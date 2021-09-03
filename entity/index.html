@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="canonical" href="https://linkml.io/linkml-prov/entity/">
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Class: Entity - PROV rendered in LinkML</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../css/theme.css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Class: Entity";
+    var mkdocs_page_input_path = "entity.md";
+    var mkdocs_page_url = "/linkml-prov/entity/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> PROV rendered in LinkML</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../home/">Home</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="..">Index</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../credits/">Credits</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">PROV rendered in LinkML</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Class: Entity</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/linkml/linkml-prov/edit/master/docs/entity.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="class-entity">Class: Entity</h1>
+<p>An entity is a physical, digital, conceptual, or other kind of thing with some fixed aspects; entities may be real or imaginary. @en</p>
+<p>URI: <a href="https://w3id.org/prov/Entity">prov:Entity</a></p>
+<p><img alt="img" src="http://yuml.me/diagram/nofunky;dir:TB/class/[Revision],[Quotation],[PrimarySource],[Plan],[Location],[Invalidation],[Influence],[Generation],[Entity]&lt;wasRevisionOf%200..1-++[Entity&#124;wasInfluencedBy:string%20%3F;generatedAtTime:string%20%3F;invalidatedAtTime:string%20%3F;value:string%20%3F],[Entity]&lt;wasQuotedFrom%200..1-++[Entity],[Activity]&lt;wasInvalidatedBy%200..1-++[Entity],[Activity]&lt;wasGeneratedBy%200..1-++[Entity],[Entity]&lt;wasDerivedFrom%200..1-++[Entity],[Agent]&lt;wasAttributedTo%200..1-++[Entity],[Entity]&lt;specializationOf%200..1-++[Entity],[Revision]&lt;qualifiedRevision%200..1-++[Entity],[Quotation]&lt;qualifiedQuotation%200..1-++[Entity],[PrimarySource]&lt;qualifiedPrimarySource%200..1-++[Entity],[Invalidation]&lt;qualifiedInvalidation%200..1-++[Entity],[Influence]&lt;qualifiedInfluence%200..1-++[Entity],[Generation]&lt;qualifiedGeneration%200..1-++[Entity],[Derivation]&lt;qualifiedDerivation%200..1-++[Entity],[Attribution]&lt;qualifiedAttribution%200..1-++[Entity],[Entity]&lt;hadPrimarySource%200..1-++[Entity],[Location]&lt;atLocation%200..1-++[Entity],[Entity]&lt;alternateOf%200..1-++[Entity],[EntityInfluence]++-%20entity%200..1&gt;[Entity],[Activity]++-%20generated%200..1&gt;[Entity],[Collection]++-%20hadMember%200..1&gt;[Entity],[Activity]++-%20invalidated%200..1&gt;[Entity],[Activity]++-%20used%200..1&gt;[Entity],[Activity]++-%20wasEndedBy%200..1&gt;[Entity],[Activity]++-%20wasStartedBy%200..1&gt;[Entity],[Entity]^-[Plan],[Entity]^-[Collection],[Entity]^-[Bundle],[EntityInfluence],[Derivation],[Collection],[Bundle],[Attribution],[Agent],[Activity]" /></p>
+<h2 id="children">Children</h2>
+<ul>
+<li><a href="../Bundle/">Bundle</a> - A bundle is a named set of provenance descriptions, and is itself an Entity, so allowing provenance of provenance to be expressed.@en</li>
+<li><a href="../Collection/">Collection</a> - A collection is an entity that provides a structure to some constituents, which are themselves entities. These constituents are said to be member of the collections.@en</li>
+<li><a href="../Plan/">Plan</a> - A plan is an entity that represents a set of actions or steps intended by one or more agents to achieve some goals.</li>
+</ul>
+<h2 id="referenced-by-class">Referenced by class</h2>
+<ul>
+<li><strong>None</strong> <em><a href="../alternateOf/">alternateOf</a></em>  <sub>OPT</sub>  <strong><a href="Entity.md">Entity</a></strong></li>
+<li><strong>None</strong> <em><a href="./">entity</a></em>  <sub>OPT</sub>  <strong><a href="Entity.md">Entity</a></strong></li>
+<li><strong>None</strong> <em><a href="../generated/">generated</a></em>  <sub>OPT</sub>  <strong><a href="Entity.md">Entity</a></strong></li>
+<li><strong>None</strong> <em><a href="../hadMember/">hadMember</a></em>  <sub>OPT</sub>  <strong><a href="Entity.md">Entity</a></strong></li>
+<li><strong>None</strong> <em><a href="../hadPrimarySource/">hadPrimarySource</a></em>  <sub>OPT</sub>  <strong><a href="Entity.md">Entity</a></strong></li>
+<li><strong>None</strong> <em><a href="../invalidated/">invalidated</a></em>  <sub>OPT</sub>  <strong><a href="Entity.md">Entity</a></strong></li>
+<li><strong>None</strong> <em><a href="../specializationOf/">specializationOf</a></em>  <sub>OPT</sub>  <strong><a href="Entity.md">Entity</a></strong></li>
+<li><strong>None</strong> <em><a href="../used/">used</a></em>  <sub>OPT</sub>  <strong><a href="Entity.md">Entity</a></strong></li>
+<li><strong>None</strong> <em><a href="../wasDerivedFrom/">wasDerivedFrom</a></em>  <sub>OPT</sub>  <strong><a href="Entity.md">Entity</a></strong></li>
+<li><strong>None</strong> <em><a href="../wasEndedBy/">wasEndedBy</a></em>  <sub>OPT</sub>  <strong><a href="Entity.md">Entity</a></strong></li>
+<li><strong>None</strong> <em><a href="../wasQuotedFrom/">wasQuotedFrom</a></em>  <sub>OPT</sub>  <strong><a href="Entity.md">Entity</a></strong></li>
+<li><strong>None</strong> <em><a href="../wasRevisionOf/">wasRevisionOf</a></em>  <sub>OPT</sub>  <strong><a href="Entity.md">Entity</a></strong></li>
+<li><strong>None</strong> <em><a href="../wasStartedBy/">wasStartedBy</a></em>  <sub>OPT</sub>  <strong><a href="Entity.md">Entity</a></strong></li>
+</ul>
+<h2 id="attributes">Attributes</h2>
+<h3 id="own">Own</h3>
+<ul>
+<li><a href="../alternateOf/">alternateOf</a>  <sub>OPT</sub><ul>
+<li>Description: Two alternate entities present aspects of the same thing. These aspects may be the same or different, and the alternate entities may or may not overlap in time.@en</li>
+<li>range: <a href="Entity.md">Entity</a></li>
+</ul>
+</li>
+<li><a href="../atLocation/">atLocation</a>  <sub>OPT</sub><ul>
+<li>range: <a href="../Location/">Location</a></li>
+</ul>
+</li>
+<li><a href="../generatedAtTime/">generatedAtTime</a>  <sub>OPT</sub><ul>
+<li>range: <a href="../String/">String</a></li>
+</ul>
+</li>
+<li><a href="../hadPrimarySource/">hadPrimarySource</a>  <sub>OPT</sub><ul>
+<li>range: <a href="Entity.md">Entity</a></li>
+</ul>
+</li>
+<li><a href="../invalidatedAtTime/">invalidatedAtTime</a>  <sub>OPT</sub><ul>
+<li>range: <a href="../String/">String</a></li>
+</ul>
+</li>
+<li><a href="../qualifiedAttribution/">qualifiedAttribution</a>  <sub>OPT</sub><ul>
+<li>range: <a href="../Attribution/">Attribution</a></li>
+</ul>
+</li>
+<li><a href="../qualifiedDerivation/">qualifiedDerivation</a>  <sub>OPT</sub><ul>
+<li>range: <a href="../Derivation/">Derivation</a></li>
+</ul>
+</li>
+<li><a href="../qualifiedGeneration/">qualifiedGeneration</a>  <sub>OPT</sub><ul>
+<li>range: <a href="../Generation/">Generation</a></li>
+</ul>
+</li>
+<li><a href="../qualifiedInfluence/">qualifiedInfluence</a>  <sub>OPT</sub><ul>
+<li>range: <a href="../Influence/">Influence</a></li>
+</ul>
+</li>
+<li><a href="../qualifiedInvalidation/">qualifiedInvalidation</a>  <sub>OPT</sub><ul>
+<li>range: <a href="../Invalidation/">Invalidation</a></li>
+</ul>
+</li>
+<li><a href="../qualifiedPrimarySource/">qualifiedPrimarySource</a>  <sub>OPT</sub><ul>
+<li>range: <a href="../PrimarySource/">PrimarySource</a></li>
+</ul>
+</li>
+<li><a href="../qualifiedQuotation/">qualifiedQuotation</a>  <sub>OPT</sub><ul>
+<li>range: <a href="../Quotation/">Quotation</a></li>
+</ul>
+</li>
+<li><a href="../qualifiedRevision/">qualifiedRevision</a>  <sub>OPT</sub><ul>
+<li>range: <a href="../Revision/">Revision</a></li>
+</ul>
+</li>
+<li><a href="../specializationOf/">specializationOf</a>  <sub>OPT</sub><ul>
+<li>Description: An entity that is a specialization of another shares all aspects of the latter, and additionally presents more specific aspects of the same thing as the latter. In particular, the lifetime of the entity being specialized contains that of any specialization. Examples of aspects include a time period, an abstraction, and a context associated with the entity.@en</li>
+<li>range: <a href="Entity.md">Entity</a></li>
+</ul>
+</li>
+<li><a href="../value/">value</a>  <sub>OPT</sub><ul>
+<li>Description: Provides a value that is a direct representation of an entity.@en</li>
+<li>range: <a href="../String/">String</a></li>
+</ul>
+</li>
+<li><a href="../wasAttributedTo/">wasAttributedTo</a>  <sub>OPT</sub><ul>
+<li>Description: Attribution is the ascribing of an entity to an agent.@en</li>
+<li>range: <a href="Agent.md">Agent</a></li>
+</ul>
+</li>
+<li><a href="../wasDerivedFrom/">wasDerivedFrom</a>  <sub>OPT</sub><ul>
+<li>Description: A derivation is a transformation of an entity into another, an update of an entity resulting in a new one, or the construction of a new entity based on a pre-existing entity.@en</li>
+<li>range: <a href="Entity.md">Entity</a></li>
+</ul>
+</li>
+<li><a href="../wasGeneratedBy/">wasGeneratedBy</a>  <sub>OPT</sub><ul>
+<li>range: <a href="Activity.md">Activity</a></li>
+</ul>
+</li>
+<li><a href="../wasInfluencedBy/">wasInfluencedBy</a>  <sub>OPT</sub><ul>
+<li>range: <a href="../String/">String</a></li>
+</ul>
+</li>
+<li><a href="../wasInvalidatedBy/">wasInvalidatedBy</a>  <sub>OPT</sub><ul>
+<li>range: <a href="Activity.md">Activity</a></li>
+</ul>
+</li>
+<li><a href="../wasQuotedFrom/">wasQuotedFrom</a>  <sub>OPT</sub><ul>
+<li>range: <a href="Entity.md">Entity</a></li>
+</ul>
+</li>
+<li><a href="../wasRevisionOf/">wasRevisionOf</a>  <sub>OPT</sub><ul>
+<li>range: <a href="Entity.md">Entity</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="other-properties">Other properties</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Mappings:</strong></td>
+<td></td>
+<td>prov:Entity</td>
+</tr>
+</tbody>
+</table>
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/linkml/linkml-prov/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

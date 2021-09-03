@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="None">
+  
+  <link rel="canonical" href="https://linkml.io/linkml-prov/">
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <title>PROV rendered in LinkML</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="css/theme.css" />
+  <link rel="stylesheet" href="css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Index";
+    var mkdocs_page_input_path = "index.md";
+    var mkdocs_page_url = "/linkml-prov/";
+  </script>
+  
+  <script src="js/jquery-2.1.1.min.js" defer></script>
+  <script src="js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="." class="icon icon-home"> PROV rendered in LinkML</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="home/">Home</a>
+                    </li>
+                </ul>
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href=".">Index</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#classes">Classes</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#mixins">Mixins</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#slots">Slots</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#enums">Enums</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#types">Types</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#built-in">Built in</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#defined">Defined</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="credits/">Credits</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href=".">PROV rendered in LinkML</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Index</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/linkml/linkml-prov/edit/master/docs/index.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="prov-schema">Prov schema</h1>
+<p>prov</p>
+<h3 id="classes">Classes</h3>
+<ul>
+<li><a href="Activity.md">Activity</a> - An activity is something that occurs over a period of time and acts upon or with entities; it may include consuming, processing, transforming, modifying, relocating, using, or generating entities.</li>
+<li><a href="Agent.md">Agent</a> - An agent is something that bears some form of responsibility for an activity taking place, for the existence of an entity, or for another agent's activity. @en<ul>
+<li><a href="Organization/">Organization</a> - An organization is a social or legal institution such as a company, society, etc.</li>
+<li><a href="Person/">Person</a> - Person agents are people.@en</li>
+<li><a href="SoftwareAgent/">SoftwareAgent</a> - A software agent is running software.@en</li>
+</ul>
+</li>
+<li><a href="Entity.md">Entity</a> - An entity is a physical, digital, conceptual, or other kind of thing with some fixed aspects; entities may be real or imaginary. @en<ul>
+<li><a href="Bundle/">Bundle</a> - A bundle is a named set of provenance descriptions, and is itself an Entity, so allowing provenance of provenance to be expressed.@en</li>
+<li><a href="Collection/">Collection</a> - A collection is an entity that provides a structure to some constituents, which are themselves entities. These constituents are said to be member of the collections.@en<ul>
+<li><a href="EmptyCollection/">EmptyCollection</a> - An empty collection is a collection without members.@en</li>
+</ul>
+</li>
+<li><a href="Plan/">Plan</a> - A plan is an entity that represents a set of actions or steps intended by one or more agents to achieve some goals.</li>
+</ul>
+</li>
+<li><a href="Influence/">Influence</a> - Influence is the capacity of an entity, activity, or agent to have an effect on the character, development, or behavior of another by means of usage, start, end, generation, invalidation, communication, derivation, attribution, association, or delegation.@en<ul>
+<li><a href="ActivityInfluence/">ActivityInfluence</a><ul>
+<li><a href="Communication/">Communication</a> - Communication is the exchange of an entity by two activities, one activity using the entity generated by the other.</li>
+</ul>
+</li>
+<li><a href="AgentInfluence/">AgentInfluence</a><ul>
+<li><a href="Association/">Association</a> - An activity association is an assignment of responsibility to an agent for an activity, indicating that the agent had a role in the activity. It further allows for a plan to be specified, which is the plan intended by the agent to achieve some goals in the context of this activity.@en</li>
+<li><a href="Attribution/">Attribution</a> - Attribution is the ascribing of an entity to an agent.</li>
+<li><a href="Delegation/">Delegation</a> - Delegation is the assignment of authority and responsibility to an agent (by itself or by another agent) to carry out a specific activity as a delegate or representative, while the agent it acts on behalf of retains some responsibility for the outcome of the delegated work.</li>
+</ul>
+</li>
+<li><a href="EntityInfluence/">EntityInfluence</a><ul>
+<li><a href="Derivation/">Derivation</a> - A derivation is a transformation of an entity into another, an update of an entity resulting in a new one, or the construction of a new entity based on a pre-existing entity.@en<ul>
+<li><a href="PrimarySource/">PrimarySource</a> - A primary source for a topic refers to something produced by some agent with direct experience and knowledge about the topic, at the time of the topic's study, without benefit from hindsight.</li>
+<li><a href="Quotation/">Quotation</a> - A quotation is the repeat of (some or all of) an entity, such as text or image, by someone who may or may not be its original author. Quotation is a particular case of derivation.@en</li>
+<li><a href="Revision/">Revision</a> - A revision is a derivation for which the resulting entity is a revised version of some original. The implication here is that the resulting entity contains substantial content from the original. Revision is a particular case of derivation.@en</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="InstantaneousEvent/">InstantaneousEvent</a> - The PROV data model is implicitly based on a notion of instantaneous events (or just events), that mark transitions in the world. Events include generation, usage, or invalidation of entities, as well as starting or ending of activities. This notion of event is not first-class in the data model, but it is useful for explaining its other concepts and its semantics.@en<ul>
+<li><a href="End/">End</a> - End is when an activity is deemed to have been ended by an entity, known as trigger. The activity no longer exists after its end. Any usage, generation, or invalidation involving an activity precedes the activity's end. An end may refer to a trigger entity that terminated the activity, or to an activity, known as ender that generated the trigger.@en</li>
+<li><a href="Generation/">Generation</a> - Generation is the completion of production of a new entity by an activity. This entity did not exist before generation and becomes available for usage after this generation.@en</li>
+<li><a href="Invalidation/">Invalidation</a> - Invalidation is the start of the destruction, cessation, or expiry of an existing entity by an activity. The entity is no longer available for use (or further invalidation) after invalidation. Any generation or usage of an entity precedes its invalidation.</li>
+<li><a href="Start/">Start</a> - Start is when an activity is deemed to have been started by an entity, known as trigger. The activity did not exist before its start. Any usage, generation, or invalidation involving an activity follows the activity's start. A start may refer to a trigger entity that set off the activity, or to an activity, known as starter, that generated the trigger.@en</li>
+<li><a href="Usage/">Usage</a> - Usage is the beginning of utilizing an entity by an activity. Before usage, the activity had not begun to utilize this entity and could not have been affected by the entity.@en</li>
+</ul>
+</li>
+<li><a href="Location/">Location</a> - A location can be an identifiable geographic place (ISO 19112), but it can also be a non-geographic place such as a directory, row, or column. As such, there are numerous ways in which location can be expressed, such as by a coordinate, address, landmark, and so forth.@en</li>
+<li><a href="Role/">Role</a> - A role is the function of an entity or agent with respect to an activity, in the context of a usage, generation, invalidation, association, start, and end.@en</li>
+<li><a href="Thing/">Thing</a></li>
+</ul>
+<h3 id="mixins">Mixins</h3>
+<h3 id="slots">Slots</h3>
+<ul>
+<li><a href="alternateOf/">alternateOf</a> - Two alternate entities present aspects of the same thing. These aspects may be the same or different, and the alternate entities may or may not overlap in time.@en<ul>
+<li><a href="specializationOf/">specializationOf</a> - An entity that is a specialization of another shares all aspects of the latter, and additionally presents more specific aspects of the same thing as the latter. In particular, the lifetime of the entity being specialized contains that of any specialization. Examples of aspects include a time period, an abstraction, and a context associated with the entity.@en</li>
+</ul>
+</li>
+<li><a href="atLocation/">atLocation</a></li>
+<li><a href="atTime/">atTime</a></li>
+<li><a href="category/">category</a></li>
+<li><a href="comment/">comment</a></li>
+<li><a href="component/">component</a></li>
+<li><a href="definition/">definition</a><ul>
+<li><a href="editorsDefinition/">editorsDefinition</a></li>
+</ul>
+</li>
+<li><a href="editorialNote/">editorialNote</a></li>
+<li><a href="endedAtTime/">endedAtTime</a></li>
+<li><a href="generatedAtTime/">generatedAtTime</a></li>
+<li><a href="hadActivity/">hadActivity</a></li>
+<li><a href="hadGeneration/">hadGeneration</a></li>
+<li><a href="hadPlan/">hadPlan</a></li>
+<li><a href="hadRole/">hadRole</a></li>
+<li><a href="hadUsage/">hadUsage</a></li>
+<li><a href="influenced/">influenced</a><ul>
+<li><a href="generated/">generated</a></li>
+<li><a href="invalidated/">invalidated</a></li>
+</ul>
+</li>
+<li><a href="influencer/">influencer</a><ul>
+<li><a href="activity/">activity</a></li>
+<li><a href="agent/">agent</a></li>
+<li><a href="entity/">entity</a></li>
+</ul>
+</li>
+<li><a href="invalidatedAtTime/">invalidatedAtTime</a></li>
+<li><a href="inverse/">inverse</a></li>
+<li><a href="isDefinedBy/">isDefinedBy</a></li>
+<li><a href="label/">label</a></li>
+<li><a href="order/">order</a></li>
+<li><a href="qualifiedInfluence/">qualifiedInfluence</a><ul>
+<li><a href="qualifiedAssociation/">qualifiedAssociation</a></li>
+<li><a href="qualifiedAttribution/">qualifiedAttribution</a></li>
+<li><a href="qualifiedCommunication/">qualifiedCommunication</a></li>
+<li><a href="qualifiedDelegation/">qualifiedDelegation</a></li>
+<li><a href="qualifiedDerivation/">qualifiedDerivation</a></li>
+<li><a href="qualifiedEnd/">qualifiedEnd</a></li>
+<li><a href="qualifiedGeneration/">qualifiedGeneration</a></li>
+<li><a href="qualifiedInvalidation/">qualifiedInvalidation</a></li>
+<li><a href="qualifiedPrimarySource/">qualifiedPrimarySource</a></li>
+<li><a href="qualifiedQuotation/">qualifiedQuotation</a></li>
+<li><a href="qualifiedRevision/">qualifiedRevision</a></li>
+<li><a href="qualifiedStart/">qualifiedStart</a></li>
+<li><a href="qualifiedUsage/">qualifiedUsage</a></li>
+</ul>
+</li>
+<li><a href="seeAlso/">seeAlso</a><ul>
+<li><a href="aq/">aq</a></li>
+<li><a href="constraints/">constraints</a></li>
+<li><a href="dm/">dm</a></li>
+<li><a href="n/">n</a></li>
+<li><a href="qualifiedForm/">qualifiedForm</a></li>
+<li><a href="sharesDefinitionWith/">sharesDefinitionWith</a></li>
+<li><a href="unqualifiedForm/">unqualifiedForm</a></li>
+</ul>
+</li>
+<li><a href="startedAtTime/">startedAtTime</a></li>
+<li><a href="todo/">todo</a></li>
+<li><a href="value/">value</a> - Provides a value that is a direct representation of an entity.@en</li>
+<li><a href="versionInfo/">versionInfo</a></li>
+<li><a href="wasInfluencedBy/">wasInfluencedBy</a><ul>
+<li><a href="actedOnBehalfOf/">actedOnBehalfOf</a></li>
+<li><a href="hadMember/">hadMember</a></li>
+<li><a href="used/">used</a></li>
+<li><a href="wasAssociatedWith/">wasAssociatedWith</a></li>
+<li><a href="wasAttributedTo/">wasAttributedTo</a> - Attribution is the ascribing of an entity to an agent.@en</li>
+<li><a href="wasDerivedFrom/">wasDerivedFrom</a> - A derivation is a transformation of an entity into another, an update of an entity resulting in a new one, or the construction of a new entity based on a pre-existing entity.@en<ul>
+<li><a href="hadPrimarySource/">hadPrimarySource</a></li>
+<li><a href="wasQuotedFrom/">wasQuotedFrom</a></li>
+<li><a href="wasRevisionOf/">wasRevisionOf</a></li>
+</ul>
+</li>
+<li><a href="wasEndedBy/">wasEndedBy</a></li>
+<li><a href="wasGeneratedBy/">wasGeneratedBy</a></li>
+<li><a href="wasInformedBy/">wasInformedBy</a></li>
+<li><a href="wasInvalidatedBy/">wasInvalidatedBy</a></li>
+<li><a href="wasStartedBy/">wasStartedBy</a></li>
+</ul>
+</li>
+</ul>
+<h3 id="enums">Enums</h3>
+<h3 id="types">Types</h3>
+<h4 id="built-in">Built in</h4>
+<ul>
+<li><strong>Bool</strong></li>
+<li><strong>Decimal</strong></li>
+<li><strong>ElementIdentifier</strong></li>
+<li><strong>NCName</strong></li>
+<li><strong>NodeIdentifier</strong></li>
+<li><strong>URI</strong></li>
+<li><strong>URIorCURIE</strong></li>
+<li><strong>XSDDate</strong></li>
+<li><strong>XSDDateTime</strong></li>
+<li><strong>XSDTime</strong></li>
+<li><strong>float</strong></li>
+<li><strong>int</strong></li>
+<li><strong>str</strong></li>
+</ul>
+<h4 id="defined">Defined</h4>
+<ul>
+<li><a href="Boolean/">Boolean</a>  (<strong>Bool</strong>)  - A binary (true or false) value</li>
+<li><a href="Date/">Date</a>  (<strong>XSDDate</strong>)  - a date (year, month and day) in an idealized calendar</li>
+<li><a href="Datetime/">Datetime</a>  (<strong>XSDDateTime</strong>)  - The combination of a date and time</li>
+<li><a href="Decimal/">Decimal</a>  (<strong>Decimal</strong>)  - A real number with arbitrary precision that conforms to the xsd:decimal specification</li>
+<li><a href="Double/">Double</a>  (<strong>float</strong>)  - A real number that conforms to the xsd:double specification</li>
+<li><a href="Float/">Float</a>  (<strong>float</strong>)  - A real number that conforms to the xsd:float specification</li>
+<li><a href="Integer/">Integer</a>  (<strong>int</strong>)  - An integer</li>
+<li><a href="Ncname/">Ncname</a>  (<strong>NCName</strong>)  - Prefix part of CURIE</li>
+<li><a href="Nodeidentifier/">Nodeidentifier</a>  (<strong>NodeIdentifier</strong>)  - A URI, CURIE or BNODE that represents a node in a model.</li>
+<li><a href="Objectidentifier/">Objectidentifier</a>  (<strong>ElementIdentifier</strong>)  - A URI or CURIE that represents an object in the model.</li>
+<li><a href="String/">String</a>  (<strong>str</strong>)  - A character string</li>
+<li><a href="Time/">Time</a>  (<strong>XSDTime</strong>)  - A time object represents a (local) time of day, independent of any particular day</li>
+<li><a href="Uri/">Uri</a>  (<strong>URI</strong>)  - a complete URI</li>
+<li><a href="Uriorcurie/">Uriorcurie</a>  (<strong>URIorCURIE</strong>)  - a URI or a CURIE</li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="credits/" class="btn btn-neutral float-right" title="Credits">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="home/" class="btn btn-neutral" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/linkml/linkml-prov/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="home/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="credits/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '.';</script>
+    <script src="js/theme.js" defer></script>
+      <script src="search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
+
+<!--
+MkDocs version : 1.1.2
+Build Date UTC : 2021-09-03 02:23:02.088004+00:00
+-->
