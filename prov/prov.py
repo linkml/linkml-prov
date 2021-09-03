@@ -1,5 +1,5 @@
 # Auto generated from prov.yaml by pythongen.py version: 0.9.0
-# Generation date: 2021-09-02 13:51
+# Generation date: 2021-09-02 19:30
 # Schema: prov
 #
 # id: http://www.w3.org/ns/prov#
@@ -32,7 +32,7 @@ dataclasses._init_fn = dataclasses_init_fn_with_kwargs
 # Namespaces
 LINKML = CurieNamespace('linkml', 'https://w3id.org/linkml/')
 OWL = CurieNamespace('owl', 'http://example.org/UNKNOWN/owl/')
-PROV = CurieNamespace('prov', 'https://w3id.org/prov/')
+PROV = CurieNamespace('prov', 'https://w3id.org/linkml/prov/')
 RDFS = CurieNamespace('rdfs', 'http://example.org/UNKNOWN/rdfs/')
 DEFAULT_ = PROV
 

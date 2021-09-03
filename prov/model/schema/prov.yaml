@@ -5,7 +5,7 @@ imports:
 - linkml:types
 prefixes:
   linkml: https://w3id.org/linkml/
-  prov: https://w3id.org/prov/
+  prov: https://w3id.org/linkml/prov/
 default_prefix: prov
 types: {}
 classes:

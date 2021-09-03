@@ -9,11 +9,11 @@
     rdfs:label "prov" ;
     dcterms:license "https://creativecommons.org/publicdomain/zero/1.0/" ;
     skos:definition "prov" ;
-    linkml:generation_date "2021-09-02 13:51" ;
+    linkml:generation_date "2021-09-02 19:30" ;
     linkml:metamodel_version "1.7.0" ;
     linkml:source_file "prov.yaml" ;
-    linkml:source_file_date "Thu Sep  2 13:50:39 2021" ;
-    linkml:source_file_size 34518 .
+    linkml:source_file_date "Thu Sep  2 19:29:49 2021" ;
+    linkml:source_file_size 34525 .
 
 linkml:Boolean a owl:Class,
         linkml:TypeDefinition ;
@@ -139,92 +139,92 @@ linkml:Uriorcurie a owl:Class,
             owl:qualifiedCardinality 1 ] ;
     skos:definition "a URI or a CURIE" .
 
-<https://w3id.org/prov/aq> a owl:ObjectProperty,
+<https://w3id.org/linkml/prov/aq> a owl:ObjectProperty,
         linkml:SlotDefinition ;
     rdfs:label "aq" ;
     rdfs:range linkml:String ;
-    rdfs:subPropertyOf <https://w3id.org/prov/seeAlso> .
+    rdfs:subPropertyOf <https://w3id.org/linkml/prov/seeAlso> .
 
-<https://w3id.org/prov/category> a owl:ObjectProperty,
+<https://w3id.org/linkml/prov/category> a owl:ObjectProperty,
         linkml:SlotDefinition ;
     rdfs:label "category" ;
     rdfs:range linkml:String ;
     skos:note "Classify prov-o terms into three categories, including 'starting-point', 'qualifed', and 'extended'. This classification is used by the prov-o html document to gently introduce prov-o terms to its users. @en" .
 
-<https://w3id.org/prov/comment> a owl:ObjectProperty,
+<https://w3id.org/linkml/prov/comment> a owl:ObjectProperty,
         linkml:SlotDefinition ;
     rdfs:label "comment" ;
     rdfs:range linkml:String ;
     skos:note "@en" .
 
-<https://w3id.org/prov/component> a owl:ObjectProperty,
+<https://w3id.org/linkml/prov/component> a owl:ObjectProperty,
         linkml:SlotDefinition ;
     rdfs:label "component" ;
     rdfs:range linkml:String ;
     skos:note "Classify prov-o terms into six components according to prov-dm, including 'agents-responsibility', 'alternate', 'annotations', 'collections', 'derivations', and 'entities-activities'. This classification is used so that readers of prov-o specification can find its correspondence with the prov-dm specification.@en" .
 
-<https://w3id.org/prov/constraints> a owl:ObjectProperty,
+<https://w3id.org/linkml/prov/constraints> a owl:ObjectProperty,
         linkml:SlotDefinition ;
     rdfs:label "constraints" ;
     rdfs:range linkml:String ;
-    rdfs:subPropertyOf <https://w3id.org/prov/seeAlso> ;
+    rdfs:subPropertyOf <https://w3id.org/linkml/prov/seeAlso> ;
     skos:note "A reference to the principal section of the PROV-CONSTRAINTS document that describes this concept.@en" .
 
-<https://w3id.org/prov/dm> a owl:ObjectProperty,
+<https://w3id.org/linkml/prov/dm> a owl:ObjectProperty,
         linkml:SlotDefinition ;
     rdfs:label "dm" ;
     rdfs:range linkml:String ;
-    rdfs:subPropertyOf <https://w3id.org/prov/seeAlso> ;
+    rdfs:subPropertyOf <https://w3id.org/linkml/prov/seeAlso> ;
     skos:note "A reference to the principal section of the PROV-DM document that describes this concept.@en" .
 
-<https://w3id.org/prov/editorialNote> a owl:ObjectProperty,
+<https://w3id.org/linkml/prov/editorialNote> a owl:ObjectProperty,
         linkml:SlotDefinition ;
     rdfs:label "editorialNote" ;
     rdfs:range linkml:String ;
     skos:note "A note by the OWL development team about how this term expresses the PROV-DM concept, or how it should be used in context of semantic web or linked data.@en" .
 
-<https://w3id.org/prov/editorsDefinition> a owl:ObjectProperty,
+<https://w3id.org/linkml/prov/editorsDefinition> a owl:ObjectProperty,
         linkml:SlotDefinition ;
     rdfs:label "editorsDefinition" ;
     rdfs:range linkml:String ;
-    rdfs:subPropertyOf <https://w3id.org/prov/definition> ;
+    rdfs:subPropertyOf <https://w3id.org/linkml/prov/definition> ;
     skos:note "When the prov-o term does not have a definition drawn from prov-dm, and the prov-o editor provides one.@en" .
 
-<https://w3id.org/prov/inverse> a owl:ObjectProperty,
+<https://w3id.org/linkml/prov/inverse> a owl:ObjectProperty,
         linkml:SlotDefinition ;
     rdfs:label "inverse" ;
     rdfs:range linkml:String ;
     skos:note "PROV-O does not define all property inverses. The directionalities defined in PROV-O should be given preference over those not defined. However, if users wish to name the inverse of a PROV-O property, the local name given by prov:inverse should be used.@en" .
 
-<https://w3id.org/prov/isDefinedBy> a owl:ObjectProperty,
+<https://w3id.org/linkml/prov/isDefinedBy> a owl:ObjectProperty,
         linkml:SlotDefinition ;
     rdfs:label "isDefinedBy" ;
     rdfs:range linkml:String .
 
-<https://w3id.org/prov/label> a owl:ObjectProperty,
+<https://w3id.org/linkml/prov/label> a owl:ObjectProperty,
         linkml:SlotDefinition ;
     rdfs:label "label" ;
     rdfs:range linkml:String ;
     skos:note "@en" .
 
-<https://w3id.org/prov/n> a owl:ObjectProperty,
+<https://w3id.org/linkml/prov/n> a owl:ObjectProperty,
         linkml:SlotDefinition ;
     rdfs:label "n" ;
     rdfs:range linkml:String ;
-    rdfs:subPropertyOf <https://w3id.org/prov/seeAlso> ;
+    rdfs:subPropertyOf <https://w3id.org/linkml/prov/seeAlso> ;
     skos:note "A reference to the principal section of the PROV-DM document that describes this concept.@en" .
 
-<https://w3id.org/prov/order> a owl:ObjectProperty,
+<https://w3id.org/linkml/prov/order> a owl:ObjectProperty,
         linkml:SlotDefinition ;
     rdfs:label "order" ;
     rdfs:range linkml:String ;
     skos:note "The position that this OWL term should be listed within documentation. The scope of the documentation (e.g., among all terms, among terms within a prov:category, among properties applying to a particular class, etc.) is unspecified.@en" .
 
-<https://w3id.org/prov/qualifiedForm> a owl:ObjectProperty,
+<https://w3id.org/linkml/prov/qualifiedForm> a owl:ObjectProperty,
         linkml:SlotDefinition ;
     rdfs:label "qualifiedForm" ;
     rdfs:range linkml:String ;
-    rdfs:subPropertyOf <https://w3id.org/prov/seeAlso> ;
+    rdfs:subPropertyOf <https://w3id.org/linkml/prov/seeAlso> ;
     skos:note """This annotation property links a subproperty of prov:wasInfluencedBy with the subclass of prov:Influence and the qualifying property that are used to qualify it. 
 
 Example annotation:
@@ -245,911 +245,911 @@ can be qualified by adding:
 
 Note how the value of the unqualified influence (prov:wasGeneratedBy :activity1) is mirrored as the value of the prov:activity (or prov:entity, or prov:agent) property on the influence class.@en""" .
 
-<https://w3id.org/prov/sharesDefinitionWith> a owl:ObjectProperty,
+<https://w3id.org/linkml/prov/sharesDefinitionWith> a owl:ObjectProperty,
         linkml:SlotDefinition ;
     rdfs:label "sharesDefinitionWith" ;
     rdfs:range linkml:String ;
-    rdfs:subPropertyOf <https://w3id.org/prov/seeAlso> .
+    rdfs:subPropertyOf <https://w3id.org/linkml/prov/seeAlso> .
 
-<https://w3id.org/prov/todo> a owl:ObjectProperty,
+<https://w3id.org/linkml/prov/todo> a owl:ObjectProperty,
         linkml:SlotDefinition ;
     rdfs:label "todo" ;
     rdfs:range linkml:String .
 
-<https://w3id.org/prov/unqualifiedForm> a owl:ObjectProperty,
+<https://w3id.org/linkml/prov/unqualifiedForm> a owl:ObjectProperty,
         linkml:SlotDefinition ;
     rdfs:label "unqualifiedForm" ;
     rdfs:range linkml:String ;
-    rdfs:subPropertyOf <https://w3id.org/prov/seeAlso> ;
+    rdfs:subPropertyOf <https://w3id.org/linkml/prov/seeAlso> ;
     skos:note "Classes and properties used to qualify relationships are annotated with prov:unqualifiedForm to indicate the property used to assert an unqualified provenance relation.@en" .
 
-<https://w3id.org/prov/versionInfo> a owl:ObjectProperty,
+<https://w3id.org/linkml/prov/versionInfo> a owl:ObjectProperty,
         linkml:SlotDefinition ;
     rdfs:label "versionInfo" ;
     rdfs:range linkml:String .
 
-<https://w3id.org/prov/Bundle> a owl:Class,
+<https://w3id.org/linkml/prov/Bundle> a owl:Class,
         linkml:ClassDefinition ;
     rdfs:label "Bundle" ;
-    rdfs:subClassOf <https://w3id.org/prov/Entity> ;
+    rdfs:subClassOf <https://w3id.org/linkml/prov/Entity> ;
     skos:definition "A bundle is a named set of provenance descriptions, and is itself an Entity, so allowing provenance of provenance to be expressed.@en" ;
-    skos:exactMatch <https://w3id.org/prov/Bundle> ;
+    skos:exactMatch <https://w3id.org/linkml/prov/Bundle> ;
     skos:note "Note that there are kinds of bundles (e.g. handwritten letters, audio recordings, etc.) that are not expressed in PROV-O, but can be still be described by PROV-O.@en" .
 
-<https://w3id.org/prov/EmptyCollection> a owl:Class,
+<https://w3id.org/linkml/prov/EmptyCollection> a owl:Class,
         linkml:ClassDefinition ;
     rdfs:label "EmptyCollection" ;
-    rdfs:subClassOf <https://w3id.org/prov/Collection> ;
+    rdfs:subClassOf <https://w3id.org/linkml/prov/Collection> ;
     skos:definition "An empty collection is a collection without members.@en" ;
-    skos:exactMatch <https://w3id.org/prov/EmptyCollection> .
+    skos:exactMatch <https://w3id.org/linkml/prov/EmptyCollection> .
 
-<https://w3id.org/prov/Organization> a owl:Class,
+<https://w3id.org/linkml/prov/Organization> a owl:Class,
         linkml:ClassDefinition ;
     rdfs:label "Organization" ;
-    rdfs:subClassOf <https://w3id.org/prov/Agent> ;
+    rdfs:subClassOf <https://w3id.org/linkml/prov/Agent> ;
     skos:definition "An organization is a social or legal institution such as a company, society, etc." ;
-    skos:exactMatch <https://w3id.org/prov/Organization> .
+    skos:exactMatch <https://w3id.org/linkml/prov/Organization> .
 
-<https://w3id.org/prov/Person> a owl:Class,
+<https://w3id.org/linkml/prov/Person> a owl:Class,
         linkml:ClassDefinition ;
     rdfs:label "Person" ;
-    rdfs:subClassOf <https://w3id.org/prov/Agent> ;
+    rdfs:subClassOf <https://w3id.org/linkml/prov/Agent> ;
     skos:definition "Person agents are people.@en" ;
-    skos:exactMatch <https://w3id.org/prov/Person> .
+    skos:exactMatch <https://w3id.org/linkml/prov/Person> .
 
-<https://w3id.org/prov/SoftwareAgent> a owl:Class,
+<https://w3id.org/linkml/prov/SoftwareAgent> a owl:Class,
         linkml:ClassDefinition ;
     rdfs:label "SoftwareAgent" ;
-    rdfs:subClassOf <https://w3id.org/prov/Agent> ;
+    rdfs:subClassOf <https://w3id.org/linkml/prov/Agent> ;
     skos:definition "A software agent is running software.@en" ;
-    skos:exactMatch <https://w3id.org/prov/SoftwareAgent> .
+    skos:exactMatch <https://w3id.org/linkml/prov/SoftwareAgent> .
 
-<https://w3id.org/prov/actedOnBehalfOf> a owl:ObjectProperty,
+<https://w3id.org/linkml/prov/actedOnBehalfOf> a owl:ObjectProperty,
         linkml:SlotDefinition ;
     rdfs:label "actedOnBehalfOf" ;
-    rdfs:range <https://w3id.org/prov/Agent> ;
-    rdfs:subPropertyOf <https://w3id.org/prov/wasInfluencedBy> ;
+    rdfs:range <https://w3id.org/linkml/prov/Agent> ;
+    rdfs:subPropertyOf <https://w3id.org/linkml/prov/wasInfluencedBy> ;
     skos:note "An object property to express the accountability of an agent towards another agent. The subordinate agent acted on behalf of the responsible agent in an actual activity. @en" .
 
-<https://w3id.org/prov/agent> a owl:ObjectProperty,
+<https://w3id.org/linkml/prov/agent> a owl:ObjectProperty,
         linkml:SlotDefinition ;
     rdfs:label "agent" ;
-    rdfs:range <https://w3id.org/prov/Agent> ;
-    rdfs:subPropertyOf <https://w3id.org/prov/influencer> .
+    rdfs:range <https://w3id.org/linkml/prov/Agent> ;
+    rdfs:subPropertyOf <https://w3id.org/linkml/prov/influencer> .
 
-<https://w3id.org/prov/atTime> a owl:ObjectProperty,
+<https://w3id.org/linkml/prov/atTime> a owl:ObjectProperty,
         linkml:SlotDefinition ;
     rdfs:label "atTime" ;
     rdfs:range linkml:String ;
     skos:note "The time at which an InstantaneousEvent occurred, in the form of xsd:dateTime.@en" .
 
-<https://w3id.org/prov/definition> a owl:ObjectProperty,
+<https://w3id.org/linkml/prov/definition> a owl:ObjectProperty,
         linkml:SlotDefinition ;
     rdfs:label "definition" ;
     rdfs:range linkml:String ;
     skos:note "A definition quoted from PROV-DM or PROV-CONSTRAINTS that describes the concept expressed with this OWL term.@en" .
 
-<https://w3id.org/prov/endedAtTime> a owl:ObjectProperty,
+<https://w3id.org/linkml/prov/endedAtTime> a owl:ObjectProperty,
         linkml:SlotDefinition ;
     rdfs:label "endedAtTime" ;
     rdfs:range linkml:String ;
     skos:note "The time at which an activity ended. See also prov:startedAtTime.@en" .
 
-<https://w3id.org/prov/generated> a owl:ObjectProperty,
+<https://w3id.org/linkml/prov/generated> a owl:ObjectProperty,
         linkml:SlotDefinition ;
     rdfs:label "generated" ;
-    rdfs:range <https://w3id.org/prov/Entity> ;
-    rdfs:subPropertyOf <https://w3id.org/prov/influenced> .
+    rdfs:range <https://w3id.org/linkml/prov/Entity> ;
+    rdfs:subPropertyOf <https://w3id.org/linkml/prov/influenced> .
 
-<https://w3id.org/prov/generatedAtTime> a owl:ObjectProperty,
+<https://w3id.org/linkml/prov/generatedAtTime> a owl:ObjectProperty,
         linkml:SlotDefinition ;
     rdfs:label "generatedAtTime" ;
     rdfs:range linkml:String ;
     skos:note "The time at which an entity was completely created and is available for use.@en" .
 
-<https://w3id.org/prov/hadGeneration> a owl:ObjectProperty,
+<https://w3id.org/linkml/prov/hadGeneration> a owl:ObjectProperty,
         linkml:SlotDefinition ;
     rdfs:label "hadGeneration" ;
-    rdfs:range <https://w3id.org/prov/Generation> ;
+    rdfs:range <https://w3id.org/linkml/prov/Generation> ;
     skos:note "The _optional_ Generation involved in an Entity's Derivation.@en" .
 
-<https://w3id.org/prov/hadMember> a owl:ObjectProperty,
+<https://w3id.org/linkml/prov/hadMember> a owl:ObjectProperty,
         linkml:SlotDefinition ;
     rdfs:label "hadMember" ;
-    rdfs:range <https://w3id.org/prov/Entity> ;
-    rdfs:subPropertyOf <https://w3id.org/prov/wasInfluencedBy> .
+    rdfs:range <https://w3id.org/linkml/prov/Entity> ;
+    rdfs:subPropertyOf <https://w3id.org/linkml/prov/wasInfluencedBy> .
 
-<https://w3id.org/prov/hadPlan> a owl:ObjectProperty,
+<https://w3id.org/linkml/prov/hadPlan> a owl:ObjectProperty,
         linkml:SlotDefinition ;
     rdfs:label "hadPlan" ;
-    rdfs:range <https://w3id.org/prov/Plan> ;
+    rdfs:range <https://w3id.org/linkml/prov/Plan> ;
     skos:note "The _optional_ Plan adopted by an Agent in Association with some Activity. Plan specifications are out of the scope of this specification.@en" .
 
-<https://w3id.org/prov/hadPrimarySource> a owl:ObjectProperty,
+<https://w3id.org/linkml/prov/hadPrimarySource> a owl:ObjectProperty,
         linkml:SlotDefinition ;
     rdfs:label "hadPrimarySource" ;
-    rdfs:range <https://w3id.org/prov/Entity> ;
-    rdfs:subPropertyOf <https://w3id.org/prov/wasDerivedFrom> .
+    rdfs:range <https://w3id.org/linkml/prov/Entity> ;
+    rdfs:subPropertyOf <https://w3id.org/linkml/prov/wasDerivedFrom> .
 
-<https://w3id.org/prov/hadUsage> a owl:ObjectProperty,
+<https://w3id.org/linkml/prov/hadUsage> a owl:ObjectProperty,
         linkml:SlotDefinition ;
     rdfs:label "hadUsage" ;
-    rdfs:range <https://w3id.org/prov/Usage> ;
+    rdfs:range <https://w3id.org/linkml/prov/Usage> ;
     skos:note "The _optional_ Usage involved in an Entity's Derivation.@en" .
 
-<https://w3id.org/prov/invalidated> a owl:ObjectProperty,
+<https://w3id.org/linkml/prov/invalidated> a owl:ObjectProperty,
         linkml:SlotDefinition ;
     rdfs:label "invalidated" ;
-    rdfs:range <https://w3id.org/prov/Entity> ;
-    rdfs:subPropertyOf <https://w3id.org/prov/influenced> .
+    rdfs:range <https://w3id.org/linkml/prov/Entity> ;
+    rdfs:subPropertyOf <https://w3id.org/linkml/prov/influenced> .
 
-<https://w3id.org/prov/invalidatedAtTime> a owl:ObjectProperty,
+<https://w3id.org/linkml/prov/invalidatedAtTime> a owl:ObjectProperty,
         linkml:SlotDefinition ;
     rdfs:label "invalidatedAtTime" ;
     rdfs:range linkml:String ;
     skos:note "The time at which an entity was invalidated (i.e., no longer usable).@en" .
 
-<https://w3id.org/prov/qualifiedAssociation> a owl:ObjectProperty,
+<https://w3id.org/linkml/prov/qualifiedAssociation> a owl:ObjectProperty,
         linkml:SlotDefinition ;
     rdfs:label "qualifiedAssociation" ;
-    rdfs:range <https://w3id.org/prov/Association> ;
-    rdfs:subPropertyOf <https://w3id.org/prov/qualifiedInfluence> ;
+    rdfs:range <https://w3id.org/linkml/prov/Association> ;
+    rdfs:subPropertyOf <https://w3id.org/linkml/prov/qualifiedInfluence> ;
     skos:note "If this Activity prov:wasAssociatedWith Agent :ag, then it can qualify the Association using prov:qualifiedAssociation [ a prov:Association;  prov:agent :ag; :foo :bar ].@en" .
 
-<https://w3id.org/prov/qualifiedAttribution> a owl:ObjectProperty,
+<https://w3id.org/linkml/prov/qualifiedAttribution> a owl:ObjectProperty,
         linkml:SlotDefinition ;
     rdfs:label "qualifiedAttribution" ;
-    rdfs:range <https://w3id.org/prov/Attribution> ;
-    rdfs:subPropertyOf <https://w3id.org/prov/qualifiedInfluence> ;
+    rdfs:range <https://w3id.org/linkml/prov/Attribution> ;
+    rdfs:subPropertyOf <https://w3id.org/linkml/prov/qualifiedInfluence> ;
     skos:note "If this Entity prov:wasAttributedTo Agent :ag, then it can qualify how it was influenced using prov:qualifiedAttribution [ a prov:Attribution;  prov:agent :ag; :foo :bar ].@en" .
 
-<https://w3id.org/prov/qualifiedCommunication> a owl:ObjectProperty,
+<https://w3id.org/linkml/prov/qualifiedCommunication> a owl:ObjectProperty,
         linkml:SlotDefinition ;
     rdfs:label "qualifiedCommunication" ;
-    rdfs:range <https://w3id.org/prov/Communication> ;
-    rdfs:subPropertyOf <https://w3id.org/prov/qualifiedInfluence> ;
+    rdfs:range <https://w3id.org/linkml/prov/Communication> ;
+    rdfs:subPropertyOf <https://w3id.org/linkml/prov/qualifiedInfluence> ;
     skos:note "If this Activity prov:wasInformedBy Activity :a, then it can qualify how it was influenced using prov:qualifiedCommunication [ a prov:Communication;  prov:activity :a; :foo :bar ].@en" .
 
-<https://w3id.org/prov/qualifiedDelegation> a owl:ObjectProperty,
+<https://w3id.org/linkml/prov/qualifiedDelegation> a owl:ObjectProperty,
         linkml:SlotDefinition ;
     rdfs:label "qualifiedDelegation" ;
-    rdfs:range <https://w3id.org/prov/Delegation> ;
-    rdfs:subPropertyOf <https://w3id.org/prov/qualifiedInfluence> ;
+    rdfs:range <https://w3id.org/linkml/prov/Delegation> ;
+    rdfs:subPropertyOf <https://w3id.org/linkml/prov/qualifiedInfluence> ;
     skos:note "If this Agent prov:actedOnBehalfOf Agent :ag, then it can qualify how with prov:qualifiedResponsibility [ a prov:Responsibility;  prov:agent :ag; :foo :bar ].@en" .
 
-<https://w3id.org/prov/qualifiedDerivation> a owl:ObjectProperty,
+<https://w3id.org/linkml/prov/qualifiedDerivation> a owl:ObjectProperty,
         linkml:SlotDefinition ;
     rdfs:label "qualifiedDerivation" ;
-    rdfs:range <https://w3id.org/prov/Derivation> ;
-    rdfs:subPropertyOf <https://w3id.org/prov/qualifiedInfluence> ;
+    rdfs:range <https://w3id.org/linkml/prov/Derivation> ;
+    rdfs:subPropertyOf <https://w3id.org/linkml/prov/qualifiedInfluence> ;
     skos:note "If this Entity prov:wasDerivedFrom Entity :e, then it can qualify how it was derived using prov:qualifiedDerivation [ a prov:Derivation;  prov:entity :e; :foo :bar ].@en" .
 
-<https://w3id.org/prov/qualifiedEnd> a owl:ObjectProperty,
+<https://w3id.org/linkml/prov/qualifiedEnd> a owl:ObjectProperty,
         linkml:SlotDefinition ;
     rdfs:label "qualifiedEnd" ;
-    rdfs:range <https://w3id.org/prov/End> ;
-    rdfs:subPropertyOf <https://w3id.org/prov/qualifiedInfluence> ;
+    rdfs:range <https://w3id.org/linkml/prov/End> ;
+    rdfs:subPropertyOf <https://w3id.org/linkml/prov/qualifiedInfluence> ;
     skos:note "If this Activity prov:wasEndedBy Entity :e1, then it can qualify how it was ended using prov:qualifiedEnd [ a prov:End;  prov:entity :e1; :foo :bar ].@en" .
 
-<https://w3id.org/prov/qualifiedGeneration> a owl:ObjectProperty,
+<https://w3id.org/linkml/prov/qualifiedGeneration> a owl:ObjectProperty,
         linkml:SlotDefinition ;
     rdfs:label "qualifiedGeneration" ;
-    rdfs:range <https://w3id.org/prov/Generation> ;
-    rdfs:subPropertyOf <https://w3id.org/prov/qualifiedInfluence> ;
+    rdfs:range <https://w3id.org/linkml/prov/Generation> ;
+    rdfs:subPropertyOf <https://w3id.org/linkml/prov/qualifiedInfluence> ;
     skos:note "If this Activity prov:generated Entity :e, then it can qualify how it performed the Generation using prov:qualifiedGeneration [ a prov:Generation;  prov:entity :e; :foo :bar ].@en" .
 
-<https://w3id.org/prov/qualifiedInvalidation> a owl:ObjectProperty,
+<https://w3id.org/linkml/prov/qualifiedInvalidation> a owl:ObjectProperty,
         linkml:SlotDefinition ;
     rdfs:label "qualifiedInvalidation" ;
-    rdfs:range <https://w3id.org/prov/Invalidation> ;
-    rdfs:subPropertyOf <https://w3id.org/prov/qualifiedInfluence> ;
+    rdfs:range <https://w3id.org/linkml/prov/Invalidation> ;
+    rdfs:subPropertyOf <https://w3id.org/linkml/prov/qualifiedInfluence> ;
     skos:note "If this Entity prov:wasInvalidatedBy Activity :a, then it can qualify how it was invalidated using prov:qualifiedInvalidation [ a prov:Invalidation;  prov:activity :a; :foo :bar ].@en" .
 
-<https://w3id.org/prov/qualifiedPrimarySource> a owl:ObjectProperty,
+<https://w3id.org/linkml/prov/qualifiedPrimarySource> a owl:ObjectProperty,
         linkml:SlotDefinition ;
     rdfs:label "qualifiedPrimarySource" ;
-    rdfs:range <https://w3id.org/prov/PrimarySource> ;
-    rdfs:subPropertyOf <https://w3id.org/prov/qualifiedInfluence> ;
+    rdfs:range <https://w3id.org/linkml/prov/PrimarySource> ;
+    rdfs:subPropertyOf <https://w3id.org/linkml/prov/qualifiedInfluence> ;
     skos:note "If this Entity prov:hadPrimarySource Entity :e, then it can qualify how using prov:qualifiedPrimarySource [ a prov:PrimarySource; prov:entity :e; :foo :bar ].@en" .
 
-<https://w3id.org/prov/qualifiedQuotation> a owl:ObjectProperty,
+<https://w3id.org/linkml/prov/qualifiedQuotation> a owl:ObjectProperty,
         linkml:SlotDefinition ;
     rdfs:label "qualifiedQuotation" ;
-    rdfs:range <https://w3id.org/prov/Quotation> ;
-    rdfs:subPropertyOf <https://w3id.org/prov/qualifiedInfluence> ;
+    rdfs:range <https://w3id.org/linkml/prov/Quotation> ;
+    rdfs:subPropertyOf <https://w3id.org/linkml/prov/qualifiedInfluence> ;
     skos:note "If this Entity prov:wasQuotedFrom Entity :e, then it can qualify how using prov:qualifiedQuotation [ a prov:Quotation;  prov:entity :e; :foo :bar ].@en" .
 
-<https://w3id.org/prov/qualifiedRevision> a owl:ObjectProperty,
+<https://w3id.org/linkml/prov/qualifiedRevision> a owl:ObjectProperty,
         linkml:SlotDefinition ;
     rdfs:label "qualifiedRevision" ;
-    rdfs:range <https://w3id.org/prov/Revision> ;
-    rdfs:subPropertyOf <https://w3id.org/prov/qualifiedInfluence> ;
+    rdfs:range <https://w3id.org/linkml/prov/Revision> ;
+    rdfs:subPropertyOf <https://w3id.org/linkml/prov/qualifiedInfluence> ;
     skos:note "If this Entity prov:wasRevisionOf Entity :e, then it can qualify how it was revised using prov:qualifiedRevision [ a prov:Revision;  prov:entity :e; :foo :bar ].@en" .
 
-<https://w3id.org/prov/qualifiedStart> a owl:ObjectProperty,
+<https://w3id.org/linkml/prov/qualifiedStart> a owl:ObjectProperty,
         linkml:SlotDefinition ;
     rdfs:label "qualifiedStart" ;
-    rdfs:range <https://w3id.org/prov/Start> ;
-    rdfs:subPropertyOf <https://w3id.org/prov/qualifiedInfluence> ;
+    rdfs:range <https://w3id.org/linkml/prov/Start> ;
+    rdfs:subPropertyOf <https://w3id.org/linkml/prov/qualifiedInfluence> ;
     skos:note "If this Activity prov:wasStartedBy Entity :e1, then it can qualify how it was started using prov:qualifiedStart [ a prov:Start;  prov:entity :e1; :foo :bar ].@en" .
 
-<https://w3id.org/prov/qualifiedUsage> a owl:ObjectProperty,
+<https://w3id.org/linkml/prov/qualifiedUsage> a owl:ObjectProperty,
         linkml:SlotDefinition ;
     rdfs:label "qualifiedUsage" ;
-    rdfs:range <https://w3id.org/prov/Usage> ;
-    rdfs:subPropertyOf <https://w3id.org/prov/qualifiedInfluence> ;
+    rdfs:range <https://w3id.org/linkml/prov/Usage> ;
+    rdfs:subPropertyOf <https://w3id.org/linkml/prov/qualifiedInfluence> ;
     skos:note "If this Activity prov:used Entity :e, then it can qualify how it used it using prov:qualifiedUsage [ a prov:Usage; prov:entity :e; :foo :bar ].@en" .
 
-<https://w3id.org/prov/specializationOf> a owl:ObjectProperty,
+<https://w3id.org/linkml/prov/specializationOf> a owl:ObjectProperty,
         linkml:SlotDefinition ;
     rdfs:label "specializationOf" ;
-    rdfs:range <https://w3id.org/prov/Entity> ;
-    rdfs:subPropertyOf <https://w3id.org/prov/alternateOf> ;
+    rdfs:range <https://w3id.org/linkml/prov/Entity> ;
+    rdfs:subPropertyOf <https://w3id.org/linkml/prov/alternateOf> ;
     skos:definition "An entity that is a specialization of another shares all aspects of the latter, and additionally presents more specific aspects of the same thing as the latter. In particular, the lifetime of the entity being specialized contains that of any specialization. Examples of aspects include a time period, an abstraction, and a context associated with the entity.@en" .
 
-<https://w3id.org/prov/startedAtTime> a owl:ObjectProperty,
+<https://w3id.org/linkml/prov/startedAtTime> a owl:ObjectProperty,
         linkml:SlotDefinition ;
     rdfs:label "startedAtTime" ;
     rdfs:range linkml:String ;
     skos:note "The time at which an activity started. See also prov:endedAtTime.@en" .
 
-<https://w3id.org/prov/used> a owl:ObjectProperty,
+<https://w3id.org/linkml/prov/used> a owl:ObjectProperty,
         linkml:SlotDefinition ;
     rdfs:label "used" ;
-    rdfs:range <https://w3id.org/prov/Entity> ;
-    rdfs:subPropertyOf <https://w3id.org/prov/wasInfluencedBy> ;
+    rdfs:range <https://w3id.org/linkml/prov/Entity> ;
+    rdfs:subPropertyOf <https://w3id.org/linkml/prov/wasInfluencedBy> ;
     skos:note "A prov:Entity that was used by this prov:Activity. For example, :baking prov:used :spoon, :egg, :oven .@en" .
 
-<https://w3id.org/prov/value> a owl:ObjectProperty,
+<https://w3id.org/linkml/prov/value> a owl:ObjectProperty,
         linkml:SlotDefinition ;
     rdfs:label "value" ;
     rdfs:range linkml:String ;
     skos:definition "Provides a value that is a direct representation of an entity.@en" .
 
-<https://w3id.org/prov/wasAssociatedWith> a owl:ObjectProperty,
+<https://w3id.org/linkml/prov/wasAssociatedWith> a owl:ObjectProperty,
         linkml:SlotDefinition ;
     rdfs:label "wasAssociatedWith" ;
-    rdfs:range <https://w3id.org/prov/Agent> ;
-    rdfs:subPropertyOf <https://w3id.org/prov/wasInfluencedBy> ;
+    rdfs:range <https://w3id.org/linkml/prov/Agent> ;
+    rdfs:subPropertyOf <https://w3id.org/linkml/prov/wasInfluencedBy> ;
     skos:note "An prov:Agent that had some (unspecified) responsibility for the occurrence of this prov:Activity.@en" .
 
-<https://w3id.org/prov/wasAttributedTo> a owl:ObjectProperty,
+<https://w3id.org/linkml/prov/wasAttributedTo> a owl:ObjectProperty,
         linkml:SlotDefinition ;
     rdfs:label "wasAttributedTo" ;
-    rdfs:range <https://w3id.org/prov/Agent> ;
-    rdfs:subPropertyOf <https://w3id.org/prov/wasInfluencedBy> ;
+    rdfs:range <https://w3id.org/linkml/prov/Agent> ;
+    rdfs:subPropertyOf <https://w3id.org/linkml/prov/wasInfluencedBy> ;
     skos:definition "Attribution is the ascribing of an entity to an agent.@en" ;
     skos:note "Attribution is the ascribing of an entity to an agent.@en" .
 
-<https://w3id.org/prov/wasEndedBy> a owl:ObjectProperty,
+<https://w3id.org/linkml/prov/wasEndedBy> a owl:ObjectProperty,
         linkml:SlotDefinition ;
     rdfs:label "wasEndedBy" ;
-    rdfs:range <https://w3id.org/prov/Entity> ;
-    rdfs:subPropertyOf <https://w3id.org/prov/wasInfluencedBy> ;
+    rdfs:range <https://w3id.org/linkml/prov/Entity> ;
+    rdfs:subPropertyOf <https://w3id.org/linkml/prov/wasInfluencedBy> ;
     skos:note "End is when an activity is deemed to have ended. An end may refer to an entity, known as trigger, that terminated the activity.@en" .
 
-<https://w3id.org/prov/wasGeneratedBy> a owl:ObjectProperty,
+<https://w3id.org/linkml/prov/wasGeneratedBy> a owl:ObjectProperty,
         linkml:SlotDefinition ;
     rdfs:label "wasGeneratedBy" ;
-    rdfs:range <https://w3id.org/prov/Activity> ;
-    rdfs:subPropertyOf <https://w3id.org/prov/wasInfluencedBy> .
+    rdfs:range <https://w3id.org/linkml/prov/Activity> ;
+    rdfs:subPropertyOf <https://w3id.org/linkml/prov/wasInfluencedBy> .
 
-<https://w3id.org/prov/wasInformedBy> a owl:ObjectProperty,
+<https://w3id.org/linkml/prov/wasInformedBy> a owl:ObjectProperty,
         linkml:SlotDefinition ;
     rdfs:label "wasInformedBy" ;
-    rdfs:range <https://w3id.org/prov/Activity> ;
-    rdfs:subPropertyOf <https://w3id.org/prov/wasInfluencedBy> ;
+    rdfs:range <https://w3id.org/linkml/prov/Activity> ;
+    rdfs:subPropertyOf <https://w3id.org/linkml/prov/wasInfluencedBy> ;
     skos:note "An activity a2 is dependent on or informed by another activity a1, by way of some unspecified entity that is generated by a1 and used by a2.@en" .
 
-<https://w3id.org/prov/wasInvalidatedBy> a owl:ObjectProperty,
+<https://w3id.org/linkml/prov/wasInvalidatedBy> a owl:ObjectProperty,
         linkml:SlotDefinition ;
     rdfs:label "wasInvalidatedBy" ;
-    rdfs:range <https://w3id.org/prov/Activity> ;
-    rdfs:subPropertyOf <https://w3id.org/prov/wasInfluencedBy> .
+    rdfs:range <https://w3id.org/linkml/prov/Activity> ;
+    rdfs:subPropertyOf <https://w3id.org/linkml/prov/wasInfluencedBy> .
 
-<https://w3id.org/prov/wasQuotedFrom> a owl:ObjectProperty,
+<https://w3id.org/linkml/prov/wasQuotedFrom> a owl:ObjectProperty,
         linkml:SlotDefinition ;
     rdfs:label "wasQuotedFrom" ;
-    rdfs:range <https://w3id.org/prov/Entity> ;
-    rdfs:subPropertyOf <https://w3id.org/prov/wasDerivedFrom> ;
+    rdfs:range <https://w3id.org/linkml/prov/Entity> ;
+    rdfs:subPropertyOf <https://w3id.org/linkml/prov/wasDerivedFrom> ;
     skos:note "An entity is derived from an original entity by copying, or 'quoting', some or all of it.@en" .
 
-<https://w3id.org/prov/wasRevisionOf> a owl:ObjectProperty,
+<https://w3id.org/linkml/prov/wasRevisionOf> a owl:ObjectProperty,
         linkml:SlotDefinition ;
     rdfs:label "wasRevisionOf" ;
-    rdfs:range <https://w3id.org/prov/Entity> ;
-    rdfs:subPropertyOf <https://w3id.org/prov/wasDerivedFrom> ;
+    rdfs:range <https://w3id.org/linkml/prov/Entity> ;
+    rdfs:subPropertyOf <https://w3id.org/linkml/prov/wasDerivedFrom> ;
     skos:note "A revision is a derivation that revises an entity into a revised version.@en" .
 
-<https://w3id.org/prov/wasStartedBy> a owl:ObjectProperty,
+<https://w3id.org/linkml/prov/wasStartedBy> a owl:ObjectProperty,
         linkml:SlotDefinition ;
     rdfs:label "wasStartedBy" ;
-    rdfs:range <https://w3id.org/prov/Entity> ;
-    rdfs:subPropertyOf <https://w3id.org/prov/wasInfluencedBy> ;
+    rdfs:range <https://w3id.org/linkml/prov/Entity> ;
+    rdfs:subPropertyOf <https://w3id.org/linkml/prov/wasInfluencedBy> ;
     skos:note "Start is when an activity is deemed to have started. A start may refer to an entity, known as trigger, that initiated the activity.@en" .
 
-<https://w3id.org/prov/Collection> a owl:Class,
+<https://w3id.org/linkml/prov/Collection> a owl:Class,
         linkml:ClassDefinition ;
     rdfs:label "Collection" ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/prov/Entity> ;
-            owl:onProperty <https://w3id.org/prov/hadMember> ],
-        <https://w3id.org/prov/Entity> ;
+            owl:onClass <https://w3id.org/linkml/prov/Entity> ;
+            owl:onProperty <https://w3id.org/linkml/prov/hadMember> ],
+        <https://w3id.org/linkml/prov/Entity> ;
     skos:definition "A collection is an entity that provides a structure to some constituents, which are themselves entities. These constituents are said to be member of the collections.@en" ;
-    skos:exactMatch <https://w3id.org/prov/Collection> .
+    skos:exactMatch <https://w3id.org/linkml/prov/Collection> .
 
-<https://w3id.org/prov/alternateOf> a owl:ObjectProperty,
+<https://w3id.org/linkml/prov/alternateOf> a owl:ObjectProperty,
         linkml:SlotDefinition ;
     rdfs:label "alternateOf" ;
-    rdfs:range <https://w3id.org/prov/Entity> ;
+    rdfs:range <https://w3id.org/linkml/prov/Entity> ;
     skos:definition "Two alternate entities present aspects of the same thing. These aspects may be the same or different, and the alternate entities may or may not overlap in time.@en" .
 
-<https://w3id.org/prov/hadRole> a owl:ObjectProperty,
+<https://w3id.org/linkml/prov/hadRole> a owl:ObjectProperty,
         linkml:SlotDefinition ;
     rdfs:label "hadRole" ;
-    rdfs:range <https://w3id.org/prov/Role> ;
+    rdfs:range <https://w3id.org/linkml/prov/Role> ;
     skos:note "The _optional_ Role that an Entity assumed in the context of an Activity. For example, :baking prov:used :spoon; prov:qualified [ a prov:Usage; prov:entity :spoon; prov:hadRole roles:mixing_implement ].@en",
         "This property has multiple RDFS domains to suit multiple OWL Profiles. See <a href=\\\"#owl-profile\\\">PROV-O OWL Profile</a>." .
 
-<https://w3id.org/prov/influenced> a owl:ObjectProperty,
+<https://w3id.org/linkml/prov/influenced> a owl:ObjectProperty,
         linkml:SlotDefinition ;
     rdfs:label "influenced" ;
     rdfs:range linkml:String .
 
-<https://w3id.org/prov/Association> a owl:Class,
+<https://w3id.org/linkml/prov/Association> a owl:Class,
         linkml:ClassDefinition ;
     rdfs:label "Association" ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/prov/Plan> ;
-            owl:onProperty <https://w3id.org/prov/hadPlan> ],
-        <https://w3id.org/prov/AgentInfluence> ;
+            owl:onClass <https://w3id.org/linkml/prov/Plan> ;
+            owl:onProperty <https://w3id.org/linkml/prov/hadPlan> ],
+        <https://w3id.org/linkml/prov/AgentInfluence> ;
     skos:definition "An activity association is an assignment of responsibility to an agent for an activity, indicating that the agent had a role in the activity. It further allows for a plan to be specified, which is the plan intended by the agent to achieve some goals in the context of this activity.@en" ;
-    skos:exactMatch <https://w3id.org/prov/Association> ;
+    skos:exactMatch <https://w3id.org/linkml/prov/Association> ;
     skos:note "An instance of prov:Association provides additional descriptions about the binary prov:wasAssociatedWith relation from an prov:Activity to some prov:Agent that had some responsiblity for it. For example, :baking prov:wasAssociatedWith :baker; prov:qualifiedAssociation [ a prov:Association; prov:agent :baker; :foo :bar ].@en" .
 
-<https://w3id.org/prov/Attribution> a owl:Class,
+<https://w3id.org/linkml/prov/Attribution> a owl:Class,
         linkml:ClassDefinition ;
     rdfs:label "Attribution" ;
-    rdfs:subClassOf <https://w3id.org/prov/AgentInfluence> ;
+    rdfs:subClassOf <https://w3id.org/linkml/prov/AgentInfluence> ;
     skos:definition """Attribution is the ascribing of an entity to an agent.
 
 When an entity e is attributed to agent ag, entity e was generated by some unspecified activity that in turn was associated to agent ag. Thus, this relation is useful when the activity is not known, or irrelevant.@en""" ;
-    skos:exactMatch <https://w3id.org/prov/Attribution> ;
+    skos:exactMatch <https://w3id.org/linkml/prov/Attribution> ;
     skos:note "An instance of prov:Attribution provides additional descriptions about the binary prov:wasAttributedTo relation from an prov:Entity to some prov:Agent that had some responsible for it. For example, :cake prov:wasAttributedTo :baker; prov:qualifiedAttribution [ a prov:Attribution; prov:entity :baker; :foo :bar ].@en" .
 
-<https://w3id.org/prov/Communication> a owl:Class,
+<https://w3id.org/linkml/prov/Communication> a owl:Class,
         linkml:ClassDefinition ;
     rdfs:label "Communication" ;
-    rdfs:subClassOf <https://w3id.org/prov/ActivityInfluence> ;
+    rdfs:subClassOf <https://w3id.org/linkml/prov/ActivityInfluence> ;
     skos:definition "Communication is the exchange of an entity by two activities, one activity using the entity generated by the other." ;
-    skos:exactMatch <https://w3id.org/prov/Communication> ;
+    skos:exactMatch <https://w3id.org/linkml/prov/Communication> ;
     skos:note "An instance of prov:Communication provides additional descriptions about the binary prov:wasInformedBy relation from an informed prov:Activity to the prov:Activity that informed it. For example, :you_jumping_off_bridge prov:wasInformedBy :everyone_else_jumping_off_bridge; prov:qualifiedCommunication [ a prov:Communication; prov:activity :everyone_else_jumping_off_bridge; :foo :bar ].@en" .
 
-<https://w3id.org/prov/Delegation> a owl:Class,
+<https://w3id.org/linkml/prov/Delegation> a owl:Class,
         linkml:ClassDefinition ;
     rdfs:label "Delegation" ;
-    rdfs:subClassOf <https://w3id.org/prov/AgentInfluence> ;
+    rdfs:subClassOf <https://w3id.org/linkml/prov/AgentInfluence> ;
     skos:definition """Delegation is the assignment of authority and responsibility to an agent (by itself or by another agent) to carry out a specific activity as a delegate or representative, while the agent it acts on behalf of retains some responsibility for the outcome of the delegated work.
 
 For example, a student acted on behalf of his supervisor, who acted on behalf of the department chair, who acted on behalf of the university; all those agents are responsible in some way for the activity that took place but we do not say explicitly who bears responsibility and to what degree.@en""" ;
-    skos:exactMatch <https://w3id.org/prov/Delegation> ;
+    skos:exactMatch <https://w3id.org/linkml/prov/Delegation> ;
     skos:note "An instance of prov:Delegation provides additional descriptions about the binary prov:actedOnBehalfOf relation from a performing prov:Agent to some prov:Agent for whom it was performed. For example, :mixing prov:wasAssociatedWith :toddler . :toddler prov:actedOnBehalfOf :mother; prov:qualifiedDelegation [ a prov:Delegation; prov:entity :mother; :foo :bar ].@en" .
 
-<https://w3id.org/prov/End> a owl:Class,
+<https://w3id.org/linkml/prov/End> a owl:Class,
         linkml:ClassDefinition ;
     rdfs:label "End" ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/prov/Activity> ;
-            owl:onProperty <https://w3id.org/prov/hadActivity> ],
+            owl:onClass <https://w3id.org/linkml/prov/Activity> ;
+            owl:onProperty <https://w3id.org/linkml/prov/hadActivity> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/prov/Thing> ;
-            owl:onProperty <https://w3id.org/prov/influencer> ],
+            owl:onClass <https://w3id.org/linkml/prov/Thing> ;
+            owl:onProperty <https://w3id.org/linkml/prov/influencer> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/prov/Entity> ;
-            owl:onProperty <https://w3id.org/prov/entity> ],
-        <https://w3id.org/prov/EntityInfluence>,
-        <https://w3id.org/prov/InstantaneousEvent> ;
+            owl:onClass <https://w3id.org/linkml/prov/Entity> ;
+            owl:onProperty <https://w3id.org/linkml/prov/entity> ],
+        <https://w3id.org/linkml/prov/EntityInfluence>,
+        <https://w3id.org/linkml/prov/InstantaneousEvent> ;
     skos:definition "End is when an activity is deemed to have been ended by an entity, known as trigger. The activity no longer exists after its end. Any usage, generation, or invalidation involving an activity precedes the activity's end. An end may refer to a trigger entity that terminated the activity, or to an activity, known as ender that generated the trigger.@en" ;
-    skos:exactMatch <https://w3id.org/prov/End> ;
+    skos:exactMatch <https://w3id.org/linkml/prov/End> ;
     skos:note "An instance of prov:End provides additional descriptions about the binary prov:wasEndedBy relation from some ended prov:Activity to an prov:Entity that ended it. For example, :ball_game prov:wasEndedBy :buzzer; prov:qualifiedEnd [ a prov:End; prov:entity :buzzer; :foo :bar; prov:atTime '2012-03-09T08:05:08-05:00'^^xsd:dateTime ].@en" .
 
-<https://w3id.org/prov/Invalidation> a owl:Class,
+<https://w3id.org/linkml/prov/Invalidation> a owl:Class,
         linkml:ClassDefinition ;
     rdfs:label "Invalidation" ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/prov/Activity> ;
-            owl:onProperty <https://w3id.org/prov/hadActivity> ],
+            owl:onClass <https://w3id.org/linkml/prov/Thing> ;
+            owl:onProperty <https://w3id.org/linkml/prov/influencer> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/prov/Thing> ;
-            owl:onProperty <https://w3id.org/prov/influencer> ],
+            owl:onClass <https://w3id.org/linkml/prov/Activity> ;
+            owl:onProperty <https://w3id.org/linkml/prov/activity> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/prov/Activity> ;
-            owl:onProperty <https://w3id.org/prov/activity> ],
-        <https://w3id.org/prov/ActivityInfluence>,
-        <https://w3id.org/prov/InstantaneousEvent> ;
+            owl:onClass <https://w3id.org/linkml/prov/Activity> ;
+            owl:onProperty <https://w3id.org/linkml/prov/hadActivity> ],
+        <https://w3id.org/linkml/prov/ActivityInfluence>,
+        <https://w3id.org/linkml/prov/InstantaneousEvent> ;
     skos:definition "Invalidation is the start of the destruction, cessation, or expiry of an existing entity by an activity. The entity is no longer available for use (or further invalidation) after invalidation. Any generation or usage of an entity precedes its invalidation." ;
-    skos:exactMatch <https://w3id.org/prov/Invalidation> ;
+    skos:exactMatch <https://w3id.org/linkml/prov/Invalidation> ;
     skos:note "An instance of prov:Invalidation provides additional descriptions about the binary prov:wasInvalidatedBy relation from an invalidated prov:Entity to the prov:Activity that invalidated it. For example, :uncracked_egg prov:wasInvalidatedBy :baking; prov:qualifiedInvalidation [ a prov:Invalidation; prov:activity :baking; :foo :bar ].@en" .
 
-<https://w3id.org/prov/Plan> a owl:Class,
+<https://w3id.org/linkml/prov/Plan> a owl:Class,
         linkml:ClassDefinition ;
     rdfs:label "Plan" ;
-    rdfs:subClassOf <https://w3id.org/prov/Entity> ;
+    rdfs:subClassOf <https://w3id.org/linkml/prov/Entity> ;
     skos:definition "A plan is an entity that represents a set of actions or steps intended by one or more agents to achieve some goals." ;
-    skos:exactMatch <https://w3id.org/prov/Plan> ;
+    skos:exactMatch <https://w3id.org/linkml/prov/Plan> ;
     skos:note "There exist no prescriptive requirement on the nature of plans, their representation, the actions or steps they consist of, or their intended goals. Since plans may evolve over time, it may become necessary to track their provenance, so plans themselves are entities. Representing the plan explicitly in the provenance can be useful for various tasks: for example, to validate the execution as represented in the provenance record, to manage expectation failures, or to provide explanations.@en" .
 
-<https://w3id.org/prov/PrimarySource> a owl:Class,
+<https://w3id.org/linkml/prov/PrimarySource> a owl:Class,
         linkml:ClassDefinition ;
     rdfs:label "PrimarySource" ;
-    rdfs:subClassOf <https://w3id.org/prov/Derivation> ;
+    rdfs:subClassOf <https://w3id.org/linkml/prov/Derivation> ;
     skos:definition """A primary source for a topic refers to something produced by some agent with direct experience and knowledge about the topic, at the time of the topic's study, without benefit from hindsight.
 
 Because of the directness of primary sources, they 'speak for themselves' in ways that cannot be captured through the filter of secondary sources. As such, it is important for secondary sources to reference those primary sources from which they were derived, so that their reliability can be investigated.
 
 A primary source relation is a particular case of derivation of secondary materials from their primary sources. It is recognized that the determination of primary sources can be up to interpretation, and should be done according to conventions accepted within the application's domain.@en""" ;
-    skos:exactMatch <https://w3id.org/prov/PrimarySource> ;
+    skos:exactMatch <https://w3id.org/linkml/prov/PrimarySource> ;
     skos:note "An instance of prov:PrimarySource provides additional descriptions about the binary prov:hadPrimarySource relation from some secondary prov:Entity to an earlier, primary prov:Entity. For example, :blog prov:hadPrimarySource :newsArticle; prov:qualifiedPrimarySource [ a prov:PrimarySource; prov:entity :newsArticle; :foo :bar ] .@en" .
 
-<https://w3id.org/prov/Quotation> a owl:Class,
+<https://w3id.org/linkml/prov/Quotation> a owl:Class,
         linkml:ClassDefinition ;
     rdfs:label "Quotation" ;
-    rdfs:subClassOf <https://w3id.org/prov/Derivation> ;
+    rdfs:subClassOf <https://w3id.org/linkml/prov/Derivation> ;
     skos:definition "A quotation is the repeat of (some or all of) an entity, such as text or image, by someone who may or may not be its original author. Quotation is a particular case of derivation.@en" ;
-    skos:exactMatch <https://w3id.org/prov/Quotation> ;
+    skos:exactMatch <https://w3id.org/linkml/prov/Quotation> ;
     skos:note "An instance of prov:Quotation provides additional descriptions about the binary prov:wasQuotedFrom relation from some taken prov:Entity from an earlier, larger prov:Entity. For example, :here_is_looking_at_you_kid prov:wasQuotedFrom :casablanca_script; prov:qualifiedQuotation [ a prov:Quotation; prov:entity :casablanca_script; :foo :bar ].@en" .
 
-<https://w3id.org/prov/Revision> a owl:Class,
+<https://w3id.org/linkml/prov/Revision> a owl:Class,
         linkml:ClassDefinition ;
     rdfs:label "Revision" ;
-    rdfs:subClassOf <https://w3id.org/prov/Derivation> ;
+    rdfs:subClassOf <https://w3id.org/linkml/prov/Derivation> ;
     skos:definition "A revision is a derivation for which the resulting entity is a revised version of some original. The implication here is that the resulting entity contains substantial content from the original. Revision is a particular case of derivation.@en" ;
-    skos:exactMatch <https://w3id.org/prov/Revision> ;
+    skos:exactMatch <https://w3id.org/linkml/prov/Revision> ;
     skos:note "An instance of prov:Revision provides additional descriptions about the binary prov:wasRevisionOf relation from some newer prov:Entity to an earlier prov:Entity. For example, :draft_2 prov:wasRevisionOf :draft_1; prov:qualifiedRevision [ a prov:Revision; prov:entity :draft_1; :foo :bar ].@en" .
 
-<https://w3id.org/prov/Start> a owl:Class,
+<https://w3id.org/linkml/prov/Start> a owl:Class,
         linkml:ClassDefinition ;
     rdfs:label "Start" ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/prov/Activity> ;
-            owl:onProperty <https://w3id.org/prov/hadActivity> ],
+            owl:onClass <https://w3id.org/linkml/prov/Entity> ;
+            owl:onProperty <https://w3id.org/linkml/prov/entity> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/prov/Entity> ;
-            owl:onProperty <https://w3id.org/prov/entity> ],
+            owl:onClass <https://w3id.org/linkml/prov/Activity> ;
+            owl:onProperty <https://w3id.org/linkml/prov/hadActivity> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/prov/Thing> ;
-            owl:onProperty <https://w3id.org/prov/influencer> ],
-        <https://w3id.org/prov/EntityInfluence>,
-        <https://w3id.org/prov/InstantaneousEvent> ;
+            owl:onClass <https://w3id.org/linkml/prov/Thing> ;
+            owl:onProperty <https://w3id.org/linkml/prov/influencer> ],
+        <https://w3id.org/linkml/prov/EntityInfluence>,
+        <https://w3id.org/linkml/prov/InstantaneousEvent> ;
     skos:definition "Start is when an activity is deemed to have been started by an entity, known as trigger. The activity did not exist before its start. Any usage, generation, or invalidation involving an activity follows the activity's start. A start may refer to a trigger entity that set off the activity, or to an activity, known as starter, that generated the trigger.@en" ;
-    skos:exactMatch <https://w3id.org/prov/Start> ;
+    skos:exactMatch <https://w3id.org/linkml/prov/Start> ;
     skos:note "An instance of prov:Start provides additional descriptions about the binary prov:wasStartedBy relation from some started prov:Activity to an prov:Entity that started it. For example, :foot_race prov:wasStartedBy :bang; prov:qualifiedStart [ a prov:Start; prov:entity :bang; :foo :bar; prov:atTime '2012-03-09T08:05:08-05:00'^^xsd:dateTime ] .@en" .
 
-<https://w3id.org/prov/activity> a owl:ObjectProperty,
+<https://w3id.org/linkml/prov/activity> a owl:ObjectProperty,
         linkml:SlotDefinition ;
     rdfs:label "activity" ;
-    rdfs:range <https://w3id.org/prov/Activity> ;
-    rdfs:subPropertyOf <https://w3id.org/prov/influencer> .
+    rdfs:range <https://w3id.org/linkml/prov/Activity> ;
+    rdfs:subPropertyOf <https://w3id.org/linkml/prov/influencer> .
 
-<https://w3id.org/prov/ActivityInfluence> a owl:Class,
+<https://w3id.org/linkml/prov/ActivityInfluence> a owl:Class,
         linkml:ClassDefinition ;
     rdfs:label "ActivityInfluence" ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/prov/Activity> ;
-            owl:onProperty <https://w3id.org/prov/activity> ],
-        <https://w3id.org/prov/Influence> ;
-    skos:exactMatch <https://w3id.org/prov/ActivityInfluence> ;
+            owl:onClass <https://w3id.org/linkml/prov/Activity> ;
+            owl:onProperty <https://w3id.org/linkml/prov/activity> ],
+        <https://w3id.org/linkml/prov/Influence> ;
+    skos:exactMatch <https://w3id.org/linkml/prov/ActivityInfluence> ;
     skos:note "ActivityInfluence provides additional descriptions of an Activity's binary influence upon any other kind of resource. Instances of ActivityInfluence use the prov:activity property to cite the influencing Activity.@en",
         "It is not recommended that the type ActivityInfluence be asserted without also asserting one of its more specific subclasses.@en" .
 
-<https://w3id.org/prov/AgentInfluence> a owl:Class,
+<https://w3id.org/linkml/prov/AgentInfluence> a owl:Class,
         linkml:ClassDefinition ;
     rdfs:label "AgentInfluence" ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/prov/Agent> ;
-            owl:onProperty <https://w3id.org/prov/agent> ],
-        <https://w3id.org/prov/Influence> ;
-    skos:exactMatch <https://w3id.org/prov/AgentInfluence> ;
+            owl:onClass <https://w3id.org/linkml/prov/Agent> ;
+            owl:onProperty <https://w3id.org/linkml/prov/agent> ],
+        <https://w3id.org/linkml/prov/Influence> ;
+    skos:exactMatch <https://w3id.org/linkml/prov/AgentInfluence> ;
     skos:note "AgentInfluence provides additional descriptions of an Agent's binary influence upon any other kind of resource. Instances of AgentInfluence use the prov:agent property to cite the influencing Agent.@en",
         "It is not recommended that the type AgentInfluence be asserted without also asserting one of its more specific subclasses.@en" .
 
-<https://w3id.org/prov/Role> a owl:Class,
+<https://w3id.org/linkml/prov/Role> a owl:Class,
         linkml:ClassDefinition ;
     rdfs:label "Role" ;
     skos:definition "A role is the function of an entity or agent with respect to an activity, in the context of a usage, generation, invalidation, association, start, and end.@en" ;
-    skos:exactMatch <https://w3id.org/prov/Role> .
+    skos:exactMatch <https://w3id.org/linkml/prov/Role> .
 
-<https://w3id.org/prov/atLocation> a owl:ObjectProperty,
+<https://w3id.org/linkml/prov/atLocation> a owl:ObjectProperty,
         linkml:SlotDefinition ;
     rdfs:label "atLocation" ;
-    rdfs:range <https://w3id.org/prov/Location> ;
+    rdfs:range <https://w3id.org/linkml/prov/Location> ;
     skos:note "The Location of any resource.@en",
         "This property has multiple RDFS domains to suit multiple OWL Profiles. See <a href=\\\"#owl-profile\\\">PROV-O OWL Profile</a>." .
 
-<https://w3id.org/prov/entity> a owl:ObjectProperty,
+<https://w3id.org/linkml/prov/entity> a owl:ObjectProperty,
         linkml:SlotDefinition ;
     rdfs:label "entity" ;
-    rdfs:range <https://w3id.org/prov/Entity> ;
-    rdfs:subPropertyOf <https://w3id.org/prov/influencer> .
+    rdfs:range <https://w3id.org/linkml/prov/Entity> ;
+    rdfs:subPropertyOf <https://w3id.org/linkml/prov/influencer> .
 
-<https://w3id.org/prov/wasDerivedFrom> a owl:ObjectProperty,
+<https://w3id.org/linkml/prov/wasDerivedFrom> a owl:ObjectProperty,
         linkml:SlotDefinition ;
     rdfs:label "wasDerivedFrom" ;
-    rdfs:range <https://w3id.org/prov/Entity> ;
-    rdfs:subPropertyOf <https://w3id.org/prov/wasInfluencedBy> ;
+    rdfs:range <https://w3id.org/linkml/prov/Entity> ;
+    rdfs:subPropertyOf <https://w3id.org/linkml/prov/wasInfluencedBy> ;
     skos:definition "A derivation is a transformation of an entity into another, an update of an entity resulting in a new one, or the construction of a new entity based on a pre-existing entity.@en" ;
     skos:note "The more specific subproperties of prov:wasDerivedFrom (i.e., prov:wasQuotedFrom, prov:wasRevisionOf, prov:hadPrimarySource) should be used when applicable.@en" .
 
-<https://w3id.org/prov/EntityInfluence> a owl:Class,
+<https://w3id.org/linkml/prov/EntityInfluence> a owl:Class,
         linkml:ClassDefinition ;
     rdfs:label "EntityInfluence" ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/prov/Entity> ;
-            owl:onProperty <https://w3id.org/prov/entity> ],
-        <https://w3id.org/prov/Influence> ;
-    skos:exactMatch <https://w3id.org/prov/EntityInfluence> ;
+            owl:onClass <https://w3id.org/linkml/prov/Entity> ;
+            owl:onProperty <https://w3id.org/linkml/prov/entity> ],
+        <https://w3id.org/linkml/prov/Influence> ;
+    skos:exactMatch <https://w3id.org/linkml/prov/EntityInfluence> ;
     skos:note "EntityInfluence provides additional descriptions of an Entity's binary influence upon any other kind of resource. Instances of EntityInfluence use the prov:entity property to cite the influencing Entity.@en",
         "It is not recommended that the type EntityInfluence be asserted without also asserting one of its more specific subclasses.@en" .
 
-<https://w3id.org/prov/Generation> a owl:Class,
+<https://w3id.org/linkml/prov/Generation> a owl:Class,
         linkml:ClassDefinition ;
     rdfs:label "Generation" ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/prov/Activity> ;
-            owl:onProperty <https://w3id.org/prov/activity> ],
+            owl:onClass <https://w3id.org/linkml/prov/Thing> ;
+            owl:onProperty <https://w3id.org/linkml/prov/influencer> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/prov/Thing> ;
-            owl:onProperty <https://w3id.org/prov/influencer> ],
+            owl:onClass <https://w3id.org/linkml/prov/Activity> ;
+            owl:onProperty <https://w3id.org/linkml/prov/activity> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/prov/Activity> ;
-            owl:onProperty <https://w3id.org/prov/hadActivity> ],
-        <https://w3id.org/prov/ActivityInfluence>,
-        <https://w3id.org/prov/InstantaneousEvent> ;
+            owl:onClass <https://w3id.org/linkml/prov/Activity> ;
+            owl:onProperty <https://w3id.org/linkml/prov/hadActivity> ],
+        <https://w3id.org/linkml/prov/ActivityInfluence>,
+        <https://w3id.org/linkml/prov/InstantaneousEvent> ;
     skos:definition "Generation is the completion of production of a new entity by an activity. This entity did not exist before generation and becomes available for usage after this generation.@en" ;
-    skos:exactMatch <https://w3id.org/prov/Generation> ;
+    skos:exactMatch <https://w3id.org/linkml/prov/Generation> ;
     skos:note "An instance of prov:Generation provides additional descriptions about the binary prov:wasGeneratedBy relation from a generated prov:Entity to the prov:Activity that generated it. For example, :cake prov:wasGeneratedBy :baking; prov:qualifiedGeneration [ a prov:Generation; prov:activity :baking; :foo :bar ].@en" .
 
-<https://w3id.org/prov/Usage> a owl:Class,
+<https://w3id.org/linkml/prov/Usage> a owl:Class,
         linkml:ClassDefinition ;
     rdfs:label "Usage" ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/prov/Activity> ;
-            owl:onProperty <https://w3id.org/prov/hadActivity> ],
+            owl:onClass <https://w3id.org/linkml/prov/Entity> ;
+            owl:onProperty <https://w3id.org/linkml/prov/entity> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/prov/Thing> ;
-            owl:onProperty <https://w3id.org/prov/influencer> ],
+            owl:onClass <https://w3id.org/linkml/prov/Activity> ;
+            owl:onProperty <https://w3id.org/linkml/prov/hadActivity> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/prov/Entity> ;
-            owl:onProperty <https://w3id.org/prov/entity> ],
-        <https://w3id.org/prov/EntityInfluence>,
-        <https://w3id.org/prov/InstantaneousEvent> ;
+            owl:onClass <https://w3id.org/linkml/prov/Thing> ;
+            owl:onProperty <https://w3id.org/linkml/prov/influencer> ],
+        <https://w3id.org/linkml/prov/EntityInfluence>,
+        <https://w3id.org/linkml/prov/InstantaneousEvent> ;
     skos:definition "Usage is the beginning of utilizing an entity by an activity. Before usage, the activity had not begun to utilize this entity and could not have been affected by the entity.@en" ;
-    skos:exactMatch <https://w3id.org/prov/Usage> ;
+    skos:exactMatch <https://w3id.org/linkml/prov/Usage> ;
     skos:note "An instance of prov:Usage provides additional descriptions about the binary prov:used relation from some prov:Activity to an prov:Entity that it used. For example, :keynote prov:used :podium; prov:qualifiedUsage [ a prov:Usage; prov:entity :podium; :foo :bar ].@en" .
 
-<https://w3id.org/prov/Derivation> a owl:Class,
+<https://w3id.org/linkml/prov/Derivation> a owl:Class,
         linkml:ClassDefinition ;
     rdfs:label "Derivation" ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/prov/Usage> ;
-            owl:onProperty <https://w3id.org/prov/hadUsage> ],
+            owl:onClass <https://w3id.org/linkml/prov/Usage> ;
+            owl:onProperty <https://w3id.org/linkml/prov/hadUsage> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/prov/Generation> ;
-            owl:onProperty <https://w3id.org/prov/hadGeneration> ],
-        <https://w3id.org/prov/EntityInfluence> ;
+            owl:onClass <https://w3id.org/linkml/prov/Generation> ;
+            owl:onProperty <https://w3id.org/linkml/prov/hadGeneration> ],
+        <https://w3id.org/linkml/prov/EntityInfluence> ;
     skos:definition "A derivation is a transformation of an entity into another, an update of an entity resulting in a new one, or the construction of a new entity based on a pre-existing entity.@en" ;
-    skos:exactMatch <https://w3id.org/prov/Derivation> ;
+    skos:exactMatch <https://w3id.org/linkml/prov/Derivation> ;
     skos:note "An instance of prov:Derivation provides additional descriptions about the binary prov:wasDerivedFrom relation from some derived prov:Entity to another prov:Entity from which it was derived. For example, :chewed_bubble_gum prov:wasDerivedFrom :unwrapped_bubble_gum; prov:qualifiedDerivation [ a prov:Derivation; prov:entity :unwrapped_bubble_gum; :foo :bar ].@en",
         "The more specific forms of prov:Derivation (i.e., prov:Revision, prov:Quotation, prov:PrimarySource) should be asserted if they apply.@en" .
 
-<https://w3id.org/prov/InstantaneousEvent> a owl:Class,
+<https://w3id.org/linkml/prov/InstantaneousEvent> a owl:Class,
         linkml:ClassDefinition ;
     rdfs:label "InstantaneousEvent" ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/prov/Role> ;
-            owl:onProperty <https://w3id.org/prov/hadRole> ],
+            owl:onClass <https://w3id.org/linkml/prov/Location> ;
+            owl:onProperty <https://w3id.org/linkml/prov/atLocation> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/prov/Location> ;
-            owl:onProperty <https://w3id.org/prov/atLocation> ],
+            owl:onClass <https://w3id.org/linkml/prov/Role> ;
+            owl:onProperty <https://w3id.org/linkml/prov/hadRole> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
             owl:onClass linkml:String ;
-            owl:onProperty <https://w3id.org/prov/atTime> ] ;
+            owl:onProperty <https://w3id.org/linkml/prov/atTime> ] ;
     skos:definition "The PROV data model is implicitly based on a notion of instantaneous events (or just events), that mark transitions in the world. Events include generation, usage, or invalidation of entities, as well as starting or ending of activities. This notion of event is not first-class in the data model, but it is useful for explaining its other concepts and its semantics.@en" ;
-    skos:exactMatch <https://w3id.org/prov/InstantaneousEvent> ;
+    skos:exactMatch <https://w3id.org/linkml/prov/InstantaneousEvent> ;
     skos:note "An instantaneous event, or event for short, happens in the world and marks a change in the world, in its activities and in its entities. The term 'event' is commonly used in process algebra with a similar meaning. Events represent communications or interactions; they are assumed to be atomic and instantaneous.@en" .
 
-<https://w3id.org/prov/Location> a owl:Class,
+<https://w3id.org/linkml/prov/Location> a owl:Class,
         linkml:ClassDefinition ;
     rdfs:label "Location" ;
     skos:definition "A location can be an identifiable geographic place (ISO 19112), but it can also be a non-geographic place such as a directory, row, or column. As such, there are numerous ways in which location can be expressed, such as by a coordinate, address, landmark, and so forth.@en" ;
-    skos:exactMatch <https://w3id.org/prov/Location> .
+    skos:exactMatch <https://w3id.org/linkml/prov/Location> .
 
-<https://w3id.org/prov/hadActivity> a owl:ObjectProperty,
+<https://w3id.org/linkml/prov/hadActivity> a owl:ObjectProperty,
         linkml:SlotDefinition ;
     rdfs:label "hadActivity" ;
-    rdfs:range <https://w3id.org/prov/Activity> ;
+    rdfs:range <https://w3id.org/linkml/prov/Activity> ;
     skos:note "The _optional_ Activity of an Influence, which used, generated, invalidated, or was the responsibility of some Entity. This property is _not_ used by ActivityInfluence (use prov:activity instead).@en",
         "This property has multiple RDFS domains to suit multiple OWL Profiles. See <a href=\\\"#owl-profile\\\">PROV-O OWL Profile</a>." .
 
-<https://w3id.org/prov/Thing> a owl:Class,
+<https://w3id.org/linkml/prov/Thing> a owl:Class,
         linkml:ClassDefinition ;
     rdfs:label "Thing" ;
     skos:exactMatch <http://example.org/UNKNOWN/owl/Thing> .
 
-<https://w3id.org/prov/seeAlso> a owl:ObjectProperty,
+<https://w3id.org/linkml/prov/seeAlso> a owl:ObjectProperty,
         linkml:SlotDefinition ;
     rdfs:label "seeAlso" ;
     rdfs:range linkml:String ;
     skos:note "@en" .
 
-<https://w3id.org/prov/Influence> a owl:Class,
+<https://w3id.org/linkml/prov/Influence> a owl:Class,
         linkml:ClassDefinition ;
     rdfs:label "Influence" ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/prov/Activity> ;
-            owl:onProperty <https://w3id.org/prov/hadActivity> ],
+            owl:onClass <https://w3id.org/linkml/prov/Activity> ;
+            owl:onProperty <https://w3id.org/linkml/prov/hadActivity> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/prov/Thing> ;
-            owl:onProperty <https://w3id.org/prov/influencer> ],
+            owl:onClass <https://w3id.org/linkml/prov/Role> ;
+            owl:onProperty <https://w3id.org/linkml/prov/hadRole> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/prov/Role> ;
-            owl:onProperty <https://w3id.org/prov/hadRole> ] ;
+            owl:onClass <https://w3id.org/linkml/prov/Thing> ;
+            owl:onProperty <https://w3id.org/linkml/prov/influencer> ] ;
     skos:definition "Influence is the capacity of an entity, activity, or agent to have an effect on the character, development, or behavior of another by means of usage, start, end, generation, invalidation, communication, derivation, attribution, association, or delegation.@en" ;
-    skos:exactMatch <https://w3id.org/prov/Influence> ;
+    skos:exactMatch <https://w3id.org/linkml/prov/Influence> ;
     skos:note "An instance of prov:Influence provides additional descriptions about the binary prov:wasInfluencedBy relation from some influenced Activity, Entity, or Agent to the influencing Activity, Entity, or Agent. For example, :stomach_ache prov:wasInfluencedBy :spoon; prov:qualifiedInfluence [ a prov:Influence; prov:entity :spoon; :foo :bar ] . Because prov:Influence is a broad relation, the more specific relations (Communication, Delegation, End, etc.) should be used when applicable.@en",
         "Because prov:Influence is a broad relation, its most specific subclasses (e.g. prov:Communication, prov:Delegation, prov:End, prov:Revision, etc.) should be used when applicable.@en" .
 
-<https://w3id.org/prov/influencer> a owl:ObjectProperty,
+<https://w3id.org/linkml/prov/influencer> a owl:ObjectProperty,
         linkml:SlotDefinition ;
     rdfs:label "influencer" ;
-    rdfs:range <https://w3id.org/prov/Thing> ;
+    rdfs:range <https://w3id.org/linkml/prov/Thing> ;
     skos:note "Subproperties of prov:influencer are used to cite the object of an unqualified PROV-O triple whose predicate is a subproperty of prov:wasInfluencedBy (e.g. prov:used, prov:wasGeneratedBy). prov:influencer is used much like rdf:object is used.@en" .
 
-<https://w3id.org/prov/Agent> a owl:Class,
+<https://w3id.org/linkml/prov/Agent> a owl:Class,
         linkml:ClassDefinition ;
     rdfs:label "Agent" ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/linkml/prov/Influence> ;
+            owl:onProperty <https://w3id.org/linkml/prov/qualifiedInfluence> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/linkml/prov/Delegation> ;
+            owl:onProperty <https://w3id.org/linkml/prov/qualifiedDelegation> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/linkml/prov/Location> ;
+            owl:onProperty <https://w3id.org/linkml/prov/atLocation> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/linkml/prov/Agent> ;
+            owl:onProperty <https://w3id.org/linkml/prov/actedOnBehalfOf> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
             owl:onClass linkml:String ;
-            owl:onProperty <https://w3id.org/prov/wasInfluencedBy> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/prov/Delegation> ;
-            owl:onProperty <https://w3id.org/prov/qualifiedDelegation> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/prov/Location> ;
-            owl:onProperty <https://w3id.org/prov/atLocation> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/prov/Agent> ;
-            owl:onProperty <https://w3id.org/prov/actedOnBehalfOf> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/prov/Influence> ;
-            owl:onProperty <https://w3id.org/prov/qualifiedInfluence> ] ;
+            owl:onProperty <https://w3id.org/linkml/prov/wasInfluencedBy> ] ;
     skos:definition "An agent is something that bears some form of responsibility for an activity taking place, for the existence of an entity, or for another agent's activity. @en" ;
-    skos:exactMatch <https://w3id.org/prov/Agent> .
+    skos:exactMatch <https://w3id.org/linkml/prov/Agent> .
 
 linkml:TypeDefinition a owl:Class ;
     rdfs:label "type_definition" ;
     skos:definition "A data type definition." .
 
-linkml:topValue a owl:DatatypeProperty ;
-    rdfs:label "value" .
-
-<https://w3id.org/prov/wasInfluencedBy> a owl:ObjectProperty,
+<https://w3id.org/linkml/prov/wasInfluencedBy> a owl:ObjectProperty,
         linkml:SlotDefinition ;
     rdfs:label "wasInfluencedBy" ;
     rdfs:range linkml:String ;
     skos:note "Because prov:wasInfluencedBy is a broad relation, its more specific subproperties (e.g. prov:wasInformedBy, prov:actedOnBehalfOf, prov:wasEndedBy, etc.) should be used when applicable.@en",
         "This property has multiple RDFS domains to suit multiple OWL Profiles. See <a href=\\\"#owl-profile\\\">PROV-O OWL Profile</a>." .
 
-<https://w3id.org/prov/qualifiedInfluence> a owl:ObjectProperty,
+linkml:topValue a owl:DatatypeProperty ;
+    rdfs:label "value" .
+
+<https://w3id.org/linkml/prov/qualifiedInfluence> a owl:ObjectProperty,
         linkml:SlotDefinition ;
     rdfs:label "qualifiedInfluence" ;
-    rdfs:range <https://w3id.org/prov/Influence> ;
+    rdfs:range <https://w3id.org/linkml/prov/Influence> ;
     skos:note "Because prov:qualifiedInfluence is a broad relation, the more specific relations (qualifiedCommunication, qualifiedDelegation, qualifiedEnd, etc.) should be used when applicable.@en" .
 
-<https://w3id.org/prov/Activity> a owl:Class,
+<https://w3id.org/linkml/prov/Activity> a owl:Class,
         linkml:ClassDefinition ;
     rdfs:label "Activity" ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/prov/Communication> ;
-            owl:onProperty <https://w3id.org/prov/qualifiedCommunication> ],
+            owl:onClass <https://w3id.org/linkml/prov/Usage> ;
+            owl:onProperty <https://w3id.org/linkml/prov/qualifiedUsage> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/prov/Usage> ;
-            owl:onProperty <https://w3id.org/prov/qualifiedUsage> ],
+            owl:onClass <https://w3id.org/linkml/prov/Start> ;
+            owl:onProperty <https://w3id.org/linkml/prov/qualifiedStart> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass linkml:String ;
-            owl:onProperty <https://w3id.org/prov/wasInfluencedBy> ],
+            owl:onClass <https://w3id.org/linkml/prov/Agent> ;
+            owl:onProperty <https://w3id.org/linkml/prov/wasAssociatedWith> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass linkml:String ;
-            owl:onProperty <https://w3id.org/prov/endedAtTime> ],
+            owl:onClass <https://w3id.org/linkml/prov/Communication> ;
+            owl:onProperty <https://w3id.org/linkml/prov/qualifiedCommunication> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/prov/Entity> ;
-            owl:onProperty <https://w3id.org/prov/wasStartedBy> ],
+            owl:onClass <https://w3id.org/linkml/prov/Association> ;
+            owl:onProperty <https://w3id.org/linkml/prov/qualifiedAssociation> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/prov/Entity> ;
-            owl:onProperty <https://w3id.org/prov/invalidated> ],
+            owl:onClass <https://w3id.org/linkml/prov/Entity> ;
+            owl:onProperty <https://w3id.org/linkml/prov/invalidated> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/prov/Entity> ;
-            owl:onProperty <https://w3id.org/prov/generated> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/prov/Agent> ;
-            owl:onProperty <https://w3id.org/prov/wasAssociatedWith> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/prov/Entity> ;
-            owl:onProperty <https://w3id.org/prov/used> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/prov/Influence> ;
-            owl:onProperty <https://w3id.org/prov/qualifiedInfluence> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/prov/Entity> ;
-            owl:onProperty <https://w3id.org/prov/wasEndedBy> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/prov/End> ;
-            owl:onProperty <https://w3id.org/prov/qualifiedEnd> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/prov/Association> ;
-            owl:onProperty <https://w3id.org/prov/qualifiedAssociation> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/prov/Location> ;
-            owl:onProperty <https://w3id.org/prov/atLocation> ],
+            owl:onClass <https://w3id.org/linkml/prov/Activity> ;
+            owl:onProperty <https://w3id.org/linkml/prov/wasInformedBy> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
             owl:onClass linkml:String ;
-            owl:onProperty <https://w3id.org/prov/startedAtTime> ],
+            owl:onProperty <https://w3id.org/linkml/prov/endedAtTime> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/prov/Start> ;
-            owl:onProperty <https://w3id.org/prov/qualifiedStart> ],
+            owl:onClass linkml:String ;
+            owl:onProperty <https://w3id.org/linkml/prov/startedAtTime> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/prov/Activity> ;
-            owl:onProperty <https://w3id.org/prov/wasInformedBy> ] ;
+            owl:onClass <https://w3id.org/linkml/prov/Entity> ;
+            owl:onProperty <https://w3id.org/linkml/prov/used> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/linkml/prov/Location> ;
+            owl:onProperty <https://w3id.org/linkml/prov/atLocation> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/linkml/prov/Entity> ;
+            owl:onProperty <https://w3id.org/linkml/prov/wasEndedBy> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/linkml/prov/Influence> ;
+            owl:onProperty <https://w3id.org/linkml/prov/qualifiedInfluence> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/linkml/prov/Entity> ;
+            owl:onProperty <https://w3id.org/linkml/prov/wasStartedBy> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/linkml/prov/Entity> ;
+            owl:onProperty <https://w3id.org/linkml/prov/generated> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/linkml/prov/End> ;
+            owl:onProperty <https://w3id.org/linkml/prov/qualifiedEnd> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass linkml:String ;
+            owl:onProperty <https://w3id.org/linkml/prov/wasInfluencedBy> ] ;
     skos:definition "An activity is something that occurs over a period of time and acts upon or with entities; it may include consuming, processing, transforming, modifying, relocating, using, or generating entities." ;
-    skos:exactMatch <https://w3id.org/prov/Activity> .
+    skos:exactMatch <https://w3id.org/linkml/prov/Activity> .
 
 linkml:ClassDefinition a owl:Class ;
     rdfs:label "class_definition" ;
     skos:definition "the definition of a class or interface" .
 
-<https://w3id.org/prov/Entity> a owl:Class,
+<https://w3id.org/linkml/prov/Entity> a owl:Class,
         linkml:ClassDefinition ;
     rdfs:label "Entity" ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/prov/Influence> ;
-            owl:onProperty <https://w3id.org/prov/qualifiedInfluence> ],
+            owl:onClass linkml:String ;
+            owl:onProperty <https://w3id.org/linkml/prov/invalidatedAtTime> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/prov/Entity> ;
-            owl:onProperty <https://w3id.org/prov/wasDerivedFrom> ],
+            owl:onClass <https://w3id.org/linkml/prov/Entity> ;
+            owl:onProperty <https://w3id.org/linkml/prov/wasRevisionOf> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/linkml/prov/Invalidation> ;
+            owl:onProperty <https://w3id.org/linkml/prov/qualifiedInvalidation> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
             owl:onClass linkml:String ;
-            owl:onProperty <https://w3id.org/prov/wasInfluencedBy> ],
+            owl:onProperty <https://w3id.org/linkml/prov/wasInfluencedBy> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/prov/Activity> ;
-            owl:onProperty <https://w3id.org/prov/wasInvalidatedBy> ],
+            owl:onClass <https://w3id.org/linkml/prov/Entity> ;
+            owl:onProperty <https://w3id.org/linkml/prov/wasQuotedFrom> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/prov/PrimarySource> ;
-            owl:onProperty <https://w3id.org/prov/qualifiedPrimarySource> ],
+            owl:onClass <https://w3id.org/linkml/prov/Derivation> ;
+            owl:onProperty <https://w3id.org/linkml/prov/qualifiedDerivation> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/prov/Entity> ;
-            owl:onProperty <https://w3id.org/prov/wasRevisionOf> ],
+            owl:onClass <https://w3id.org/linkml/prov/Revision> ;
+            owl:onProperty <https://w3id.org/linkml/prov/qualifiedRevision> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/prov/Quotation> ;
-            owl:onProperty <https://w3id.org/prov/qualifiedQuotation> ],
+            owl:onClass <https://w3id.org/linkml/prov/Quotation> ;
+            owl:onProperty <https://w3id.org/linkml/prov/qualifiedQuotation> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/prov/Entity> ;
-            owl:onProperty <https://w3id.org/prov/hadPrimarySource> ],
+            owl:onClass <https://w3id.org/linkml/prov/PrimarySource> ;
+            owl:onProperty <https://w3id.org/linkml/prov/qualifiedPrimarySource> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/prov/Agent> ;
-            owl:onProperty <https://w3id.org/prov/wasAttributedTo> ],
+            owl:onClass <https://w3id.org/linkml/prov/Activity> ;
+            owl:onProperty <https://w3id.org/linkml/prov/wasGeneratedBy> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/prov/Entity> ;
-            owl:onProperty <https://w3id.org/prov/specializationOf> ],
+            owl:onClass <https://w3id.org/linkml/prov/Location> ;
+            owl:onProperty <https://w3id.org/linkml/prov/atLocation> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/prov/Attribution> ;
-            owl:onProperty <https://w3id.org/prov/qualifiedAttribution> ],
+            owl:onClass <https://w3id.org/linkml/prov/Influence> ;
+            owl:onProperty <https://w3id.org/linkml/prov/qualifiedInfluence> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/prov/Entity> ;
-            owl:onProperty <https://w3id.org/prov/alternateOf> ],
+            owl:onClass <https://w3id.org/linkml/prov/Activity> ;
+            owl:onProperty <https://w3id.org/linkml/prov/wasInvalidatedBy> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/linkml/prov/Entity> ;
+            owl:onProperty <https://w3id.org/linkml/prov/alternateOf> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/linkml/prov/Entity> ;
+            owl:onProperty <https://w3id.org/linkml/prov/specializationOf> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/linkml/prov/Generation> ;
+            owl:onProperty <https://w3id.org/linkml/prov/qualifiedGeneration> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/linkml/prov/Entity> ;
+            owl:onProperty <https://w3id.org/linkml/prov/hadPrimarySource> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/linkml/prov/Agent> ;
+            owl:onProperty <https://w3id.org/linkml/prov/wasAttributedTo> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/linkml/prov/Entity> ;
+            owl:onProperty <https://w3id.org/linkml/prov/wasDerivedFrom> ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality 1 ;
+            owl:onClass <https://w3id.org/linkml/prov/Attribution> ;
+            owl:onProperty <https://w3id.org/linkml/prov/qualifiedAttribution> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
             owl:onClass linkml:String ;
-            owl:onProperty <https://w3id.org/prov/invalidatedAtTime> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/prov/Location> ;
-            owl:onProperty <https://w3id.org/prov/atLocation> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/prov/Derivation> ;
-            owl:onProperty <https://w3id.org/prov/qualifiedDerivation> ],
+            owl:onProperty <https://w3id.org/linkml/prov/generatedAtTime> ],
         [ a owl:Restriction ;
             owl:maxQualifiedCardinality 1 ;
             owl:onClass linkml:String ;
-            owl:onProperty <https://w3id.org/prov/generatedAtTime> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/prov/Invalidation> ;
-            owl:onProperty <https://w3id.org/prov/qualifiedInvalidation> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/prov/Revision> ;
-            owl:onProperty <https://w3id.org/prov/qualifiedRevision> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass linkml:String ;
-            owl:onProperty <https://w3id.org/prov/value> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/prov/Entity> ;
-            owl:onProperty <https://w3id.org/prov/wasQuotedFrom> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/prov/Activity> ;
-            owl:onProperty <https://w3id.org/prov/wasGeneratedBy> ],
-        [ a owl:Restriction ;
-            owl:maxQualifiedCardinality 1 ;
-            owl:onClass <https://w3id.org/prov/Generation> ;
-            owl:onProperty <https://w3id.org/prov/qualifiedGeneration> ] ;
+            owl:onProperty <https://w3id.org/linkml/prov/value> ] ;
     skos:definition "An entity is a physical, digital, conceptual, or other kind of thing with some fixed aspects; entities may be real or imaginary. @en" ;
-    skos:exactMatch <https://w3id.org/prov/Entity> .
+    skos:exactMatch <https://w3id.org/linkml/prov/Entity> .
 
 linkml:String a owl:Class,
         linkml:TypeDefinition ;

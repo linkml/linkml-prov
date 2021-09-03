@@ -1,11 +1,11 @@
 {
-   "_comments": "Auto generated from prov.yaml by jsonldcontextgen.py version: 0.1.1\n    Generation date: 2021-09-02 13:50\n    Schema: prov\n    \n    id: http://www.w3.org/ns/prov#\n    description: prov\n    license: https://creativecommons.org/publicdomain/zero/1.0/\n    ",
+   "_comments": "Auto generated from prov.yaml by jsonldcontextgen.py version: 0.1.1\n    Generation date: 2021-09-02 19:30\n    Schema: prov\n    \n    id: http://www.w3.org/ns/prov#\n    description: prov\n    license: https://creativecommons.org/publicdomain/zero/1.0/\n    ",
    "@context": {
       "linkml": "https://w3id.org/linkml/",
       "owl": "http://example.org/UNKNOWN/owl/",
-      "prov": "https://w3id.org/prov/",
+      "prov": "https://w3id.org/linkml/prov/",
       "rdfs": "http://example.org/UNKNOWN/rdfs/",
-      "@vocab": "https://w3id.org/prov/",
+      "@vocab": "https://w3id.org/linkml/prov/",
       "actedOnBehalfOf": {
          "@type": "@id"
       },
