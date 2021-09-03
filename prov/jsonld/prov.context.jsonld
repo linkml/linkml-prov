@@ -1,0 +1,155 @@
+{
+   "_comments": "Auto generated from prov.yaml by jsonldcontextgen.py version: 0.1.1\n    Generation date: 2021-09-02 13:50\n    Schema: prov\n    \n    id: http://www.w3.org/ns/prov#\n    description: prov\n    license: https://creativecommons.org/publicdomain/zero/1.0/\n    ",
+   "@context": {
+      "linkml": "https://w3id.org/linkml/",
+      "owl": "http://example.org/UNKNOWN/owl/",
+      "prov": "https://w3id.org/prov/",
+      "rdfs": "http://example.org/UNKNOWN/rdfs/",
+      "@vocab": "https://w3id.org/prov/",
+      "actedOnBehalfOf": {
+         "@type": "@id"
+      },
+      "activity": {
+         "@type": "@id"
+      },
+      "agent": {
+         "@type": "@id"
+      },
+      "alternateOf": {
+         "@type": "@id"
+      },
+      "atLocation": {
+         "@type": "@id"
+      },
+      "comment": {
+         "@id": "rdfs:comment"
+      },
+      "entity": {
+         "@type": "@id"
+      },
+      "generated": {
+         "@type": "@id"
+      },
+      "hadActivity": {
+         "@type": "@id"
+      },
+      "hadGeneration": {
+         "@type": "@id"
+      },
+      "hadMember": {
+         "@type": "@id"
+      },
+      "hadPlan": {
+         "@type": "@id"
+      },
+      "hadPrimarySource": {
+         "@type": "@id"
+      },
+      "hadRole": {
+         "@type": "@id"
+      },
+      "hadUsage": {
+         "@type": "@id"
+      },
+      "influencer": {
+         "@type": "@id"
+      },
+      "invalidated": {
+         "@type": "@id"
+      },
+      "isDefinedBy": {
+         "@id": "rdfs:isDefinedBy"
+      },
+      "label": {
+         "@id": "rdfs:label"
+      },
+      "qualifiedAssociation": {
+         "@type": "@id"
+      },
+      "qualifiedAttribution": {
+         "@type": "@id"
+      },
+      "qualifiedCommunication": {
+         "@type": "@id"
+      },
+      "qualifiedDelegation": {
+         "@type": "@id"
+      },
+      "qualifiedDerivation": {
+         "@type": "@id"
+      },
+      "qualifiedEnd": {
+         "@type": "@id"
+      },
+      "qualifiedGeneration": {
+         "@type": "@id"
+      },
+      "qualifiedInfluence": {
+         "@type": "@id"
+      },
+      "qualifiedInvalidation": {
+         "@type": "@id"
+      },
+      "qualifiedPrimarySource": {
+         "@type": "@id"
+      },
+      "qualifiedQuotation": {
+         "@type": "@id"
+      },
+      "qualifiedRevision": {
+         "@type": "@id"
+      },
+      "qualifiedStart": {
+         "@type": "@id"
+      },
+      "qualifiedUsage": {
+         "@type": "@id"
+      },
+      "seeAlso": {
+         "@id": "rdfs:seeAlso"
+      },
+      "specializationOf": {
+         "@type": "@id"
+      },
+      "used": {
+         "@type": "@id"
+      },
+      "versionInfo": {
+         "@id": "owl:versionInfo"
+      },
+      "wasAssociatedWith": {
+         "@type": "@id"
+      },
+      "wasAttributedTo": {
+         "@type": "@id"
+      },
+      "wasDerivedFrom": {
+         "@type": "@id"
+      },
+      "wasEndedBy": {
+         "@type": "@id"
+      },
+      "wasGeneratedBy": {
+         "@type": "@id"
+      },
+      "wasInformedBy": {
+         "@type": "@id"
+      },
+      "wasInvalidatedBy": {
+         "@type": "@id"
+      },
+      "wasQuotedFrom": {
+         "@type": "@id"
+      },
+      "wasRevisionOf": {
+         "@type": "@id"
+      },
+      "wasStartedBy": {
+         "@type": "@id"
+      },
+      "Thing": {
+         "@id": "owl:Thing"
+      }
+   }
+}
+

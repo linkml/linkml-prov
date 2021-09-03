@@ -1,0 +1,10 @@
+site_name: "PROV rendered in LinkML"
+theme: readthedocs
+docs_dir: target/docs
+site_dir: docs
+nav:
+  - Home: home.md
+  - Index: index.md
+  - Credits: credits.md
+site_url: https://linkml.io/linkml-prov/
+repo_url: https://github.com/linkml/linkml-prov

@@ -1,0 +1,1025 @@
+{
+   "$id": "http://www.w3.org/ns/prov#",
+   "$schema": "http://json-schema.org/draft-07/schema#",
+   "definitions": {
+      "Activity": {
+         "additionalProperties": false,
+         "description": "An activity is something that occurs over a period of time and acts upon or with entities; it may include consuming, processing, transforming, modifying, relocating, using, or generating entities.",
+         "properties": {
+            "atLocation": {
+               "$ref": "#/definitions/Location"
+            },
+            "endedAtTime": {
+               "type": "string"
+            },
+            "generated": {
+               "$ref": "#/definitions/Entity"
+            },
+            "invalidated": {
+               "$ref": "#/definitions/Entity"
+            },
+            "qualifiedAssociation": {
+               "$ref": "#/definitions/Association"
+            },
+            "qualifiedCommunication": {
+               "$ref": "#/definitions/Communication"
+            },
+            "qualifiedEnd": {
+               "$ref": "#/definitions/End"
+            },
+            "qualifiedInfluence": {
+               "$ref": "#/definitions/Influence"
+            },
+            "qualifiedStart": {
+               "$ref": "#/definitions/Start"
+            },
+            "qualifiedUsage": {
+               "$ref": "#/definitions/Usage"
+            },
+            "startedAtTime": {
+               "type": "string"
+            },
+            "used": {
+               "$ref": "#/definitions/Entity"
+            },
+            "wasAssociatedWith": {
+               "$ref": "#/definitions/Agent"
+            },
+            "wasEndedBy": {
+               "$ref": "#/definitions/Entity"
+            },
+            "wasInfluencedBy": {
+               "type": "string"
+            },
+            "wasInformedBy": {
+               "$ref": "#/definitions/Activity"
+            },
+            "wasStartedBy": {
+               "$ref": "#/definitions/Entity"
+            }
+         },
+         "required": [],
+         "title": "Activity",
+         "type": "object"
+      },
+      "ActivityInfluence": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "activity": {
+               "$ref": "#/definitions/Activity"
+            },
+            "hadActivity": {
+               "$ref": "#/definitions/Activity"
+            },
+            "hadRole": {
+               "$ref": "#/definitions/Role"
+            },
+            "influencer": {
+               "$ref": "#/definitions/Thing"
+            }
+         },
+         "required": [],
+         "title": "ActivityInfluence",
+         "type": "object"
+      },
+      "Agent": {
+         "additionalProperties": false,
+         "description": "An agent is something that bears some form of responsibility for an activity taking place, for the existence of an entity, or for another agent's activity. @en",
+         "properties": {
+            "actedOnBehalfOf": {
+               "$ref": "#/definitions/Agent"
+            },
+            "atLocation": {
+               "$ref": "#/definitions/Location"
+            },
+            "qualifiedDelegation": {
+               "$ref": "#/definitions/Delegation"
+            },
+            "qualifiedInfluence": {
+               "$ref": "#/definitions/Influence"
+            },
+            "wasInfluencedBy": {
+               "type": "string"
+            }
+         },
+         "required": [],
+         "title": "Agent",
+         "type": "object"
+      },
+      "AgentInfluence": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "agent": {
+               "$ref": "#/definitions/Agent"
+            },
+            "hadActivity": {
+               "$ref": "#/definitions/Activity"
+            },
+            "hadRole": {
+               "$ref": "#/definitions/Role"
+            },
+            "influencer": {
+               "$ref": "#/definitions/Thing"
+            }
+         },
+         "required": [],
+         "title": "AgentInfluence",
+         "type": "object"
+      },
+      "Association": {
+         "additionalProperties": false,
+         "description": "An activity association is an assignment of responsibility to an agent for an activity, indicating that the agent had a role in the activity. It further allows for a plan to be specified, which is the plan intended by the agent to achieve some goals in the context of this activity.@en",
+         "properties": {
+            "agent": {
+               "$ref": "#/definitions/Agent"
+            },
+            "hadActivity": {
+               "$ref": "#/definitions/Activity"
+            },
+            "hadPlan": {
+               "$ref": "#/definitions/Plan"
+            },
+            "hadRole": {
+               "$ref": "#/definitions/Role"
+            },
+            "influencer": {
+               "$ref": "#/definitions/Thing"
+            }
+         },
+         "required": [],
+         "title": "Association",
+         "type": "object"
+      },
+      "Attribution": {
+         "additionalProperties": false,
+         "description": "Attribution is the ascribing of an entity to an agent.\n\nWhen an entity e is attributed to agent ag, entity e was generated by some unspecified activity that in turn was associated to agent ag. Thus, this relation is useful when the activity is not known, or irrelevant.@en",
+         "properties": {
+            "agent": {
+               "$ref": "#/definitions/Agent"
+            },
+            "hadActivity": {
+               "$ref": "#/definitions/Activity"
+            },
+            "hadRole": {
+               "$ref": "#/definitions/Role"
+            },
+            "influencer": {
+               "$ref": "#/definitions/Thing"
+            }
+         },
+         "required": [],
+         "title": "Attribution",
+         "type": "object"
+      },
+      "Bundle": {
+         "additionalProperties": false,
+         "description": "A bundle is a named set of provenance descriptions, and is itself an Entity, so allowing provenance of provenance to be expressed.@en",
+         "properties": {
+            "alternateOf": {
+               "$ref": "#/definitions/Entity",
+               "description": "Two alternate entities present aspects of the same thing. These aspects may be the same or different, and the alternate entities may or may not overlap in time.@en"
+            },
+            "atLocation": {
+               "$ref": "#/definitions/Location"
+            },
+            "generatedAtTime": {
+               "type": "string"
+            },
+            "hadPrimarySource": {
+               "$ref": "#/definitions/Entity"
+            },
+            "invalidatedAtTime": {
+               "type": "string"
+            },
+            "qualifiedAttribution": {
+               "$ref": "#/definitions/Attribution"
+            },
+            "qualifiedDerivation": {
+               "$ref": "#/definitions/Derivation"
+            },
+            "qualifiedGeneration": {
+               "$ref": "#/definitions/Generation"
+            },
+            "qualifiedInfluence": {
+               "$ref": "#/definitions/Influence"
+            },
+            "qualifiedInvalidation": {
+               "$ref": "#/definitions/Invalidation"
+            },
+            "qualifiedPrimarySource": {
+               "$ref": "#/definitions/PrimarySource"
+            },
+            "qualifiedQuotation": {
+               "$ref": "#/definitions/Quotation"
+            },
+            "qualifiedRevision": {
+               "$ref": "#/definitions/Revision"
+            },
+            "specializationOf": {
+               "$ref": "#/definitions/Entity",
+               "description": "An entity that is a specialization of another shares all aspects of the latter, and additionally presents more specific aspects of the same thing as the latter. In particular, the lifetime of the entity being specialized contains that of any specialization. Examples of aspects include a time period, an abstraction, and a context associated with the entity.@en"
+            },
+            "value": {
+               "description": "Provides a value that is a direct representation of an entity.@en",
+               "type": "string"
+            },
+            "wasAttributedTo": {
+               "$ref": "#/definitions/Agent",
+               "description": "Attribution is the ascribing of an entity to an agent.@en"
+            },
+            "wasDerivedFrom": {
+               "$ref": "#/definitions/Entity",
+               "description": "A derivation is a transformation of an entity into another, an update of an entity resulting in a new one, or the construction of a new entity based on a pre-existing entity.@en"
+            },
+            "wasGeneratedBy": {
+               "$ref": "#/definitions/Activity"
+            },
+            "wasInfluencedBy": {
+               "type": "string"
+            },
+            "wasInvalidatedBy": {
+               "$ref": "#/definitions/Activity"
+            },
+            "wasQuotedFrom": {
+               "$ref": "#/definitions/Entity"
+            },
+            "wasRevisionOf": {
+               "$ref": "#/definitions/Entity"
+            }
+         },
+         "required": [],
+         "title": "Bundle",
+         "type": "object"
+      },
+      "Collection": {
+         "additionalProperties": false,
+         "description": "A collection is an entity that provides a structure to some constituents, which are themselves entities. These constituents are said to be member of the collections.@en",
+         "properties": {
+            "alternateOf": {
+               "$ref": "#/definitions/Entity",
+               "description": "Two alternate entities present aspects of the same thing. These aspects may be the same or different, and the alternate entities may or may not overlap in time.@en"
+            },
+            "atLocation": {
+               "$ref": "#/definitions/Location"
+            },
+            "generatedAtTime": {
+               "type": "string"
+            },
+            "hadMember": {
+               "$ref": "#/definitions/Entity"
+            },
+            "hadPrimarySource": {
+               "$ref": "#/definitions/Entity"
+            },
+            "invalidatedAtTime": {
+               "type": "string"
+            },
+            "qualifiedAttribution": {
+               "$ref": "#/definitions/Attribution"
+            },
+            "qualifiedDerivation": {
+               "$ref": "#/definitions/Derivation"
+            },
+            "qualifiedGeneration": {
+               "$ref": "#/definitions/Generation"
+            },
+            "qualifiedInfluence": {
+               "$ref": "#/definitions/Influence"
+            },
+            "qualifiedInvalidation": {
+               "$ref": "#/definitions/Invalidation"
+            },
+            "qualifiedPrimarySource": {
+               "$ref": "#/definitions/PrimarySource"
+            },
+            "qualifiedQuotation": {
+               "$ref": "#/definitions/Quotation"
+            },
+            "qualifiedRevision": {
+               "$ref": "#/definitions/Revision"
+            },
+            "specializationOf": {
+               "$ref": "#/definitions/Entity",
+               "description": "An entity that is a specialization of another shares all aspects of the latter, and additionally presents more specific aspects of the same thing as the latter. In particular, the lifetime of the entity being specialized contains that of any specialization. Examples of aspects include a time period, an abstraction, and a context associated with the entity.@en"
+            },
+            "value": {
+               "description": "Provides a value that is a direct representation of an entity.@en",
+               "type": "string"
+            },
+            "wasAttributedTo": {
+               "$ref": "#/definitions/Agent",
+               "description": "Attribution is the ascribing of an entity to an agent.@en"
+            },
+            "wasDerivedFrom": {
+               "$ref": "#/definitions/Entity",
+               "description": "A derivation is a transformation of an entity into another, an update of an entity resulting in a new one, or the construction of a new entity based on a pre-existing entity.@en"
+            },
+            "wasGeneratedBy": {
+               "$ref": "#/definitions/Activity"
+            },
+            "wasInfluencedBy": {
+               "type": "string"
+            },
+            "wasInvalidatedBy": {
+               "$ref": "#/definitions/Activity"
+            },
+            "wasQuotedFrom": {
+               "$ref": "#/definitions/Entity"
+            },
+            "wasRevisionOf": {
+               "$ref": "#/definitions/Entity"
+            }
+         },
+         "required": [],
+         "title": "Collection",
+         "type": "object"
+      },
+      "Communication": {
+         "additionalProperties": false,
+         "description": "Communication is the exchange of an entity by two activities, one activity using the entity generated by the other.",
+         "properties": {
+            "activity": {
+               "$ref": "#/definitions/Activity"
+            },
+            "hadActivity": {
+               "$ref": "#/definitions/Activity"
+            },
+            "hadRole": {
+               "$ref": "#/definitions/Role"
+            },
+            "influencer": {
+               "$ref": "#/definitions/Thing"
+            }
+         },
+         "required": [],
+         "title": "Communication",
+         "type": "object"
+      },
+      "Delegation": {
+         "additionalProperties": false,
+         "description": "Delegation is the assignment of authority and responsibility to an agent (by itself or by another agent) to carry out a specific activity as a delegate or representative, while the agent it acts on behalf of retains some responsibility for the outcome of the delegated work.\n\nFor example, a student acted on behalf of his supervisor, who acted on behalf of the department chair, who acted on behalf of the university; all those agents are responsible in some way for the activity that took place but we do not say explicitly who bears responsibility and to what degree.@en",
+         "properties": {
+            "agent": {
+               "$ref": "#/definitions/Agent"
+            },
+            "hadActivity": {
+               "$ref": "#/definitions/Activity"
+            },
+            "hadRole": {
+               "$ref": "#/definitions/Role"
+            },
+            "influencer": {
+               "$ref": "#/definitions/Thing"
+            }
+         },
+         "required": [],
+         "title": "Delegation",
+         "type": "object"
+      },
+      "Derivation": {
+         "additionalProperties": false,
+         "description": "A derivation is a transformation of an entity into another, an update of an entity resulting in a new one, or the construction of a new entity based on a pre-existing entity.@en",
+         "properties": {
+            "entity": {
+               "$ref": "#/definitions/Entity"
+            },
+            "hadActivity": {
+               "$ref": "#/definitions/Activity"
+            },
+            "hadGeneration": {
+               "$ref": "#/definitions/Generation"
+            },
+            "hadRole": {
+               "$ref": "#/definitions/Role"
+            },
+            "hadUsage": {
+               "$ref": "#/definitions/Usage"
+            },
+            "influencer": {
+               "$ref": "#/definitions/Thing"
+            }
+         },
+         "required": [],
+         "title": "Derivation",
+         "type": "object"
+      },
+      "EmptyCollection": {
+         "additionalProperties": false,
+         "description": "An empty collection is a collection without members.@en",
+         "properties": {
+            "alternateOf": {
+               "$ref": "#/definitions/Entity",
+               "description": "Two alternate entities present aspects of the same thing. These aspects may be the same or different, and the alternate entities may or may not overlap in time.@en"
+            },
+            "atLocation": {
+               "$ref": "#/definitions/Location"
+            },
+            "generatedAtTime": {
+               "type": "string"
+            },
+            "hadMember": {
+               "$ref": "#/definitions/Entity"
+            },
+            "hadPrimarySource": {
+               "$ref": "#/definitions/Entity"
+            },
+            "invalidatedAtTime": {
+               "type": "string"
+            },
+            "qualifiedAttribution": {
+               "$ref": "#/definitions/Attribution"
+            },
+            "qualifiedDerivation": {
+               "$ref": "#/definitions/Derivation"
+            },
+            "qualifiedGeneration": {
+               "$ref": "#/definitions/Generation"
+            },
+            "qualifiedInfluence": {
+               "$ref": "#/definitions/Influence"
+            },
+            "qualifiedInvalidation": {
+               "$ref": "#/definitions/Invalidation"
+            },
+            "qualifiedPrimarySource": {
+               "$ref": "#/definitions/PrimarySource"
+            },
+            "qualifiedQuotation": {
+               "$ref": "#/definitions/Quotation"
+            },
+            "qualifiedRevision": {
+               "$ref": "#/definitions/Revision"
+            },
+            "specializationOf": {
+               "$ref": "#/definitions/Entity",
+               "description": "An entity that is a specialization of another shares all aspects of the latter, and additionally presents more specific aspects of the same thing as the latter. In particular, the lifetime of the entity being specialized contains that of any specialization. Examples of aspects include a time period, an abstraction, and a context associated with the entity.@en"
+            },
+            "value": {
+               "description": "Provides a value that is a direct representation of an entity.@en",
+               "type": "string"
+            },
+            "wasAttributedTo": {
+               "$ref": "#/definitions/Agent",
+               "description": "Attribution is the ascribing of an entity to an agent.@en"
+            },
+            "wasDerivedFrom": {
+               "$ref": "#/definitions/Entity",
+               "description": "A derivation is a transformation of an entity into another, an update of an entity resulting in a new one, or the construction of a new entity based on a pre-existing entity.@en"
+            },
+            "wasGeneratedBy": {
+               "$ref": "#/definitions/Activity"
+            },
+            "wasInfluencedBy": {
+               "type": "string"
+            },
+            "wasInvalidatedBy": {
+               "$ref": "#/definitions/Activity"
+            },
+            "wasQuotedFrom": {
+               "$ref": "#/definitions/Entity"
+            },
+            "wasRevisionOf": {
+               "$ref": "#/definitions/Entity"
+            }
+         },
+         "required": [],
+         "title": "EmptyCollection",
+         "type": "object"
+      },
+      "End": {
+         "additionalProperties": false,
+         "description": "End is when an activity is deemed to have been ended by an entity, known as trigger. The activity no longer exists after its end. Any usage, generation, or invalidation involving an activity precedes the activity's end. An end may refer to a trigger entity that terminated the activity, or to an activity, known as ender that generated the trigger.@en",
+         "properties": {
+            "atLocation": {
+               "$ref": "#/definitions/Location"
+            },
+            "atTime": {
+               "type": "string"
+            },
+            "entity": {
+               "$ref": "#/definitions/Entity"
+            },
+            "hadActivity": {
+               "$ref": "#/definitions/Activity"
+            },
+            "hadRole": {
+               "$ref": "#/definitions/Role"
+            },
+            "influencer": {
+               "$ref": "#/definitions/Thing"
+            }
+         },
+         "required": [],
+         "title": "End",
+         "type": "object"
+      },
+      "Entity": {
+         "additionalProperties": false,
+         "description": "An entity is a physical, digital, conceptual, or other kind of thing with some fixed aspects; entities may be real or imaginary. @en",
+         "properties": {
+            "alternateOf": {
+               "$ref": "#/definitions/Entity",
+               "description": "Two alternate entities present aspects of the same thing. These aspects may be the same or different, and the alternate entities may or may not overlap in time.@en"
+            },
+            "atLocation": {
+               "$ref": "#/definitions/Location"
+            },
+            "generatedAtTime": {
+               "type": "string"
+            },
+            "hadPrimarySource": {
+               "$ref": "#/definitions/Entity"
+            },
+            "invalidatedAtTime": {
+               "type": "string"
+            },
+            "qualifiedAttribution": {
+               "$ref": "#/definitions/Attribution"
+            },
+            "qualifiedDerivation": {
+               "$ref": "#/definitions/Derivation"
+            },
+            "qualifiedGeneration": {
+               "$ref": "#/definitions/Generation"
+            },
+            "qualifiedInfluence": {
+               "$ref": "#/definitions/Influence"
+            },
+            "qualifiedInvalidation": {
+               "$ref": "#/definitions/Invalidation"
+            },
+            "qualifiedPrimarySource": {
+               "$ref": "#/definitions/PrimarySource"
+            },
+            "qualifiedQuotation": {
+               "$ref": "#/definitions/Quotation"
+            },
+            "qualifiedRevision": {
+               "$ref": "#/definitions/Revision"
+            },
+            "specializationOf": {
+               "$ref": "#/definitions/Entity",
+               "description": "An entity that is a specialization of another shares all aspects of the latter, and additionally presents more specific aspects of the same thing as the latter. In particular, the lifetime of the entity being specialized contains that of any specialization. Examples of aspects include a time period, an abstraction, and a context associated with the entity.@en"
+            },
+            "value": {
+               "description": "Provides a value that is a direct representation of an entity.@en",
+               "type": "string"
+            },
+            "wasAttributedTo": {
+               "$ref": "#/definitions/Agent",
+               "description": "Attribution is the ascribing of an entity to an agent.@en"
+            },
+            "wasDerivedFrom": {
+               "$ref": "#/definitions/Entity",
+               "description": "A derivation is a transformation of an entity into another, an update of an entity resulting in a new one, or the construction of a new entity based on a pre-existing entity.@en"
+            },
+            "wasGeneratedBy": {
+               "$ref": "#/definitions/Activity"
+            },
+            "wasInfluencedBy": {
+               "type": "string"
+            },
+            "wasInvalidatedBy": {
+               "$ref": "#/definitions/Activity"
+            },
+            "wasQuotedFrom": {
+               "$ref": "#/definitions/Entity"
+            },
+            "wasRevisionOf": {
+               "$ref": "#/definitions/Entity"
+            }
+         },
+         "required": [],
+         "title": "Entity",
+         "type": "object"
+      },
+      "EntityInfluence": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {
+            "entity": {
+               "$ref": "#/definitions/Entity"
+            },
+            "hadActivity": {
+               "$ref": "#/definitions/Activity"
+            },
+            "hadRole": {
+               "$ref": "#/definitions/Role"
+            },
+            "influencer": {
+               "$ref": "#/definitions/Thing"
+            }
+         },
+         "required": [],
+         "title": "EntityInfluence",
+         "type": "object"
+      },
+      "Generation": {
+         "additionalProperties": false,
+         "description": "Generation is the completion of production of a new entity by an activity. This entity did not exist before generation and becomes available for usage after this generation.@en",
+         "properties": {
+            "activity": {
+               "$ref": "#/definitions/Activity"
+            },
+            "atLocation": {
+               "$ref": "#/definitions/Location"
+            },
+            "atTime": {
+               "type": "string"
+            },
+            "hadActivity": {
+               "$ref": "#/definitions/Activity"
+            },
+            "hadRole": {
+               "$ref": "#/definitions/Role"
+            },
+            "influencer": {
+               "$ref": "#/definitions/Thing"
+            }
+         },
+         "required": [],
+         "title": "Generation",
+         "type": "object"
+      },
+      "Influence": {
+         "additionalProperties": false,
+         "description": "Influence is the capacity of an entity, activity, or agent to have an effect on the character, development, or behavior of another by means of usage, start, end, generation, invalidation, communication, derivation, attribution, association, or delegation.@en",
+         "properties": {
+            "hadActivity": {
+               "$ref": "#/definitions/Activity"
+            },
+            "hadRole": {
+               "$ref": "#/definitions/Role"
+            },
+            "influencer": {
+               "$ref": "#/definitions/Thing"
+            }
+         },
+         "required": [],
+         "title": "Influence",
+         "type": "object"
+      },
+      "InstantaneousEvent": {
+         "additionalProperties": false,
+         "description": "The PROV data model is implicitly based on a notion of instantaneous events (or just events), that mark transitions in the world. Events include generation, usage, or invalidation of entities, as well as starting or ending of activities. This notion of event is not first-class in the data model, but it is useful for explaining its other concepts and its semantics.@en",
+         "properties": {
+            "atLocation": {
+               "$ref": "#/definitions/Location"
+            },
+            "atTime": {
+               "type": "string"
+            },
+            "hadRole": {
+               "$ref": "#/definitions/Role"
+            }
+         },
+         "required": [],
+         "title": "InstantaneousEvent",
+         "type": "object"
+      },
+      "Invalidation": {
+         "additionalProperties": false,
+         "description": "Invalidation is the start of the destruction, cessation, or expiry of an existing entity by an activity. The entity is no longer available for use (or further invalidation) after invalidation. Any generation or usage of an entity precedes its invalidation.",
+         "properties": {
+            "activity": {
+               "$ref": "#/definitions/Activity"
+            },
+            "atLocation": {
+               "$ref": "#/definitions/Location"
+            },
+            "atTime": {
+               "type": "string"
+            },
+            "hadActivity": {
+               "$ref": "#/definitions/Activity"
+            },
+            "hadRole": {
+               "$ref": "#/definitions/Role"
+            },
+            "influencer": {
+               "$ref": "#/definitions/Thing"
+            }
+         },
+         "required": [],
+         "title": "Invalidation",
+         "type": "object"
+      },
+      "Location": {
+         "additionalProperties": false,
+         "description": "A location can be an identifiable geographic place (ISO 19112), but it can also be a non-geographic place such as a directory, row, or column. As such, there are numerous ways in which location can be expressed, such as by a coordinate, address, landmark, and so forth.@en",
+         "properties": {},
+         "required": [],
+         "title": "Location",
+         "type": "object"
+      },
+      "Organization": {
+         "additionalProperties": false,
+         "description": "An organization is a social or legal institution such as a company, society, etc.",
+         "properties": {
+            "actedOnBehalfOf": {
+               "$ref": "#/definitions/Agent"
+            },
+            "atLocation": {
+               "$ref": "#/definitions/Location"
+            },
+            "qualifiedDelegation": {
+               "$ref": "#/definitions/Delegation"
+            },
+            "qualifiedInfluence": {
+               "$ref": "#/definitions/Influence"
+            },
+            "wasInfluencedBy": {
+               "type": "string"
+            }
+         },
+         "required": [],
+         "title": "Organization",
+         "type": "object"
+      },
+      "Person": {
+         "additionalProperties": false,
+         "description": "Person agents are people.@en",
+         "properties": {
+            "actedOnBehalfOf": {
+               "$ref": "#/definitions/Agent"
+            },
+            "atLocation": {
+               "$ref": "#/definitions/Location"
+            },
+            "qualifiedDelegation": {
+               "$ref": "#/definitions/Delegation"
+            },
+            "qualifiedInfluence": {
+               "$ref": "#/definitions/Influence"
+            },
+            "wasInfluencedBy": {
+               "type": "string"
+            }
+         },
+         "required": [],
+         "title": "Person",
+         "type": "object"
+      },
+      "Plan": {
+         "additionalProperties": false,
+         "description": "A plan is an entity that represents a set of actions or steps intended by one or more agents to achieve some goals.",
+         "properties": {
+            "alternateOf": {
+               "$ref": "#/definitions/Entity",
+               "description": "Two alternate entities present aspects of the same thing. These aspects may be the same or different, and the alternate entities may or may not overlap in time.@en"
+            },
+            "atLocation": {
+               "$ref": "#/definitions/Location"
+            },
+            "generatedAtTime": {
+               "type": "string"
+            },
+            "hadPrimarySource": {
+               "$ref": "#/definitions/Entity"
+            },
+            "invalidatedAtTime": {
+               "type": "string"
+            },
+            "qualifiedAttribution": {
+               "$ref": "#/definitions/Attribution"
+            },
+            "qualifiedDerivation": {
+               "$ref": "#/definitions/Derivation"
+            },
+            "qualifiedGeneration": {
+               "$ref": "#/definitions/Generation"
+            },
+            "qualifiedInfluence": {
+               "$ref": "#/definitions/Influence"
+            },
+            "qualifiedInvalidation": {
+               "$ref": "#/definitions/Invalidation"
+            },
+            "qualifiedPrimarySource": {
+               "$ref": "#/definitions/PrimarySource"
+            },
+            "qualifiedQuotation": {
+               "$ref": "#/definitions/Quotation"
+            },
+            "qualifiedRevision": {
+               "$ref": "#/definitions/Revision"
+            },
+            "specializationOf": {
+               "$ref": "#/definitions/Entity",
+               "description": "An entity that is a specialization of another shares all aspects of the latter, and additionally presents more specific aspects of the same thing as the latter. In particular, the lifetime of the entity being specialized contains that of any specialization. Examples of aspects include a time period, an abstraction, and a context associated with the entity.@en"
+            },
+            "value": {
+               "description": "Provides a value that is a direct representation of an entity.@en",
+               "type": "string"
+            },
+            "wasAttributedTo": {
+               "$ref": "#/definitions/Agent",
+               "description": "Attribution is the ascribing of an entity to an agent.@en"
+            },
+            "wasDerivedFrom": {
+               "$ref": "#/definitions/Entity",
+               "description": "A derivation is a transformation of an entity into another, an update of an entity resulting in a new one, or the construction of a new entity based on a pre-existing entity.@en"
+            },
+            "wasGeneratedBy": {
+               "$ref": "#/definitions/Activity"
+            },
+            "wasInfluencedBy": {
+               "type": "string"
+            },
+            "wasInvalidatedBy": {
+               "$ref": "#/definitions/Activity"
+            },
+            "wasQuotedFrom": {
+               "$ref": "#/definitions/Entity"
+            },
+            "wasRevisionOf": {
+               "$ref": "#/definitions/Entity"
+            }
+         },
+         "required": [],
+         "title": "Plan",
+         "type": "object"
+      },
+      "PrimarySource": {
+         "additionalProperties": false,
+         "description": "A primary source for a topic refers to something produced by some agent with direct experience and knowledge about the topic, at the time of the topic's study, without benefit from hindsight.\n\nBecause of the directness of primary sources, they 'speak for themselves' in ways that cannot be captured through the filter of secondary sources. As such, it is important for secondary sources to reference those primary sources from which they were derived, so that their reliability can be investigated.\n\nA primary source relation is a particular case of derivation of secondary materials from their primary sources. It is recognized that the determination of primary sources can be up to interpretation, and should be done according to conventions accepted within the application's domain.@en",
+         "properties": {
+            "entity": {
+               "$ref": "#/definitions/Entity"
+            },
+            "hadActivity": {
+               "$ref": "#/definitions/Activity"
+            },
+            "hadGeneration": {
+               "$ref": "#/definitions/Generation"
+            },
+            "hadRole": {
+               "$ref": "#/definitions/Role"
+            },
+            "hadUsage": {
+               "$ref": "#/definitions/Usage"
+            },
+            "influencer": {
+               "$ref": "#/definitions/Thing"
+            }
+         },
+         "required": [],
+         "title": "PrimarySource",
+         "type": "object"
+      },
+      "Quotation": {
+         "additionalProperties": false,
+         "description": "A quotation is the repeat of (some or all of) an entity, such as text or image, by someone who may or may not be its original author. Quotation is a particular case of derivation.@en",
+         "properties": {
+            "entity": {
+               "$ref": "#/definitions/Entity"
+            },
+            "hadActivity": {
+               "$ref": "#/definitions/Activity"
+            },
+            "hadGeneration": {
+               "$ref": "#/definitions/Generation"
+            },
+            "hadRole": {
+               "$ref": "#/definitions/Role"
+            },
+            "hadUsage": {
+               "$ref": "#/definitions/Usage"
+            },
+            "influencer": {
+               "$ref": "#/definitions/Thing"
+            }
+         },
+         "required": [],
+         "title": "Quotation",
+         "type": "object"
+      },
+      "Revision": {
+         "additionalProperties": false,
+         "description": "A revision is a derivation for which the resulting entity is a revised version of some original. The implication here is that the resulting entity contains substantial content from the original. Revision is a particular case of derivation.@en",
+         "properties": {
+            "entity": {
+               "$ref": "#/definitions/Entity"
+            },
+            "hadActivity": {
+               "$ref": "#/definitions/Activity"
+            },
+            "hadGeneration": {
+               "$ref": "#/definitions/Generation"
+            },
+            "hadRole": {
+               "$ref": "#/definitions/Role"
+            },
+            "hadUsage": {
+               "$ref": "#/definitions/Usage"
+            },
+            "influencer": {
+               "$ref": "#/definitions/Thing"
+            }
+         },
+         "required": [],
+         "title": "Revision",
+         "type": "object"
+      },
+      "Role": {
+         "additionalProperties": false,
+         "description": "A role is the function of an entity or agent with respect to an activity, in the context of a usage, generation, invalidation, association, start, and end.@en",
+         "properties": {},
+         "required": [],
+         "title": "Role",
+         "type": "object"
+      },
+      "SoftwareAgent": {
+         "additionalProperties": false,
+         "description": "A software agent is running software.@en",
+         "properties": {
+            "actedOnBehalfOf": {
+               "$ref": "#/definitions/Agent"
+            },
+            "atLocation": {
+               "$ref": "#/definitions/Location"
+            },
+            "qualifiedDelegation": {
+               "$ref": "#/definitions/Delegation"
+            },
+            "qualifiedInfluence": {
+               "$ref": "#/definitions/Influence"
+            },
+            "wasInfluencedBy": {
+               "type": "string"
+            }
+         },
+         "required": [],
+         "title": "SoftwareAgent",
+         "type": "object"
+      },
+      "Start": {
+         "additionalProperties": false,
+         "description": "Start is when an activity is deemed to have been started by an entity, known as trigger. The activity did not exist before its start. Any usage, generation, or invalidation involving an activity follows the activity's start. A start may refer to a trigger entity that set off the activity, or to an activity, known as starter, that generated the trigger.@en",
+         "properties": {
+            "atLocation": {
+               "$ref": "#/definitions/Location"
+            },
+            "atTime": {
+               "type": "string"
+            },
+            "entity": {
+               "$ref": "#/definitions/Entity"
+            },
+            "hadActivity": {
+               "$ref": "#/definitions/Activity"
+            },
+            "hadRole": {
+               "$ref": "#/definitions/Role"
+            },
+            "influencer": {
+               "$ref": "#/definitions/Thing"
+            }
+         },
+         "required": [],
+         "title": "Start",
+         "type": "object"
+      },
+      "Thing": {
+         "additionalProperties": false,
+         "description": "",
+         "properties": {},
+         "required": [],
+         "title": "Thing",
+         "type": "object"
+      },
+      "Usage": {
+         "additionalProperties": false,
+         "description": "Usage is the beginning of utilizing an entity by an activity. Before usage, the activity had not begun to utilize this entity and could not have been affected by the entity.@en",
+         "properties": {
+            "atLocation": {
+               "$ref": "#/definitions/Location"
+            },
+            "atTime": {
+               "type": "string"
+            },
+            "entity": {
+               "$ref": "#/definitions/Entity"
+            },
+            "hadActivity": {
+               "$ref": "#/definitions/Activity"
+            },
+            "hadRole": {
+               "$ref": "#/definitions/Role"
+            },
+            "influencer": {
+               "$ref": "#/definitions/Thing"
+            }
+         },
+         "required": [],
+         "title": "Usage",
+         "type": "object"
+      }
+   },
+   "properties": {},
+   "title": "prov",
+   "type": "object"
+}
+
