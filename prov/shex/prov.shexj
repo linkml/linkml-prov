@@ -90,119 +90,119 @@
                   "expressions": [
                      {
                         "type": "TripleConstraint",
-                        "predicate": "https://w3id.org/linkml/prov/atLocation",
+                        "predicate": "http://www.w3.org/ns/prov#atLocation",
                         "valueExpr": "https://w3id.org/linkml/prov/Location",
                         "min": 0,
                         "max": 1
                      },
                      {
                         "type": "TripleConstraint",
-                        "predicate": "https://w3id.org/linkml/prov/generated",
+                        "predicate": "http://www.w3.org/ns/prov#generated",
                         "valueExpr": "https://w3id.org/linkml/prov/Entity",
                         "min": 0,
                         "max": 1
                      },
                      {
                         "type": "TripleConstraint",
-                        "predicate": "https://w3id.org/linkml/prov/invalidated",
+                        "predicate": "http://www.w3.org/ns/prov#invalidated",
                         "valueExpr": "https://w3id.org/linkml/prov/Entity",
                         "min": 0,
                         "max": 1
                      },
                      {
                         "type": "TripleConstraint",
-                        "predicate": "https://w3id.org/linkml/prov/qualifiedAssociation",
+                        "predicate": "http://www.w3.org/ns/prov#qualifiedAssociation",
                         "valueExpr": "https://w3id.org/linkml/prov/Association",
                         "min": 0,
                         "max": 1
                      },
                      {
                         "type": "TripleConstraint",
-                        "predicate": "https://w3id.org/linkml/prov/qualifiedCommunication",
+                        "predicate": "http://www.w3.org/ns/prov#qualifiedCommunication",
                         "valueExpr": "https://w3id.org/linkml/prov/Communication",
                         "min": 0,
                         "max": 1
                      },
                      {
                         "type": "TripleConstraint",
-                        "predicate": "https://w3id.org/linkml/prov/qualifiedEnd",
+                        "predicate": "http://www.w3.org/ns/prov#qualifiedEnd",
                         "valueExpr": "https://w3id.org/linkml/prov/End",
                         "min": 0,
                         "max": 1
                      },
                      {
                         "type": "TripleConstraint",
-                        "predicate": "https://w3id.org/linkml/prov/qualifiedInfluence",
+                        "predicate": "http://www.w3.org/ns/prov#qualifiedInfluence",
                         "valueExpr": "https://w3id.org/linkml/prov/Influence",
                         "min": 0,
                         "max": 1
                      },
                      {
                         "type": "TripleConstraint",
-                        "predicate": "https://w3id.org/linkml/prov/qualifiedStart",
+                        "predicate": "http://www.w3.org/ns/prov#qualifiedStart",
                         "valueExpr": "https://w3id.org/linkml/prov/Start",
                         "min": 0,
                         "max": 1
                      },
                      {
                         "type": "TripleConstraint",
-                        "predicate": "https://w3id.org/linkml/prov/qualifiedUsage",
+                        "predicate": "http://www.w3.org/ns/prov#qualifiedUsage",
                         "valueExpr": "https://w3id.org/linkml/prov/Usage",
                         "min": 0,
                         "max": 1
                      },
                      {
                         "type": "TripleConstraint",
-                        "predicate": "https://w3id.org/linkml/prov/used",
+                        "predicate": "http://www.w3.org/ns/prov#used",
                         "valueExpr": "https://w3id.org/linkml/prov/Entity",
                         "min": 0,
                         "max": 1
                      },
                      {
                         "type": "TripleConstraint",
-                        "predicate": "https://w3id.org/linkml/prov/wasAssociatedWith",
+                        "predicate": "http://www.w3.org/ns/prov#wasAssociatedWith",
                         "valueExpr": "https://w3id.org/linkml/prov/Agent",
                         "min": 0,
                         "max": 1
                      },
                      {
                         "type": "TripleConstraint",
-                        "predicate": "https://w3id.org/linkml/prov/wasEndedBy",
+                        "predicate": "http://www.w3.org/ns/prov#wasEndedBy",
                         "valueExpr": "https://w3id.org/linkml/prov/Entity",
                         "min": 0,
                         "max": 1
                      },
                      {
                         "type": "TripleConstraint",
-                        "predicate": "https://w3id.org/linkml/prov/wasInfluencedBy",
+                        "predicate": "http://www.w3.org/ns/prov#wasInfluencedBy",
                         "valueExpr": "https://w3id.org/linkml/String",
                         "min": 0,
                         "max": 1
                      },
                      {
                         "type": "TripleConstraint",
-                        "predicate": "https://w3id.org/linkml/prov/wasInformedBy",
+                        "predicate": "http://www.w3.org/ns/prov#wasInformedBy",
                         "valueExpr": "https://w3id.org/linkml/prov/Activity",
                         "min": 0,
                         "max": 1
                      },
                      {
                         "type": "TripleConstraint",
-                        "predicate": "https://w3id.org/linkml/prov/wasStartedBy",
+                        "predicate": "http://www.w3.org/ns/prov#wasStartedBy",
                         "valueExpr": "https://w3id.org/linkml/prov/Entity",
                         "min": 0,
                         "max": 1
                      },
                      {
                         "type": "TripleConstraint",
-                        "predicate": "https://w3id.org/linkml/prov/endedAtTime",
+                        "predicate": "http://www.w3.org/ns/prov#endedAtTime",
                         "valueExpr": "https://w3id.org/linkml/String",
                         "min": 0,
                         "max": 1
                      },
                      {
                         "type": "TripleConstraint",
-                        "predicate": "https://w3id.org/linkml/prov/startedAtTime",
+                        "predicate": "http://www.w3.org/ns/prov#startedAtTime",
                         "valueExpr": "https://w3id.org/linkml/String",
                         "min": 0,
                         "max": 1
@@ -215,7 +215,7 @@
                   "valueExpr": {
                      "type": "NodeConstraint",
                      "values": [
-                        "https://w3id.org/linkml/prov/Activity"
+                        "http://www.w3.org/ns/prov#Activity"
                      ]
                   },
                   "min": 0
@@ -244,14 +244,14 @@
                               "valueExpr": {
                                  "type": "NodeConstraint",
                                  "values": [
-                                    "https://w3id.org/linkml/prov/Influence"
+                                    "http://www.w3.org/ns/prov#Influence"
                                  ]
                               },
                               "min": 0
                            },
                            {
                               "type": "TripleConstraint",
-                              "predicate": "https://w3id.org/linkml/prov/activity",
+                              "predicate": "http://www.w3.org/ns/prov#activity",
                               "valueExpr": "https://w3id.org/linkml/prov/Activity",
                               "min": 0,
                               "max": 1
@@ -264,7 +264,7 @@
                         "valueExpr": {
                            "type": "NodeConstraint",
                            "values": [
-                              "https://w3id.org/linkml/prov/ActivityInfluence"
+                              "http://www.w3.org/ns/prov#ActivityInfluence"
                            ]
                         },
                         "min": 0
@@ -291,35 +291,35 @@
                         "expressions": [
                            {
                               "type": "TripleConstraint",
-                              "predicate": "https://w3id.org/linkml/prov/actedOnBehalfOf",
+                              "predicate": "http://www.w3.org/ns/prov#actedOnBehalfOf",
                               "valueExpr": "https://w3id.org/linkml/prov/Agent",
                               "min": 0,
                               "max": 1
                            },
                            {
                               "type": "TripleConstraint",
-                              "predicate": "https://w3id.org/linkml/prov/atLocation",
+                              "predicate": "http://www.w3.org/ns/prov#atLocation",
                               "valueExpr": "https://w3id.org/linkml/prov/Location",
                               "min": 0,
                               "max": 1
                            },
                            {
                               "type": "TripleConstraint",
-                              "predicate": "https://w3id.org/linkml/prov/qualifiedDelegation",
+                              "predicate": "http://www.w3.org/ns/prov#qualifiedDelegation",
                               "valueExpr": "https://w3id.org/linkml/prov/Delegation",
                               "min": 0,
                               "max": 1
                            },
                            {
                               "type": "TripleConstraint",
-                              "predicate": "https://w3id.org/linkml/prov/qualifiedInfluence",
+                              "predicate": "http://www.w3.org/ns/prov#qualifiedInfluence",
                               "valueExpr": "https://w3id.org/linkml/prov/Influence",
                               "min": 0,
                               "max": 1
                            },
                            {
                               "type": "TripleConstraint",
-                              "predicate": "https://w3id.org/linkml/prov/wasInfluencedBy",
+                              "predicate": "http://www.w3.org/ns/prov#wasInfluencedBy",
                               "valueExpr": "https://w3id.org/linkml/String",
                               "min": 0,
                               "max": 1
@@ -332,7 +332,7 @@
                         "valueExpr": {
                            "type": "NodeConstraint",
                            "values": [
-                              "https://w3id.org/linkml/prov/Agent"
+                              "http://www.w3.org/ns/prov#Agent"
                            ]
                         },
                         "min": 0
@@ -366,14 +366,14 @@
                               "valueExpr": {
                                  "type": "NodeConstraint",
                                  "values": [
-                                    "https://w3id.org/linkml/prov/Influence"
+                                    "http://www.w3.org/ns/prov#Influence"
                                  ]
                               },
                               "min": 0
                            },
                            {
                               "type": "TripleConstraint",
-                              "predicate": "https://w3id.org/linkml/prov/agent",
+                              "predicate": "http://www.w3.org/ns/prov#agent",
                               "valueExpr": "https://w3id.org/linkml/prov/Agent",
                               "min": 0,
                               "max": 1
@@ -386,7 +386,7 @@
                         "valueExpr": {
                            "type": "NodeConstraint",
                            "values": [
-                              "https://w3id.org/linkml/prov/AgentInfluence"
+                              "http://www.w3.org/ns/prov#AgentInfluence"
                            ]
                         },
                         "min": 0
@@ -417,14 +417,14 @@
                         "valueExpr": {
                            "type": "NodeConstraint",
                            "values": [
-                              "https://w3id.org/linkml/prov/AgentInfluence"
+                              "http://www.w3.org/ns/prov#AgentInfluence"
                            ]
                         },
                         "min": 0
                      },
                      {
                         "type": "TripleConstraint",
-                        "predicate": "https://w3id.org/linkml/prov/hadPlan",
+                        "predicate": "http://www.w3.org/ns/prov#hadPlan",
                         "valueExpr": "https://w3id.org/linkml/prov/Plan",
                         "min": 0,
                         "max": 1
@@ -437,7 +437,7 @@
                   "valueExpr": {
                      "type": "NodeConstraint",
                      "values": [
-                        "https://w3id.org/linkml/prov/Association"
+                        "http://www.w3.org/ns/prov#Association"
                      ]
                   },
                   "min": 0
@@ -463,7 +463,7 @@
                         "valueExpr": {
                            "type": "NodeConstraint",
                            "values": [
-                              "https://w3id.org/linkml/prov/AgentInfluence"
+                              "http://www.w3.org/ns/prov#AgentInfluence"
                            ]
                         },
                         "min": 0
@@ -476,7 +476,7 @@
                   "valueExpr": {
                      "type": "NodeConstraint",
                      "values": [
-                        "https://w3id.org/linkml/prov/Attribution"
+                        "http://www.w3.org/ns/prov#Attribution"
                      ]
                   },
                   "min": 0
@@ -502,7 +502,7 @@
                         "valueExpr": {
                            "type": "NodeConstraint",
                            "values": [
-                              "https://w3id.org/linkml/prov/Entity"
+                              "http://www.w3.org/ns/prov#Entity"
                            ]
                         },
                         "min": 0
@@ -515,7 +515,7 @@
                   "valueExpr": {
                      "type": "NodeConstraint",
                      "values": [
-                        "https://w3id.org/linkml/prov/Bundle"
+                        "http://www.w3.org/ns/prov#Bundle"
                      ]
                   },
                   "min": 0
@@ -544,14 +544,14 @@
                               "valueExpr": {
                                  "type": "NodeConstraint",
                                  "values": [
-                                    "https://w3id.org/linkml/prov/Entity"
+                                    "http://www.w3.org/ns/prov#Entity"
                                  ]
                               },
                               "min": 0
                            },
                            {
                               "type": "TripleConstraint",
-                              "predicate": "https://w3id.org/linkml/prov/hadMember",
+                              "predicate": "http://www.w3.org/ns/prov#hadMember",
                               "valueExpr": "https://w3id.org/linkml/prov/Entity",
                               "min": 0,
                               "max": 1
@@ -564,7 +564,7 @@
                         "valueExpr": {
                            "type": "NodeConstraint",
                            "values": [
-                              "https://w3id.org/linkml/prov/Collection"
+                              "http://www.w3.org/ns/prov#Collection"
                            ]
                         },
                         "min": 0
@@ -593,7 +593,7 @@
                         "valueExpr": {
                            "type": "NodeConstraint",
                            "values": [
-                              "https://w3id.org/linkml/prov/ActivityInfluence"
+                              "http://www.w3.org/ns/prov#ActivityInfluence"
                            ]
                         },
                         "min": 0
@@ -606,7 +606,7 @@
                   "valueExpr": {
                      "type": "NodeConstraint",
                      "values": [
-                        "https://w3id.org/linkml/prov/Communication"
+                        "http://www.w3.org/ns/prov#Communication"
                      ]
                   },
                   "min": 0
@@ -632,7 +632,7 @@
                         "valueExpr": {
                            "type": "NodeConstraint",
                            "values": [
-                              "https://w3id.org/linkml/prov/AgentInfluence"
+                              "http://www.w3.org/ns/prov#AgentInfluence"
                            ]
                         },
                         "min": 0
@@ -645,7 +645,7 @@
                   "valueExpr": {
                      "type": "NodeConstraint",
                      "values": [
-                        "https://w3id.org/linkml/prov/Delegation"
+                        "http://www.w3.org/ns/prov#Delegation"
                      ]
                   },
                   "min": 0
@@ -674,21 +674,21 @@
                               "valueExpr": {
                                  "type": "NodeConstraint",
                                  "values": [
-                                    "https://w3id.org/linkml/prov/EntityInfluence"
+                                    "http://www.w3.org/ns/prov#EntityInfluence"
                                  ]
                               },
                               "min": 0
                            },
                            {
                               "type": "TripleConstraint",
-                              "predicate": "https://w3id.org/linkml/prov/hadGeneration",
+                              "predicate": "http://www.w3.org/ns/prov#hadGeneration",
                               "valueExpr": "https://w3id.org/linkml/prov/Generation",
                               "min": 0,
                               "max": 1
                            },
                            {
                               "type": "TripleConstraint",
-                              "predicate": "https://w3id.org/linkml/prov/hadUsage",
+                              "predicate": "http://www.w3.org/ns/prov#hadUsage",
                               "valueExpr": "https://w3id.org/linkml/prov/Usage",
                               "min": 0,
                               "max": 1
@@ -701,7 +701,7 @@
                         "valueExpr": {
                            "type": "NodeConstraint",
                            "values": [
-                              "https://w3id.org/linkml/prov/Derivation"
+                              "http://www.w3.org/ns/prov#Derivation"
                            ]
                         },
                         "min": 0
@@ -732,7 +732,7 @@
                         "valueExpr": {
                            "type": "NodeConstraint",
                            "values": [
-                              "https://w3id.org/linkml/prov/Collection"
+                              "http://www.w3.org/ns/prov#Collection"
                            ]
                         },
                         "min": 0
@@ -745,7 +745,7 @@
                   "valueExpr": {
                      "type": "NodeConstraint",
                      "values": [
-                        "https://w3id.org/linkml/prov/EmptyCollection"
+                        "http://www.w3.org/ns/prov#EmptyCollection"
                      ]
                   },
                   "min": 0
@@ -771,7 +771,7 @@
                         "valueExpr": {
                            "type": "NodeConstraint",
                            "values": [
-                              "https://w3id.org/linkml/prov/InstantaneousEvent"
+                              "http://www.w3.org/ns/prov#InstantaneousEvent"
                            ]
                         },
                         "min": 0
@@ -783,28 +783,28 @@
                         "valueExpr": {
                            "type": "NodeConstraint",
                            "values": [
-                              "https://w3id.org/linkml/prov/EntityInfluence"
+                              "http://www.w3.org/ns/prov#EntityInfluence"
                            ]
                         },
                         "min": 0
                      },
                      {
                         "type": "TripleConstraint",
-                        "predicate": "https://w3id.org/linkml/prov/hadActivity",
+                        "predicate": "http://www.w3.org/ns/prov#hadActivity",
                         "valueExpr": "https://w3id.org/linkml/prov/Activity",
                         "min": 0,
                         "max": 1
                      },
                      {
                         "type": "TripleConstraint",
-                        "predicate": "https://w3id.org/linkml/prov/influencer",
+                        "predicate": "http://www.w3.org/ns/prov#influencer",
                         "valueExpr": "https://w3id.org/linkml/prov/Thing",
                         "min": 0,
                         "max": 1
                      },
                      {
                         "type": "TripleConstraint",
-                        "predicate": "https://w3id.org/linkml/prov/entity",
+                        "predicate": "http://www.w3.org/ns/prov#entity",
                         "valueExpr": "https://w3id.org/linkml/prov/Entity",
                         "min": 0,
                         "max": 1
@@ -817,7 +817,7 @@
                   "valueExpr": {
                      "type": "NodeConstraint",
                      "values": [
-                        "https://w3id.org/linkml/prov/End"
+                        "http://www.w3.org/ns/prov#End"
                      ]
                   },
                   "min": 0
@@ -841,154 +841,154 @@
                         "expressions": [
                            {
                               "type": "TripleConstraint",
-                              "predicate": "https://w3id.org/linkml/prov/alternateOf",
+                              "predicate": "http://www.w3.org/ns/prov#alternateOf",
                               "valueExpr": "https://w3id.org/linkml/prov/Entity",
                               "min": 0,
                               "max": 1
                            },
                            {
                               "type": "TripleConstraint",
-                              "predicate": "https://w3id.org/linkml/prov/atLocation",
+                              "predicate": "http://www.w3.org/ns/prov#atLocation",
                               "valueExpr": "https://w3id.org/linkml/prov/Location",
                               "min": 0,
                               "max": 1
                            },
                            {
                               "type": "TripleConstraint",
-                              "predicate": "https://w3id.org/linkml/prov/hadPrimarySource",
+                              "predicate": "http://www.w3.org/ns/prov#hadPrimarySource",
                               "valueExpr": "https://w3id.org/linkml/prov/Entity",
                               "min": 0,
                               "max": 1
                            },
                            {
                               "type": "TripleConstraint",
-                              "predicate": "https://w3id.org/linkml/prov/qualifiedAttribution",
+                              "predicate": "http://www.w3.org/ns/prov#qualifiedAttribution",
                               "valueExpr": "https://w3id.org/linkml/prov/Attribution",
                               "min": 0,
                               "max": 1
                            },
                            {
                               "type": "TripleConstraint",
-                              "predicate": "https://w3id.org/linkml/prov/qualifiedDerivation",
+                              "predicate": "http://www.w3.org/ns/prov#qualifiedDerivation",
                               "valueExpr": "https://w3id.org/linkml/prov/Derivation",
                               "min": 0,
                               "max": 1
                            },
                            {
                               "type": "TripleConstraint",
-                              "predicate": "https://w3id.org/linkml/prov/qualifiedGeneration",
+                              "predicate": "http://www.w3.org/ns/prov#qualifiedGeneration",
                               "valueExpr": "https://w3id.org/linkml/prov/Generation",
                               "min": 0,
                               "max": 1
                            },
                            {
                               "type": "TripleConstraint",
-                              "predicate": "https://w3id.org/linkml/prov/qualifiedInfluence",
+                              "predicate": "http://www.w3.org/ns/prov#qualifiedInfluence",
                               "valueExpr": "https://w3id.org/linkml/prov/Influence",
                               "min": 0,
                               "max": 1
                            },
                            {
                               "type": "TripleConstraint",
-                              "predicate": "https://w3id.org/linkml/prov/qualifiedInvalidation",
+                              "predicate": "http://www.w3.org/ns/prov#qualifiedInvalidation",
                               "valueExpr": "https://w3id.org/linkml/prov/Invalidation",
                               "min": 0,
                               "max": 1
                            },
                            {
                               "type": "TripleConstraint",
-                              "predicate": "https://w3id.org/linkml/prov/qualifiedPrimarySource",
+                              "predicate": "http://www.w3.org/ns/prov#qualifiedPrimarySource",
                               "valueExpr": "https://w3id.org/linkml/prov/PrimarySource",
                               "min": 0,
                               "max": 1
                            },
                            {
                               "type": "TripleConstraint",
-                              "predicate": "https://w3id.org/linkml/prov/qualifiedQuotation",
+                              "predicate": "http://www.w3.org/ns/prov#qualifiedQuotation",
                               "valueExpr": "https://w3id.org/linkml/prov/Quotation",
                               "min": 0,
                               "max": 1
                            },
                            {
                               "type": "TripleConstraint",
-                              "predicate": "https://w3id.org/linkml/prov/qualifiedRevision",
+                              "predicate": "http://www.w3.org/ns/prov#qualifiedRevision",
                               "valueExpr": "https://w3id.org/linkml/prov/Revision",
                               "min": 0,
                               "max": 1
                            },
                            {
                               "type": "TripleConstraint",
-                              "predicate": "https://w3id.org/linkml/prov/specializationOf",
+                              "predicate": "http://www.w3.org/ns/prov#specializationOf",
                               "valueExpr": "https://w3id.org/linkml/prov/Entity",
                               "min": 0,
                               "max": 1
                            },
                            {
                               "type": "TripleConstraint",
-                              "predicate": "https://w3id.org/linkml/prov/wasAttributedTo",
+                              "predicate": "http://www.w3.org/ns/prov#wasAttributedTo",
                               "valueExpr": "https://w3id.org/linkml/prov/Agent",
                               "min": 0,
                               "max": 1
                            },
                            {
                               "type": "TripleConstraint",
-                              "predicate": "https://w3id.org/linkml/prov/wasDerivedFrom",
+                              "predicate": "http://www.w3.org/ns/prov#wasDerivedFrom",
                               "valueExpr": "https://w3id.org/linkml/prov/Entity",
                               "min": 0,
                               "max": 1
                            },
                            {
                               "type": "TripleConstraint",
-                              "predicate": "https://w3id.org/linkml/prov/wasGeneratedBy",
+                              "predicate": "http://www.w3.org/ns/prov#wasGeneratedBy",
                               "valueExpr": "https://w3id.org/linkml/prov/Activity",
                               "min": 0,
                               "max": 1
                            },
                            {
                               "type": "TripleConstraint",
-                              "predicate": "https://w3id.org/linkml/prov/wasInfluencedBy",
+                              "predicate": "http://www.w3.org/ns/prov#wasInfluencedBy",
                               "valueExpr": "https://w3id.org/linkml/String",
                               "min": 0,
                               "max": 1
                            },
                            {
                               "type": "TripleConstraint",
-                              "predicate": "https://w3id.org/linkml/prov/wasInvalidatedBy",
+                              "predicate": "http://www.w3.org/ns/prov#wasInvalidatedBy",
                               "valueExpr": "https://w3id.org/linkml/prov/Activity",
                               "min": 0,
                               "max": 1
                            },
                            {
                               "type": "TripleConstraint",
-                              "predicate": "https://w3id.org/linkml/prov/wasQuotedFrom",
+                              "predicate": "http://www.w3.org/ns/prov#wasQuotedFrom",
                               "valueExpr": "https://w3id.org/linkml/prov/Entity",
                               "min": 0,
                               "max": 1
                            },
                            {
                               "type": "TripleConstraint",
-                              "predicate": "https://w3id.org/linkml/prov/wasRevisionOf",
+                              "predicate": "http://www.w3.org/ns/prov#wasRevisionOf",
                               "valueExpr": "https://w3id.org/linkml/prov/Entity",
                               "min": 0,
                               "max": 1
                            },
                            {
                               "type": "TripleConstraint",
-                              "predicate": "https://w3id.org/linkml/prov/generatedAtTime",
+                              "predicate": "http://www.w3.org/ns/prov#generatedAtTime",
                               "valueExpr": "https://w3id.org/linkml/String",
                               "min": 0,
                               "max": 1
                            },
                            {
                               "type": "TripleConstraint",
-                              "predicate": "https://w3id.org/linkml/prov/invalidatedAtTime",
+                              "predicate": "http://www.w3.org/ns/prov#invalidatedAtTime",
                               "valueExpr": "https://w3id.org/linkml/String",
                               "min": 0,
                               "max": 1
                            },
                            {
                               "type": "TripleConstraint",
-                              "predicate": "https://w3id.org/linkml/prov/value",
+                              "predicate": "http://www.w3.org/ns/prov#value",
                               "valueExpr": "https://w3id.org/linkml/String",
                               "min": 0,
                               "max": 1
@@ -1001,7 +1001,7 @@
                         "valueExpr": {
                            "type": "NodeConstraint",
                            "values": [
-                              "https://w3id.org/linkml/prov/Entity"
+                              "http://www.w3.org/ns/prov#Entity"
                            ]
                         },
                         "min": 0
@@ -1035,14 +1035,14 @@
                               "valueExpr": {
                                  "type": "NodeConstraint",
                                  "values": [
-                                    "https://w3id.org/linkml/prov/Influence"
+                                    "http://www.w3.org/ns/prov#Influence"
                                  ]
                               },
                               "min": 0
                            },
                            {
                               "type": "TripleConstraint",
-                              "predicate": "https://w3id.org/linkml/prov/entity",
+                              "predicate": "http://www.w3.org/ns/prov#entity",
                               "valueExpr": "https://w3id.org/linkml/prov/Entity",
                               "min": 0,
                               "max": 1
@@ -1055,7 +1055,7 @@
                         "valueExpr": {
                            "type": "NodeConstraint",
                            "values": [
-                              "https://w3id.org/linkml/prov/EntityInfluence"
+                              "http://www.w3.org/ns/prov#EntityInfluence"
                            ]
                         },
                         "min": 0
@@ -1084,7 +1084,7 @@
                         "valueExpr": {
                            "type": "NodeConstraint",
                            "values": [
-                              "https://w3id.org/linkml/prov/InstantaneousEvent"
+                              "http://www.w3.org/ns/prov#InstantaneousEvent"
                            ]
                         },
                         "min": 0
@@ -1096,28 +1096,28 @@
                         "valueExpr": {
                            "type": "NodeConstraint",
                            "values": [
-                              "https://w3id.org/linkml/prov/ActivityInfluence"
+                              "http://www.w3.org/ns/prov#ActivityInfluence"
                            ]
                         },
                         "min": 0
                      },
                      {
                         "type": "TripleConstraint",
-                        "predicate": "https://w3id.org/linkml/prov/hadActivity",
+                        "predicate": "http://www.w3.org/ns/prov#hadActivity",
                         "valueExpr": "https://w3id.org/linkml/prov/Activity",
                         "min": 0,
                         "max": 1
                      },
                      {
                         "type": "TripleConstraint",
-                        "predicate": "https://w3id.org/linkml/prov/influencer",
+                        "predicate": "http://www.w3.org/ns/prov#influencer",
                         "valueExpr": "https://w3id.org/linkml/prov/Thing",
                         "min": 0,
                         "max": 1
                      },
                      {
                         "type": "TripleConstraint",
-                        "predicate": "https://w3id.org/linkml/prov/activity",
+                        "predicate": "http://www.w3.org/ns/prov#activity",
                         "valueExpr": "https://w3id.org/linkml/prov/Activity",
                         "min": 0,
                         "max": 1
@@ -1130,7 +1130,7 @@
                   "valueExpr": {
                      "type": "NodeConstraint",
                      "values": [
-                        "https://w3id.org/linkml/prov/Generation"
+                        "http://www.w3.org/ns/prov#Generation"
                      ]
                   },
                   "min": 0
@@ -1154,21 +1154,21 @@
                         "expressions": [
                            {
                               "type": "TripleConstraint",
-                              "predicate": "https://w3id.org/linkml/prov/hadActivity",
+                              "predicate": "http://www.w3.org/ns/prov#hadActivity",
                               "valueExpr": "https://w3id.org/linkml/prov/Activity",
                               "min": 0,
                               "max": 1
                            },
                            {
                               "type": "TripleConstraint",
-                              "predicate": "https://w3id.org/linkml/prov/hadRole",
+                              "predicate": "http://www.w3.org/ns/prov#hadRole",
                               "valueExpr": "https://w3id.org/linkml/prov/Role",
                               "min": 0,
                               "max": 1
                            },
                            {
                               "type": "TripleConstraint",
-                              "predicate": "https://w3id.org/linkml/prov/influencer",
+                              "predicate": "http://www.w3.org/ns/prov#influencer",
                               "valueExpr": "https://w3id.org/linkml/prov/Thing",
                               "min": 0,
                               "max": 1
@@ -1181,7 +1181,7 @@
                         "valueExpr": {
                            "type": "NodeConstraint",
                            "values": [
-                              "https://w3id.org/linkml/prov/Influence"
+                              "http://www.w3.org/ns/prov#Influence"
                            ]
                         },
                         "min": 0
@@ -1210,21 +1210,21 @@
                         "expressions": [
                            {
                               "type": "TripleConstraint",
-                              "predicate": "https://w3id.org/linkml/prov/atLocation",
+                              "predicate": "http://www.w3.org/ns/prov#atLocation",
                               "valueExpr": "https://w3id.org/linkml/prov/Location",
                               "min": 0,
                               "max": 1
                            },
                            {
                               "type": "TripleConstraint",
-                              "predicate": "https://w3id.org/linkml/prov/hadRole",
+                              "predicate": "http://www.w3.org/ns/prov#hadRole",
                               "valueExpr": "https://w3id.org/linkml/prov/Role",
                               "min": 0,
                               "max": 1
                            },
                            {
                               "type": "TripleConstraint",
-                              "predicate": "https://w3id.org/linkml/prov/atTime",
+                              "predicate": "http://www.w3.org/ns/prov#atTime",
                               "valueExpr": "https://w3id.org/linkml/String",
                               "min": 0,
                               "max": 1
@@ -1237,7 +1237,7 @@
                         "valueExpr": {
                            "type": "NodeConstraint",
                            "values": [
-                              "https://w3id.org/linkml/prov/InstantaneousEvent"
+                              "http://www.w3.org/ns/prov#InstantaneousEvent"
                            ]
                         },
                         "min": 0
@@ -1270,7 +1270,7 @@
                         "valueExpr": {
                            "type": "NodeConstraint",
                            "values": [
-                              "https://w3id.org/linkml/prov/InstantaneousEvent"
+                              "http://www.w3.org/ns/prov#InstantaneousEvent"
                            ]
                         },
                         "min": 0
@@ -1282,28 +1282,28 @@
                         "valueExpr": {
                            "type": "NodeConstraint",
                            "values": [
-                              "https://w3id.org/linkml/prov/ActivityInfluence"
+                              "http://www.w3.org/ns/prov#ActivityInfluence"
                            ]
                         },
                         "min": 0
                      },
                      {
                         "type": "TripleConstraint",
-                        "predicate": "https://w3id.org/linkml/prov/hadActivity",
+                        "predicate": "http://www.w3.org/ns/prov#hadActivity",
                         "valueExpr": "https://w3id.org/linkml/prov/Activity",
                         "min": 0,
                         "max": 1
                      },
                      {
                         "type": "TripleConstraint",
-                        "predicate": "https://w3id.org/linkml/prov/influencer",
+                        "predicate": "http://www.w3.org/ns/prov#influencer",
                         "valueExpr": "https://w3id.org/linkml/prov/Thing",
                         "min": 0,
                         "max": 1
                      },
                      {
                         "type": "TripleConstraint",
-                        "predicate": "https://w3id.org/linkml/prov/activity",
+                        "predicate": "http://www.w3.org/ns/prov#activity",
                         "valueExpr": "https://w3id.org/linkml/prov/Activity",
                         "min": 0,
                         "max": 1
@@ -1316,7 +1316,7 @@
                   "valueExpr": {
                      "type": "NodeConstraint",
                      "values": [
-                        "https://w3id.org/linkml/prov/Invalidation"
+                        "http://www.w3.org/ns/prov#Invalidation"
                      ]
                   },
                   "min": 0
@@ -1344,7 +1344,7 @@
                   "valueExpr": {
                      "type": "NodeConstraint",
                      "values": [
-                        "https://w3id.org/linkml/prov/Location"
+                        "http://www.w3.org/ns/prov#Location"
                      ]
                   },
                   "min": 0
@@ -1370,7 +1370,7 @@
                         "valueExpr": {
                            "type": "NodeConstraint",
                            "values": [
-                              "https://w3id.org/linkml/prov/Agent"
+                              "http://www.w3.org/ns/prov#Agent"
                            ]
                         },
                         "min": 0
@@ -1383,7 +1383,7 @@
                   "valueExpr": {
                      "type": "NodeConstraint",
                      "values": [
-                        "https://w3id.org/linkml/prov/Organization"
+                        "http://www.w3.org/ns/prov#Organization"
                      ]
                   },
                   "min": 0
@@ -1409,7 +1409,7 @@
                         "valueExpr": {
                            "type": "NodeConstraint",
                            "values": [
-                              "https://w3id.org/linkml/prov/Agent"
+                              "http://www.w3.org/ns/prov#Agent"
                            ]
                         },
                         "min": 0
@@ -1422,7 +1422,7 @@
                   "valueExpr": {
                      "type": "NodeConstraint",
                      "values": [
-                        "https://w3id.org/linkml/prov/Person"
+                        "http://www.w3.org/ns/prov#Person"
                      ]
                   },
                   "min": 0
@@ -1448,7 +1448,7 @@
                         "valueExpr": {
                            "type": "NodeConstraint",
                            "values": [
-                              "https://w3id.org/linkml/prov/Entity"
+                              "http://www.w3.org/ns/prov#Entity"
                            ]
                         },
                         "min": 0
@@ -1461,7 +1461,7 @@
                   "valueExpr": {
                      "type": "NodeConstraint",
                      "values": [
-                        "https://w3id.org/linkml/prov/Plan"
+                        "http://www.w3.org/ns/prov#Plan"
                      ]
                   },
                   "min": 0
@@ -1487,7 +1487,7 @@
                         "valueExpr": {
                            "type": "NodeConstraint",
                            "values": [
-                              "https://w3id.org/linkml/prov/Derivation"
+                              "http://www.w3.org/ns/prov#Derivation"
                            ]
                         },
                         "min": 0
@@ -1500,7 +1500,7 @@
                   "valueExpr": {
                      "type": "NodeConstraint",
                      "values": [
-                        "https://w3id.org/linkml/prov/PrimarySource"
+                        "http://www.w3.org/ns/prov#PrimarySource"
                      ]
                   },
                   "min": 0
@@ -1526,7 +1526,7 @@
                         "valueExpr": {
                            "type": "NodeConstraint",
                            "values": [
-                              "https://w3id.org/linkml/prov/Derivation"
+                              "http://www.w3.org/ns/prov#Derivation"
                            ]
                         },
                         "min": 0
@@ -1539,7 +1539,7 @@
                   "valueExpr": {
                      "type": "NodeConstraint",
                      "values": [
-                        "https://w3id.org/linkml/prov/Quotation"
+                        "http://www.w3.org/ns/prov#Quotation"
                      ]
                   },
                   "min": 0
@@ -1565,7 +1565,7 @@
                         "valueExpr": {
                            "type": "NodeConstraint",
                            "values": [
-                              "https://w3id.org/linkml/prov/Derivation"
+                              "http://www.w3.org/ns/prov#Derivation"
                            ]
                         },
                         "min": 0
@@ -1578,7 +1578,7 @@
                   "valueExpr": {
                      "type": "NodeConstraint",
                      "values": [
-                        "https://w3id.org/linkml/prov/Revision"
+                        "http://www.w3.org/ns/prov#Revision"
                      ]
                   },
                   "min": 0
@@ -1606,7 +1606,7 @@
                   "valueExpr": {
                      "type": "NodeConstraint",
                      "values": [
-                        "https://w3id.org/linkml/prov/Role"
+                        "http://www.w3.org/ns/prov#Role"
                      ]
                   },
                   "min": 0
@@ -1632,7 +1632,7 @@
                         "valueExpr": {
                            "type": "NodeConstraint",
                            "values": [
-                              "https://w3id.org/linkml/prov/Agent"
+                              "http://www.w3.org/ns/prov#Agent"
                            ]
                         },
                         "min": 0
@@ -1645,7 +1645,7 @@
                   "valueExpr": {
                      "type": "NodeConstraint",
                      "values": [
-                        "https://w3id.org/linkml/prov/SoftwareAgent"
+                        "http://www.w3.org/ns/prov#SoftwareAgent"
                      ]
                   },
                   "min": 0
@@ -1671,7 +1671,7 @@
                         "valueExpr": {
                            "type": "NodeConstraint",
                            "values": [
-                              "https://w3id.org/linkml/prov/InstantaneousEvent"
+                              "http://www.w3.org/ns/prov#InstantaneousEvent"
                            ]
                         },
                         "min": 0
@@ -1683,28 +1683,28 @@
                         "valueExpr": {
                            "type": "NodeConstraint",
                            "values": [
-                              "https://w3id.org/linkml/prov/EntityInfluence"
+                              "http://www.w3.org/ns/prov#EntityInfluence"
                            ]
                         },
                         "min": 0
                      },
                      {
                         "type": "TripleConstraint",
-                        "predicate": "https://w3id.org/linkml/prov/hadActivity",
+                        "predicate": "http://www.w3.org/ns/prov#hadActivity",
                         "valueExpr": "https://w3id.org/linkml/prov/Activity",
                         "min": 0,
                         "max": 1
                      },
                      {
                         "type": "TripleConstraint",
-                        "predicate": "https://w3id.org/linkml/prov/influencer",
+                        "predicate": "http://www.w3.org/ns/prov#influencer",
                         "valueExpr": "https://w3id.org/linkml/prov/Thing",
                         "min": 0,
                         "max": 1
                      },
                      {
                         "type": "TripleConstraint",
-                        "predicate": "https://w3id.org/linkml/prov/entity",
+                        "predicate": "http://www.w3.org/ns/prov#entity",
                         "valueExpr": "https://w3id.org/linkml/prov/Entity",
                         "min": 0,
                         "max": 1
@@ -1717,7 +1717,7 @@
                   "valueExpr": {
                      "type": "NodeConstraint",
                      "values": [
-                        "https://w3id.org/linkml/prov/Start"
+                        "http://www.w3.org/ns/prov#Start"
                      ]
                   },
                   "min": 0
@@ -1771,7 +1771,7 @@
                         "valueExpr": {
                            "type": "NodeConstraint",
                            "values": [
-                              "https://w3id.org/linkml/prov/InstantaneousEvent"
+                              "http://www.w3.org/ns/prov#InstantaneousEvent"
                            ]
                         },
                         "min": 0
@@ -1783,28 +1783,28 @@
                         "valueExpr": {
                            "type": "NodeConstraint",
                            "values": [
-                              "https://w3id.org/linkml/prov/EntityInfluence"
+                              "http://www.w3.org/ns/prov#EntityInfluence"
                            ]
                         },
                         "min": 0
                      },
                      {
                         "type": "TripleConstraint",
-                        "predicate": "https://w3id.org/linkml/prov/hadActivity",
+                        "predicate": "http://www.w3.org/ns/prov#hadActivity",
                         "valueExpr": "https://w3id.org/linkml/prov/Activity",
                         "min": 0,
                         "max": 1
                      },
                      {
                         "type": "TripleConstraint",
-                        "predicate": "https://w3id.org/linkml/prov/influencer",
+                        "predicate": "http://www.w3.org/ns/prov#influencer",
                         "valueExpr": "https://w3id.org/linkml/prov/Thing",
                         "min": 0,
                         "max": 1
                      },
                      {
                         "type": "TripleConstraint",
-                        "predicate": "https://w3id.org/linkml/prov/entity",
+                        "predicate": "http://www.w3.org/ns/prov#entity",
                         "valueExpr": "https://w3id.org/linkml/prov/Entity",
                         "min": 0,
                         "max": 1
@@ -1817,7 +1817,7 @@
                   "valueExpr": {
                      "type": "NodeConstraint",
                      "values": [
-                        "https://w3id.org/linkml/prov/Usage"
+                        "http://www.w3.org/ns/prov#Usage"
                      ]
                   },
                   "min": 0

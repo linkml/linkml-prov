@@ -2,6 +2,7 @@ BASE <https://w3id.org/linkml/prov/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX linkml: <https://w3id.org/linkml/>
+PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX owl: <http://example.org/UNKNOWN/owl/>
 
 
@@ -34,48 +35,48 @@ linkml:Objectidentifier IRI
 linkml:Nodeidentifier NONLITERAL
 
 <Activity> CLOSED {
-    (  $<Activity_tes> (  <atLocation> @<Location> ? ;
-          <generated> @<Entity> ? ;
-          <invalidated> @<Entity> ? ;
-          <qualifiedAssociation> @<Association> ? ;
-          <qualifiedCommunication> @<Communication> ? ;
-          <qualifiedEnd> @<End> ? ;
-          <qualifiedInfluence> @<Influence> ? ;
-          <qualifiedStart> @<Start> ? ;
-          <qualifiedUsage> @<Usage> ? ;
-          <used> @<Entity> ? ;
-          <wasAssociatedWith> @<Agent> ? ;
-          <wasEndedBy> @<Entity> ? ;
-          <wasInfluencedBy> @linkml:String ? ;
-          <wasInformedBy> @<Activity> ? ;
-          <wasStartedBy> @<Entity> ? ;
-          <endedAtTime> @linkml:String ? ;
-          <startedAtTime> @linkml:String ?
+    (  $<Activity_tes> (  prov:atLocation @<Location> ? ;
+          prov:generated @<Entity> ? ;
+          prov:invalidated @<Entity> ? ;
+          prov:qualifiedAssociation @<Association> ? ;
+          prov:qualifiedCommunication @<Communication> ? ;
+          prov:qualifiedEnd @<End> ? ;
+          prov:qualifiedInfluence @<Influence> ? ;
+          prov:qualifiedStart @<Start> ? ;
+          prov:qualifiedUsage @<Usage> ? ;
+          prov:used @<Entity> ? ;
+          prov:wasAssociatedWith @<Agent> ? ;
+          prov:wasEndedBy @<Entity> ? ;
+          prov:wasInfluencedBy @linkml:String ? ;
+          prov:wasInformedBy @<Activity> ? ;
+          prov:wasStartedBy @<Entity> ? ;
+          prov:endedAtTime @linkml:String ? ;
+          prov:startedAtTime @linkml:String ?
        ) ;
-       rdf:type [ <Activity> ] ?
+       rdf:type [ prov:Activity ] ?
     )
 }
 
 <ActivityInfluence>  (
     CLOSED {
        (  $<ActivityInfluence_tes> (  &<Influence_tes> ;
-             rdf:type [ <Influence> ] ? ;
-             <activity> @<Activity> ?
+             rdf:type [ prov:Influence ] ? ;
+             prov:activity @<Activity> ?
           ) ;
-          rdf:type [ <ActivityInfluence> ] ?
+          rdf:type [ prov:ActivityInfluence ] ?
        )
     } OR @<Communication>
 )
 
 <Agent>  (
     CLOSED {
-       (  $<Agent_tes> (  <actedOnBehalfOf> @<Agent> ? ;
-             <atLocation> @<Location> ? ;
-             <qualifiedDelegation> @<Delegation> ? ;
-             <qualifiedInfluence> @<Influence> ? ;
-             <wasInfluencedBy> @linkml:String ?
+       (  $<Agent_tes> (  prov:actedOnBehalfOf @<Agent> ? ;
+             prov:atLocation @<Location> ? ;
+             prov:qualifiedDelegation @<Delegation> ? ;
+             prov:qualifiedInfluence @<Influence> ? ;
+             prov:wasInfluencedBy @linkml:String ?
           ) ;
-          rdf:type [ <Agent> ] ?
+          rdf:type [ prov:Agent ] ?
        )
     } OR @<Organization> OR @<Person> OR @<SoftwareAgent>
 )
@@ -83,125 +84,125 @@ linkml:Nodeidentifier NONLITERAL
 <AgentInfluence>  (
     CLOSED {
        (  $<AgentInfluence_tes> (  &<Influence_tes> ;
-             rdf:type [ <Influence> ] ? ;
-             <agent> @<Agent> ?
+             rdf:type [ prov:Influence ] ? ;
+             prov:agent @<Agent> ?
           ) ;
-          rdf:type [ <AgentInfluence> ] ?
+          rdf:type [ prov:AgentInfluence ] ?
        )
     } OR @<Association> OR @<Attribution> OR @<Delegation>
 )
 
 <Association> CLOSED {
     (  $<Association_tes> (  &<AgentInfluence_tes> ;
-          rdf:type [ <AgentInfluence> ] ? ;
-          <hadPlan> @<Plan> ?
+          rdf:type [ prov:AgentInfluence ] ? ;
+          prov:hadPlan @<Plan> ?
        ) ;
-       rdf:type [ <Association> ] ?
+       rdf:type [ prov:Association ] ?
     )
 }
 
 <Attribution> CLOSED {
     (  $<Attribution_tes> (  &<AgentInfluence_tes> ;
-          rdf:type [ <AgentInfluence> ] ?
+          rdf:type [ prov:AgentInfluence ] ?
        ) ;
-       rdf:type [ <Attribution> ] ?
+       rdf:type [ prov:Attribution ] ?
     )
 }
 
 <Bundle> CLOSED {
     (  $<Bundle_tes> (  &<Entity_tes> ;
-          rdf:type [ <Entity> ] ?
+          rdf:type [ prov:Entity ] ?
        ) ;
-       rdf:type [ <Bundle> ] ?
+       rdf:type [ prov:Bundle ] ?
     )
 }
 
 <Collection>  (
     CLOSED {
        (  $<Collection_tes> (  &<Entity_tes> ;
-             rdf:type [ <Entity> ] ? ;
-             <hadMember> @<Entity> ?
+             rdf:type [ prov:Entity ] ? ;
+             prov:hadMember @<Entity> ?
           ) ;
-          rdf:type [ <Collection> ] ?
+          rdf:type [ prov:Collection ] ?
        )
     } OR @<EmptyCollection>
 )
 
 <Communication> CLOSED {
     (  $<Communication_tes> (  &<ActivityInfluence_tes> ;
-          rdf:type [ <ActivityInfluence> ] ?
+          rdf:type [ prov:ActivityInfluence ] ?
        ) ;
-       rdf:type [ <Communication> ] ?
+       rdf:type [ prov:Communication ] ?
     )
 }
 
 <Delegation> CLOSED {
     (  $<Delegation_tes> (  &<AgentInfluence_tes> ;
-          rdf:type [ <AgentInfluence> ] ?
+          rdf:type [ prov:AgentInfluence ] ?
        ) ;
-       rdf:type [ <Delegation> ] ?
+       rdf:type [ prov:Delegation ] ?
     )
 }
 
 <Derivation>  (
     CLOSED {
        (  $<Derivation_tes> (  &<EntityInfluence_tes> ;
-             rdf:type [ <EntityInfluence> ] ? ;
-             <hadGeneration> @<Generation> ? ;
-             <hadUsage> @<Usage> ?
+             rdf:type [ prov:EntityInfluence ] ? ;
+             prov:hadGeneration @<Generation> ? ;
+             prov:hadUsage @<Usage> ?
           ) ;
-          rdf:type [ <Derivation> ] ?
+          rdf:type [ prov:Derivation ] ?
        )
     } OR @<PrimarySource> OR @<Quotation> OR @<Revision>
 )
 
 <EmptyCollection> CLOSED {
     (  $<EmptyCollection_tes> (  &<Collection_tes> ;
-          rdf:type [ <Collection> ] ?
+          rdf:type [ prov:Collection ] ?
        ) ;
-       rdf:type [ <EmptyCollection> ] ?
+       rdf:type [ prov:EmptyCollection ] ?
     )
 }
 
 <End> CLOSED {
     (  $<End_tes> (  &<InstantaneousEvent_tes> ;
-          rdf:type [ <InstantaneousEvent> ] ? ;
+          rdf:type [ prov:InstantaneousEvent ] ? ;
           &<EntityInfluence_tes> ;
-          rdf:type [ <EntityInfluence> ] ? ;
-          <hadActivity> @<Activity> ? ;
-          <influencer> @<Thing> ? ;
-          <entity> @<Entity> ?
+          rdf:type [ prov:EntityInfluence ] ? ;
+          prov:hadActivity @<Activity> ? ;
+          prov:influencer @<Thing> ? ;
+          prov:entity @<Entity> ?
        ) ;
-       rdf:type [ <End> ] ?
+       rdf:type [ prov:End ] ?
     )
 }
 
 <Entity>  (
     CLOSED {
-       (  $<Entity_tes> (  <alternateOf> @<Entity> ? ;
-             <atLocation> @<Location> ? ;
-             <hadPrimarySource> @<Entity> ? ;
-             <qualifiedAttribution> @<Attribution> ? ;
-             <qualifiedDerivation> @<Derivation> ? ;
-             <qualifiedGeneration> @<Generation> ? ;
-             <qualifiedInfluence> @<Influence> ? ;
-             <qualifiedInvalidation> @<Invalidation> ? ;
-             <qualifiedPrimarySource> @<PrimarySource> ? ;
-             <qualifiedQuotation> @<Quotation> ? ;
-             <qualifiedRevision> @<Revision> ? ;
-             <specializationOf> @<Entity> ? ;
-             <wasAttributedTo> @<Agent> ? ;
-             <wasDerivedFrom> @<Entity> ? ;
-             <wasGeneratedBy> @<Activity> ? ;
-             <wasInfluencedBy> @linkml:String ? ;
-             <wasInvalidatedBy> @<Activity> ? ;
-             <wasQuotedFrom> @<Entity> ? ;
-             <wasRevisionOf> @<Entity> ? ;
-             <generatedAtTime> @linkml:String ? ;
-             <invalidatedAtTime> @linkml:String ? ;
-             <value> @linkml:String ?
+       (  $<Entity_tes> (  prov:alternateOf @<Entity> ? ;
+             prov:atLocation @<Location> ? ;
+             prov:hadPrimarySource @<Entity> ? ;
+             prov:qualifiedAttribution @<Attribution> ? ;
+             prov:qualifiedDerivation @<Derivation> ? ;
+             prov:qualifiedGeneration @<Generation> ? ;
+             prov:qualifiedInfluence @<Influence> ? ;
+             prov:qualifiedInvalidation @<Invalidation> ? ;
+             prov:qualifiedPrimarySource @<PrimarySource> ? ;
+             prov:qualifiedQuotation @<Quotation> ? ;
+             prov:qualifiedRevision @<Revision> ? ;
+             prov:specializationOf @<Entity> ? ;
+             prov:wasAttributedTo @<Agent> ? ;
+             prov:wasDerivedFrom @<Entity> ? ;
+             prov:wasGeneratedBy @<Activity> ? ;
+             prov:wasInfluencedBy @linkml:String ? ;
+             prov:wasInvalidatedBy @<Activity> ? ;
+             prov:wasQuotedFrom @<Entity> ? ;
+             prov:wasRevisionOf @<Entity> ? ;
+             prov:generatedAtTime @linkml:String ? ;
+             prov:invalidatedAtTime @linkml:String ? ;
+             prov:value @linkml:String ?
           ) ;
-          rdf:type [ <Entity> ] ?
+          rdf:type [ prov:Entity ] ?
        )
     } OR @<Bundle> OR @<Collection> OR @<Plan>
 )
@@ -209,140 +210,140 @@ linkml:Nodeidentifier NONLITERAL
 <EntityInfluence>  (
     CLOSED {
        (  $<EntityInfluence_tes> (  &<Influence_tes> ;
-             rdf:type [ <Influence> ] ? ;
-             <entity> @<Entity> ?
+             rdf:type [ prov:Influence ] ? ;
+             prov:entity @<Entity> ?
           ) ;
-          rdf:type [ <EntityInfluence> ] ?
+          rdf:type [ prov:EntityInfluence ] ?
        )
     } OR @<Derivation>
 )
 
 <Generation> CLOSED {
     (  $<Generation_tes> (  &<InstantaneousEvent_tes> ;
-          rdf:type [ <InstantaneousEvent> ] ? ;
+          rdf:type [ prov:InstantaneousEvent ] ? ;
           &<ActivityInfluence_tes> ;
-          rdf:type [ <ActivityInfluence> ] ? ;
-          <hadActivity> @<Activity> ? ;
-          <influencer> @<Thing> ? ;
-          <activity> @<Activity> ?
+          rdf:type [ prov:ActivityInfluence ] ? ;
+          prov:hadActivity @<Activity> ? ;
+          prov:influencer @<Thing> ? ;
+          prov:activity @<Activity> ?
        ) ;
-       rdf:type [ <Generation> ] ?
+       rdf:type [ prov:Generation ] ?
     )
 }
 
 <Influence>  (
     CLOSED {
-       (  $<Influence_tes> (  <hadActivity> @<Activity> ? ;
-             <hadRole> @<Role> ? ;
-             <influencer> @<Thing> ?
+       (  $<Influence_tes> (  prov:hadActivity @<Activity> ? ;
+             prov:hadRole @<Role> ? ;
+             prov:influencer @<Thing> ?
           ) ;
-          rdf:type [ <Influence> ] ?
+          rdf:type [ prov:Influence ] ?
        )
     } OR @<ActivityInfluence> OR @<AgentInfluence> OR @<EntityInfluence>
 )
 
 <InstantaneousEvent>  (
     CLOSED {
-       (  $<InstantaneousEvent_tes> (  <atLocation> @<Location> ? ;
-             <hadRole> @<Role> ? ;
-             <atTime> @linkml:String ?
+       (  $<InstantaneousEvent_tes> (  prov:atLocation @<Location> ? ;
+             prov:hadRole @<Role> ? ;
+             prov:atTime @linkml:String ?
           ) ;
-          rdf:type [ <InstantaneousEvent> ] ?
+          rdf:type [ prov:InstantaneousEvent ] ?
        )
     } OR @<End> OR @<Generation> OR @<Invalidation> OR @<Start> OR @<Usage>
 )
 
 <Invalidation> CLOSED {
     (  $<Invalidation_tes> (  &<InstantaneousEvent_tes> ;
-          rdf:type [ <InstantaneousEvent> ] ? ;
+          rdf:type [ prov:InstantaneousEvent ] ? ;
           &<ActivityInfluence_tes> ;
-          rdf:type [ <ActivityInfluence> ] ? ;
-          <hadActivity> @<Activity> ? ;
-          <influencer> @<Thing> ? ;
-          <activity> @<Activity> ?
+          rdf:type [ prov:ActivityInfluence ] ? ;
+          prov:hadActivity @<Activity> ? ;
+          prov:influencer @<Thing> ? ;
+          prov:activity @<Activity> ?
        ) ;
-       rdf:type [ <Invalidation> ] ?
+       rdf:type [ prov:Invalidation ] ?
     )
 }
 
 <Location> CLOSED {
     (  $<Location_tes> rdf:type . * ;
-       rdf:type [ <Location> ] ?
+       rdf:type [ prov:Location ] ?
     )
 }
 
 <Organization> CLOSED {
     (  $<Organization_tes> (  &<Agent_tes> ;
-          rdf:type [ <Agent> ] ?
+          rdf:type [ prov:Agent ] ?
        ) ;
-       rdf:type [ <Organization> ] ?
+       rdf:type [ prov:Organization ] ?
     )
 }
 
 <Person> CLOSED {
     (  $<Person_tes> (  &<Agent_tes> ;
-          rdf:type [ <Agent> ] ?
+          rdf:type [ prov:Agent ] ?
        ) ;
-       rdf:type [ <Person> ] ?
+       rdf:type [ prov:Person ] ?
     )
 }
 
 <Plan> CLOSED {
     (  $<Plan_tes> (  &<Entity_tes> ;
-          rdf:type [ <Entity> ] ?
+          rdf:type [ prov:Entity ] ?
        ) ;
-       rdf:type [ <Plan> ] ?
+       rdf:type [ prov:Plan ] ?
     )
 }
 
 <PrimarySource> CLOSED {
     (  $<PrimarySource_tes> (  &<Derivation_tes> ;
-          rdf:type [ <Derivation> ] ?
+          rdf:type [ prov:Derivation ] ?
        ) ;
-       rdf:type [ <PrimarySource> ] ?
+       rdf:type [ prov:PrimarySource ] ?
     )
 }
 
 <Quotation> CLOSED {
     (  $<Quotation_tes> (  &<Derivation_tes> ;
-          rdf:type [ <Derivation> ] ?
+          rdf:type [ prov:Derivation ] ?
        ) ;
-       rdf:type [ <Quotation> ] ?
+       rdf:type [ prov:Quotation ] ?
     )
 }
 
 <Revision> CLOSED {
     (  $<Revision_tes> (  &<Derivation_tes> ;
-          rdf:type [ <Derivation> ] ?
+          rdf:type [ prov:Derivation ] ?
        ) ;
-       rdf:type [ <Revision> ] ?
+       rdf:type [ prov:Revision ] ?
     )
 }
 
 <Role> CLOSED {
     (  $<Role_tes> rdf:type . * ;
-       rdf:type [ <Role> ] ?
+       rdf:type [ prov:Role ] ?
     )
 }
 
 <SoftwareAgent> CLOSED {
     (  $<SoftwareAgent_tes> (  &<Agent_tes> ;
-          rdf:type [ <Agent> ] ?
+          rdf:type [ prov:Agent ] ?
        ) ;
-       rdf:type [ <SoftwareAgent> ] ?
+       rdf:type [ prov:SoftwareAgent ] ?
     )
 }
 
 <Start> CLOSED {
     (  $<Start_tes> (  &<InstantaneousEvent_tes> ;
-          rdf:type [ <InstantaneousEvent> ] ? ;
+          rdf:type [ prov:InstantaneousEvent ] ? ;
           &<EntityInfluence_tes> ;
-          rdf:type [ <EntityInfluence> ] ? ;
-          <hadActivity> @<Activity> ? ;
-          <influencer> @<Thing> ? ;
-          <entity> @<Entity> ?
+          rdf:type [ prov:EntityInfluence ] ? ;
+          prov:hadActivity @<Activity> ? ;
+          prov:influencer @<Thing> ? ;
+          prov:entity @<Entity> ?
        ) ;
-       rdf:type [ <Start> ] ?
+       rdf:type [ prov:Start ] ?
     )
 }
 
@@ -354,14 +355,14 @@ linkml:Nodeidentifier NONLITERAL
 
 <Usage> CLOSED {
     (  $<Usage_tes> (  &<InstantaneousEvent_tes> ;
-          rdf:type [ <InstantaneousEvent> ] ? ;
+          rdf:type [ prov:InstantaneousEvent ] ? ;
           &<EntityInfluence_tes> ;
-          rdf:type [ <EntityInfluence> ] ? ;
-          <hadActivity> @<Activity> ? ;
-          <influencer> @<Thing> ? ;
-          <entity> @<Entity> ?
+          rdf:type [ prov:EntityInfluence ] ? ;
+          prov:hadActivity @<Activity> ? ;
+          prov:influencer @<Thing> ? ;
+          prov:entity @<Entity> ?
        ) ;
-       rdf:type [ <Usage> ] ?
+       rdf:type [ prov:Usage ] ?
     )
 }
 

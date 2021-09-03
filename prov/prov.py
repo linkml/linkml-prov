@@ -1,5 +1,5 @@
 # Auto generated from prov.yaml by pythongen.py version: 0.9.0
-# Generation date: 2021-09-02 19:30
+# Generation date: 2021-09-02 19:35
 # Schema: prov
 #
 # id: http://www.w3.org/ns/prov#
@@ -31,10 +31,11 @@ dataclasses._init_fn = dataclasses_init_fn_with_kwargs
 
 # Namespaces
 LINKML = CurieNamespace('linkml', 'https://w3id.org/linkml/')
+LINKML_PROV = CurieNamespace('linkml_prov', 'https://w3id.org/linkml/prov/')
 OWL = CurieNamespace('owl', 'http://example.org/UNKNOWN/owl/')
-PROV = CurieNamespace('prov', 'https://w3id.org/linkml/prov/')
+PROV = CurieNamespace('prov', 'http://www.w3.org/ns/prov#')
 RDFS = CurieNamespace('rdfs', 'http://example.org/UNKNOWN/rdfs/')
-DEFAULT_ = PROV
+DEFAULT_ = LINKML_PROV
 
 
 # Types
@@ -49,7 +50,7 @@ class Thing(YAMLRoot):
     class_class_uri: ClassVar[URIRef] = OWL.Thing
     class_class_curie: ClassVar[str] = "owl:Thing"
     class_name: ClassVar[str] = "Thing"
-    class_model_uri: ClassVar[URIRef] = PROV.Thing
+    class_model_uri: ClassVar[URIRef] = LINKML_PROV.Thing
 
 
 @dataclass
@@ -63,7 +64,7 @@ class Activity(YAMLRoot):
     class_class_uri: ClassVar[URIRef] = PROV.Activity
     class_class_curie: ClassVar[str] = "prov:Activity"
     class_name: ClassVar[str] = "Activity"
-    class_model_uri: ClassVar[URIRef] = PROV.Activity
+    class_model_uri: ClassVar[URIRef] = LINKML_PROV.Activity
 
     atLocation: Optional[Union[dict, "Location"]] = None
     generated: Optional[Union[dict, "Entity"]] = None
@@ -149,7 +150,7 @@ class Agent(YAMLRoot):
     class_class_uri: ClassVar[URIRef] = PROV.Agent
     class_class_curie: ClassVar[str] = "prov:Agent"
     class_name: ClassVar[str] = "Agent"
-    class_model_uri: ClassVar[URIRef] = PROV.Agent
+    class_model_uri: ClassVar[URIRef] = LINKML_PROV.Agent
 
     actedOnBehalfOf: Optional[Union[dict, "Agent"]] = None
     atLocation: Optional[Union[dict, "Location"]] = None
@@ -187,7 +188,7 @@ class Entity(YAMLRoot):
     class_class_uri: ClassVar[URIRef] = PROV.Entity
     class_class_curie: ClassVar[str] = "prov:Entity"
     class_name: ClassVar[str] = "Entity"
-    class_model_uri: ClassVar[URIRef] = PROV.Entity
+    class_model_uri: ClassVar[URIRef] = LINKML_PROV.Entity
 
     alternateOf: Optional[Union[dict, "Entity"]] = None
     atLocation: Optional[Union[dict, "Location"]] = None
@@ -292,7 +293,7 @@ class Bundle(Entity):
     class_class_uri: ClassVar[URIRef] = PROV.Bundle
     class_class_curie: ClassVar[str] = "prov:Bundle"
     class_name: ClassVar[str] = "Bundle"
-    class_model_uri: ClassVar[URIRef] = PROV.Bundle
+    class_model_uri: ClassVar[URIRef] = LINKML_PROV.Bundle
 
 
 @dataclass
@@ -306,7 +307,7 @@ class Collection(Entity):
     class_class_uri: ClassVar[URIRef] = PROV.Collection
     class_class_curie: ClassVar[str] = "prov:Collection"
     class_name: ClassVar[str] = "Collection"
-    class_model_uri: ClassVar[URIRef] = PROV.Collection
+    class_model_uri: ClassVar[URIRef] = LINKML_PROV.Collection
 
     hadMember: Optional[Union[dict, "Entity"]] = None
 
@@ -326,7 +327,7 @@ class EmptyCollection(Collection):
     class_class_uri: ClassVar[URIRef] = PROV.EmptyCollection
     class_class_curie: ClassVar[str] = "prov:EmptyCollection"
     class_name: ClassVar[str] = "EmptyCollection"
-    class_model_uri: ClassVar[URIRef] = PROV.EmptyCollection
+    class_model_uri: ClassVar[URIRef] = LINKML_PROV.EmptyCollection
 
 
 @dataclass
@@ -341,7 +342,7 @@ class Influence(YAMLRoot):
     class_class_uri: ClassVar[URIRef] = PROV.Influence
     class_class_curie: ClassVar[str] = "prov:Influence"
     class_name: ClassVar[str] = "Influence"
-    class_model_uri: ClassVar[URIRef] = PROV.Influence
+    class_model_uri: ClassVar[URIRef] = LINKML_PROV.Influence
 
     hadActivity: Optional[Union[dict, Activity]] = None
     hadRole: Optional[Union[dict, "Role"]] = None
@@ -367,7 +368,7 @@ class ActivityInfluence(Influence):
     class_class_uri: ClassVar[URIRef] = PROV.ActivityInfluence
     class_class_curie: ClassVar[str] = "prov:ActivityInfluence"
     class_name: ClassVar[str] = "ActivityInfluence"
-    class_model_uri: ClassVar[URIRef] = PROV.ActivityInfluence
+    class_model_uri: ClassVar[URIRef] = LINKML_PROV.ActivityInfluence
 
     activity: Optional[Union[dict, Activity]] = None
 
@@ -385,7 +386,7 @@ class AgentInfluence(Influence):
     class_class_uri: ClassVar[URIRef] = PROV.AgentInfluence
     class_class_curie: ClassVar[str] = "prov:AgentInfluence"
     class_name: ClassVar[str] = "AgentInfluence"
-    class_model_uri: ClassVar[URIRef] = PROV.AgentInfluence
+    class_model_uri: ClassVar[URIRef] = LINKML_PROV.AgentInfluence
 
     agent: Optional[Union[dict, Agent]] = None
 
@@ -408,7 +409,7 @@ class Association(AgentInfluence):
     class_class_uri: ClassVar[URIRef] = PROV.Association
     class_class_curie: ClassVar[str] = "prov:Association"
     class_name: ClassVar[str] = "Association"
-    class_model_uri: ClassVar[URIRef] = PROV.Association
+    class_model_uri: ClassVar[URIRef] = LINKML_PROV.Association
 
     hadPlan: Optional[Union[dict, "Plan"]] = None
     hadRole: Optional[Union[dict, "Role"]] = None
@@ -435,7 +436,7 @@ class Attribution(AgentInfluence):
     class_class_uri: ClassVar[URIRef] = PROV.Attribution
     class_class_curie: ClassVar[str] = "prov:Attribution"
     class_name: ClassVar[str] = "Attribution"
-    class_model_uri: ClassVar[URIRef] = PROV.Attribution
+    class_model_uri: ClassVar[URIRef] = LINKML_PROV.Attribution
 
 
 class Communication(ActivityInfluence):
@@ -447,7 +448,7 @@ class Communication(ActivityInfluence):
     class_class_uri: ClassVar[URIRef] = PROV.Communication
     class_class_curie: ClassVar[str] = "prov:Communication"
     class_name: ClassVar[str] = "Communication"
-    class_model_uri: ClassVar[URIRef] = PROV.Communication
+    class_model_uri: ClassVar[URIRef] = LINKML_PROV.Communication
 
 
 @dataclass
@@ -466,7 +467,7 @@ class Delegation(AgentInfluence):
     class_class_uri: ClassVar[URIRef] = PROV.Delegation
     class_class_curie: ClassVar[str] = "prov:Delegation"
     class_name: ClassVar[str] = "Delegation"
-    class_model_uri: ClassVar[URIRef] = PROV.Delegation
+    class_model_uri: ClassVar[URIRef] = LINKML_PROV.Delegation
 
     hadActivity: Optional[Union[dict, Activity]] = None
 
@@ -484,7 +485,7 @@ class EntityInfluence(Influence):
     class_class_uri: ClassVar[URIRef] = PROV.EntityInfluence
     class_class_curie: ClassVar[str] = "prov:EntityInfluence"
     class_name: ClassVar[str] = "EntityInfluence"
-    class_model_uri: ClassVar[URIRef] = PROV.EntityInfluence
+    class_model_uri: ClassVar[URIRef] = LINKML_PROV.EntityInfluence
 
     entity: Optional[Union[dict, Entity]] = None
 
@@ -506,7 +507,7 @@ class Derivation(EntityInfluence):
     class_class_uri: ClassVar[URIRef] = PROV.Derivation
     class_class_curie: ClassVar[str] = "prov:Derivation"
     class_name: ClassVar[str] = "Derivation"
-    class_model_uri: ClassVar[URIRef] = PROV.Derivation
+    class_model_uri: ClassVar[URIRef] = LINKML_PROV.Derivation
 
     hadActivity: Optional[Union[dict, Activity]] = None
     hadGeneration: Optional[Union[dict, "Generation"]] = None
@@ -538,7 +539,7 @@ class InstantaneousEvent(YAMLRoot):
     class_class_uri: ClassVar[URIRef] = PROV.InstantaneousEvent
     class_class_curie: ClassVar[str] = "prov:InstantaneousEvent"
     class_name: ClassVar[str] = "InstantaneousEvent"
-    class_model_uri: ClassVar[URIRef] = PROV.InstantaneousEvent
+    class_model_uri: ClassVar[URIRef] = LINKML_PROV.InstantaneousEvent
 
     atLocation: Optional[Union[dict, "Location"]] = None
     hadRole: Optional[Union[dict, "Role"]] = None
@@ -570,7 +571,7 @@ class End(InstantaneousEvent):
     class_class_uri: ClassVar[URIRef] = PROV.End
     class_class_curie: ClassVar[str] = "prov:End"
     class_name: ClassVar[str] = "End"
-    class_model_uri: ClassVar[URIRef] = PROV.End
+    class_model_uri: ClassVar[URIRef] = LINKML_PROV.End
 
     hadActivity: Optional[Union[dict, Activity]] = None
     entity: Optional[Union[dict, "Entity"]] = None
@@ -596,7 +597,7 @@ class Generation(InstantaneousEvent):
     class_class_uri: ClassVar[URIRef] = PROV.Generation
     class_class_curie: ClassVar[str] = "prov:Generation"
     class_name: ClassVar[str] = "Generation"
-    class_model_uri: ClassVar[URIRef] = PROV.Generation
+    class_model_uri: ClassVar[URIRef] = LINKML_PROV.Generation
 
     activity: Optional[Union[dict, Activity]] = None
 
@@ -619,7 +620,7 @@ class Invalidation(InstantaneousEvent):
     class_class_uri: ClassVar[URIRef] = PROV.Invalidation
     class_class_curie: ClassVar[str] = "prov:Invalidation"
     class_name: ClassVar[str] = "Invalidation"
-    class_model_uri: ClassVar[URIRef] = PROV.Invalidation
+    class_model_uri: ClassVar[URIRef] = LINKML_PROV.Invalidation
 
     activity: Optional[Union[dict, Activity]] = None
 
@@ -641,7 +642,7 @@ class Location(YAMLRoot):
     class_class_uri: ClassVar[URIRef] = PROV.Location
     class_class_curie: ClassVar[str] = "prov:Location"
     class_name: ClassVar[str] = "Location"
-    class_model_uri: ClassVar[URIRef] = PROV.Location
+    class_model_uri: ClassVar[URIRef] = LINKML_PROV.Location
 
 
 class Organization(Agent):
@@ -653,7 +654,7 @@ class Organization(Agent):
     class_class_uri: ClassVar[URIRef] = PROV.Organization
     class_class_curie: ClassVar[str] = "prov:Organization"
     class_name: ClassVar[str] = "Organization"
-    class_model_uri: ClassVar[URIRef] = PROV.Organization
+    class_model_uri: ClassVar[URIRef] = LINKML_PROV.Organization
 
 
 class Person(Agent):
@@ -665,7 +666,7 @@ class Person(Agent):
     class_class_uri: ClassVar[URIRef] = PROV.Person
     class_class_curie: ClassVar[str] = "prov:Person"
     class_name: ClassVar[str] = "Person"
-    class_model_uri: ClassVar[URIRef] = PROV.Person
+    class_model_uri: ClassVar[URIRef] = LINKML_PROV.Person
 
 
 class Plan(Entity):
@@ -677,7 +678,7 @@ class Plan(Entity):
     class_class_uri: ClassVar[URIRef] = PROV.Plan
     class_class_curie: ClassVar[str] = "prov:Plan"
     class_name: ClassVar[str] = "Plan"
-    class_model_uri: ClassVar[URIRef] = PROV.Plan
+    class_model_uri: ClassVar[URIRef] = LINKML_PROV.Plan
 
 
 class PrimarySource(Derivation):
@@ -698,7 +699,7 @@ class PrimarySource(Derivation):
     class_class_uri: ClassVar[URIRef] = PROV.PrimarySource
     class_class_curie: ClassVar[str] = "prov:PrimarySource"
     class_name: ClassVar[str] = "PrimarySource"
-    class_model_uri: ClassVar[URIRef] = PROV.PrimarySource
+    class_model_uri: ClassVar[URIRef] = LINKML_PROV.PrimarySource
 
 
 class Quotation(Derivation):
@@ -711,7 +712,7 @@ class Quotation(Derivation):
     class_class_uri: ClassVar[URIRef] = PROV.Quotation
     class_class_curie: ClassVar[str] = "prov:Quotation"
     class_name: ClassVar[str] = "Quotation"
-    class_model_uri: ClassVar[URIRef] = PROV.Quotation
+    class_model_uri: ClassVar[URIRef] = LINKML_PROV.Quotation
 
 
 class Revision(Derivation):
@@ -725,7 +726,7 @@ class Revision(Derivation):
     class_class_uri: ClassVar[URIRef] = PROV.Revision
     class_class_curie: ClassVar[str] = "prov:Revision"
     class_name: ClassVar[str] = "Revision"
-    class_model_uri: ClassVar[URIRef] = PROV.Revision
+    class_model_uri: ClassVar[URIRef] = LINKML_PROV.Revision
 
 
 class Role(YAMLRoot):
@@ -738,7 +739,7 @@ class Role(YAMLRoot):
     class_class_uri: ClassVar[URIRef] = PROV.Role
     class_class_curie: ClassVar[str] = "prov:Role"
     class_name: ClassVar[str] = "Role"
-    class_model_uri: ClassVar[URIRef] = PROV.Role
+    class_model_uri: ClassVar[URIRef] = LINKML_PROV.Role
 
 
 class SoftwareAgent(Agent):
@@ -750,7 +751,7 @@ class SoftwareAgent(Agent):
     class_class_uri: ClassVar[URIRef] = PROV.SoftwareAgent
     class_class_curie: ClassVar[str] = "prov:SoftwareAgent"
     class_name: ClassVar[str] = "SoftwareAgent"
-    class_model_uri: ClassVar[URIRef] = PROV.SoftwareAgent
+    class_model_uri: ClassVar[URIRef] = LINKML_PROV.SoftwareAgent
 
 
 @dataclass
@@ -766,7 +767,7 @@ class Start(InstantaneousEvent):
     class_class_uri: ClassVar[URIRef] = PROV.Start
     class_class_curie: ClassVar[str] = "prov:Start"
     class_name: ClassVar[str] = "Start"
-    class_model_uri: ClassVar[URIRef] = PROV.Start
+    class_model_uri: ClassVar[URIRef] = LINKML_PROV.Start
 
     hadActivity: Optional[Union[dict, Activity]] = None
     entity: Optional[Union[dict, Entity]] = None
@@ -792,7 +793,7 @@ class Usage(InstantaneousEvent):
     class_class_uri: ClassVar[URIRef] = PROV.Usage
     class_class_curie: ClassVar[str] = "prov:Usage"
     class_name: ClassVar[str] = "Usage"
-    class_model_uri: ClassVar[URIRef] = PROV.Usage
+    class_model_uri: ClassVar[URIRef] = LINKML_PROV.Usage
 
     entity: Optional[Union[dict, Entity]] = None
 

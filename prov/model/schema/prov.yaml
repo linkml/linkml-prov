@@ -5,8 +5,9 @@ imports:
 - linkml:types
 prefixes:
   linkml: https://w3id.org/linkml/
-  prov: https://w3id.org/linkml/prov/
-default_prefix: prov
+  linkml_prov: https://w3id.org/linkml/prov/
+  prov: http://www.w3.org/ns/prov#
+default_prefix: linkml_prov
 types: {}
 classes:
   Thing:
